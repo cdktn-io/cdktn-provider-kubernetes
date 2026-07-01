@@ -4,7 +4,7 @@
 
 ### DataKubernetesEndpointSliceV1 <a name="DataKubernetesEndpointSliceV1" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/endpoint_slice_v1 kubernetes_endpoint_slice_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/endpoint_slice_v1 kubernetes_endpoint_slice_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1.Initializer"></a>
 
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataKubernetesEndpointSlic
 
 The id of the existing DataKubernetesEndpointSliceV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/endpoint_slice_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/endpoint_slice_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -679,7 +679,7 @@ const dataKubernetesEndpointSliceV1Config: dataKubernetesEndpointSliceV1.DataKub
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1Config.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1Metadata">DataKubernetesEndpointSliceV1Metadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/endpoint_slice_v1#id DataKubernetesEndpointSliceV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/endpoint_slice_v1#id DataKubernetesEndpointSliceV1#id}. |
 
 ---
 
@@ -763,7 +763,7 @@ public readonly metadata: DataKubernetesEndpointSliceV1Metadata;
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/endpoint_slice_v1#metadata DataKubernetesEndpointSliceV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/endpoint_slice_v1#metadata DataKubernetesEndpointSliceV1#metadata}
 
 ---
 
@@ -775,7 +775,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/endpoint_slice_v1#id DataKubernetesEndpointSliceV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/endpoint_slice_v1#id DataKubernetesEndpointSliceV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -849,7 +849,7 @@ An unstructured key value map stored with the endpoint_slice that may be used to
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/endpoint_slice_v1#annotations DataKubernetesEndpointSliceV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/endpoint_slice_v1#annotations DataKubernetesEndpointSliceV1#annotations}
 
 ---
 
@@ -865,7 +865,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/endpoint_slice_v1#generate_name DataKubernetesEndpointSliceV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/endpoint_slice_v1#generate_name DataKubernetesEndpointSliceV1#generate_name}
 
 ---
 
@@ -881,7 +881,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/endpoint_slice_v1#labels DataKubernetesEndpointSliceV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/endpoint_slice_v1#labels DataKubernetesEndpointSliceV1#labels}
 
 ---
 
@@ -895,7 +895,7 @@ public readonly name: string;
 
 Name of the endpoint_slice, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/endpoint_slice_v1#name DataKubernetesEndpointSliceV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/endpoint_slice_v1#name DataKubernetesEndpointSliceV1#name}
 
 ---
 
@@ -909,7 +909,7 @@ public readonly namespace: string;
 
 Namespace defines the space within which name of the endpoint_slice must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/data-sources/endpoint_slice_v1#namespace DataKubernetesEndpointSliceV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/endpoint_slice_v1#namespace DataKubernetesEndpointSliceV1#namespace}
 
 ---
 

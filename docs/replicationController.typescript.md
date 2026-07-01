@@ -4,7 +4,7 @@
 
 ### ReplicationController <a name="ReplicationController" id="@cdktn/provider-kubernetes.replicationController.ReplicationController"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller kubernetes_replication_controller}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller kubernetes_replication_controller}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.replicationController.ReplicationController.Initializer"></a>
 
@@ -542,7 +542,7 @@ The construct id used in the generated config for the ReplicationController to i
 
 The id of the existing ReplicationController that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -848,7 +848,7 @@ const replicationControllerConfig: replicationController.ReplicationControllerCo
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerMetadata">ReplicationControllerMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerConfig.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpec">ReplicationControllerSpec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#id ReplicationController#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#id ReplicationController#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts">ReplicationControllerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -933,7 +933,7 @@ public readonly metadata: ReplicationControllerMetadata;
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#metadata ReplicationController#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#metadata ReplicationController#metadata}
 
 ---
 
@@ -947,7 +947,7 @@ public readonly spec: ReplicationControllerSpec;
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#spec ReplicationController#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#spec ReplicationController#spec}
 
 ---
 
@@ -959,7 +959,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#id ReplicationController#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#id ReplicationController#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -976,7 +976,7 @@ public readonly timeouts: ReplicationControllerTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#timeouts ReplicationController#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#timeouts ReplicationController#timeouts}
 
 ---
 
@@ -1014,7 +1014,7 @@ An unstructured key value map stored with the replication controller that may be
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#annotations ReplicationController#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#annotations ReplicationController#annotations}
 
 ---
 
@@ -1030,7 +1030,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#generate_name ReplicationController#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#generate_name ReplicationController#generate_name}
 
 ---
 
@@ -1046,7 +1046,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#labels ReplicationController#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#labels ReplicationController#labels}
 
 ---
 
@@ -1060,7 +1060,7 @@ public readonly name: string;
 
 Name of the replication controller, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -1074,7 +1074,7 @@ public readonly namespace: string;
 
 Namespace defines the space within which name of the replication controller must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#namespace ReplicationController#namespace}
 
 ---
 
@@ -1111,7 +1111,7 @@ A label query over pods that should match the Replicas count.
 
 If Selector is empty, it is defaulted to the labels present on the Pod template. Label keys and values that must match in order to be controlled by this replication controller, if empty defaulted to labels on Pod template. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#selector ReplicationController#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#selector ReplicationController#selector}
 
 ---
 
@@ -1125,7 +1125,7 @@ public readonly template: ReplicationControllerSpecTemplate;
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#template ReplicationController#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#template ReplicationController#template}
 
 ---
 
@@ -1141,7 +1141,7 @@ Minimum number of seconds for which a newly created pod should be ready without 
 
 Defaults to 0 (pod will be considered available as soon as it is ready)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#min_ready_seconds ReplicationController#min_ready_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#min_ready_seconds ReplicationController#min_ready_seconds}
 
 ---
 
@@ -1155,7 +1155,7 @@ public readonly replicas: number;
 
 The number of desired replicas. Defaults to 1. More info: https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#what-is-a-replicationcontroller.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#replicas ReplicationController#replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#replicas ReplicationController#replicas}
 
 ---
 
@@ -1188,7 +1188,7 @@ public readonly metadata: ReplicationControllerSpecTemplateMetadata;
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#metadata ReplicationController#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#metadata ReplicationController#metadata}
 
 ---
 
@@ -1202,7 +1202,7 @@ public readonly spec: ReplicationControllerSpecTemplateSpec;
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#spec ReplicationController#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#spec ReplicationController#spec}
 
 ---
 
@@ -1240,7 +1240,7 @@ An unstructured key value map stored with the replication controller's template 
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#annotations ReplicationController#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#annotations ReplicationController#annotations}
 
 ---
 
@@ -1256,7 +1256,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#generate_name ReplicationController#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#generate_name ReplicationController#generate_name}
 
 ---
 
@@ -1272,7 +1272,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#labels ReplicationController#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#labels ReplicationController#labels}
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly name: string;
 
 Name of the replication controller's template, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -1300,7 +1300,7 @@ public readonly namespace: string;
 
 Namespace defines the space within which name of the replication controller's template must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#namespace ReplicationController#namespace}
 
 ---
 
@@ -1363,7 +1363,7 @@ Optional duration in seconds the pod may be active on the node relative to Start
 
 Value must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#active_deadline_seconds ReplicationController#active_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#active_deadline_seconds ReplicationController#active_deadline_seconds}
 
 ---
 
@@ -1377,7 +1377,7 @@ public readonly affinity: ReplicationControllerSpecTemplateSpecAffinity;
 
 affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#affinity ReplicationController#affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#affinity ReplicationController#affinity}
 
 ---
 
@@ -1391,7 +1391,7 @@ public readonly automountServiceAccountToken: boolean | IResolvable;
 
 AutomountServiceAccountToken indicates whether a service account token should be automatically mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#automount_service_account_token ReplicationController#automount_service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#automount_service_account_token ReplicationController#automount_service_account_token}
 
 ---
 
@@ -1405,7 +1405,7 @@ public readonly container: IResolvable | ReplicationControllerSpecTemplateSpecCo
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#container ReplicationController#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#container ReplicationController#container}
 
 ---
 
@@ -1419,7 +1419,7 @@ public readonly dnsConfig: ReplicationControllerSpecTemplateSpecDnsConfig;
 
 dns_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#dns_config ReplicationController#dns_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#dns_config ReplicationController#dns_config}
 
 ---
 
@@ -1435,7 +1435,7 @@ Set DNS policy for containers within the pod.
 
 Valid values are 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set along with hostNetwork, you have to specify DNS policy explicitly to 'ClusterFirstWithHostNet'. Defaults to 'ClusterFirst'. More info: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#dns_policy ReplicationController#dns_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#dns_policy ReplicationController#dns_policy}
 
 ---
 
@@ -1449,7 +1449,7 @@ public readonly enableServiceLinks: boolean | IResolvable;
 
 Enables generating environment variables for service discovery. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#enable_service_links ReplicationController#enable_service_links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#enable_service_links ReplicationController#enable_service_links}
 
 ---
 
@@ -1463,7 +1463,7 @@ public readonly hostAliases: IResolvable | ReplicationControllerSpecTemplateSpec
 
 host_aliases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host_aliases ReplicationController#host_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host_aliases ReplicationController#host_aliases}
 
 ---
 
@@ -1477,7 +1477,7 @@ public readonly hostIpc: boolean | IResolvable;
 
 Use the host's ipc namespace. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host_ipc ReplicationController#host_ipc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host_ipc ReplicationController#host_ipc}
 
 ---
 
@@ -1491,7 +1491,7 @@ public readonly hostname: string;
 
 Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a system-defined value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#hostname ReplicationController#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#hostname ReplicationController#hostname}
 
 ---
 
@@ -1507,7 +1507,7 @@ Host networking requested for this pod.
 
 Use the host's network namespace. If this option is set, the ports that will be used must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host_network ReplicationController#host_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host_network ReplicationController#host_network}
 
 ---
 
@@ -1521,7 +1521,7 @@ public readonly hostPid: boolean | IResolvable;
 
 Use the host's pid namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host_pid ReplicationController#host_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host_pid ReplicationController#host_pid}
 
 ---
 
@@ -1535,7 +1535,7 @@ public readonly imagePullSecrets: IResolvable | ReplicationControllerSpecTemplat
 
 image_pull_secrets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#image_pull_secrets ReplicationController#image_pull_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#image_pull_secrets ReplicationController#image_pull_secrets}
 
 ---
 
@@ -1549,7 +1549,7 @@ public readonly initContainer: IResolvable | ReplicationControllerSpecTemplateSp
 
 init_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#init_container ReplicationController#init_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#init_container ReplicationController#init_container}
 
 ---
 
@@ -1565,7 +1565,7 @@ NodeName is a request to schedule this pod onto a specific node.
 
 If it is non-empty, the scheduler simply schedules this pod onto that node, assuming that it fits resource requirements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#node_name ReplicationController#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#node_name ReplicationController#node_name}
 
 ---
 
@@ -1581,7 +1581,7 @@ NodeSelector is a selector which must be true for the pod to fit on a node.
 
 Selector which must match a node's labels for the pod to be scheduled on that node. More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#node_selector ReplicationController#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#node_selector ReplicationController#node_selector}
 
 ---
 
@@ -1595,7 +1595,7 @@ public readonly os: ReplicationControllerSpecTemplateSpecOs;
 
 os block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#os ReplicationController#os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#os ReplicationController#os}
 
 ---
 
@@ -1611,7 +1611,7 @@ If specified, indicates the pod's priority.
 
 "system-node-critical" and "system-cluster-critical" are two special keywords which indicate the highest priorities with the former being the highest priority. Any other name must be defined by creating a PriorityClass object with that name. If not specified, the pod priority will be default or zero if there is no default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#priority_class_name ReplicationController#priority_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#priority_class_name ReplicationController#priority_class_name}
 
 ---
 
@@ -1625,7 +1625,7 @@ public readonly readinessGate: IResolvable | ReplicationControllerSpecTemplateSp
 
 readiness_gate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#readiness_gate ReplicationController#readiness_gate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#readiness_gate ReplicationController#readiness_gate}
 
 ---
 
@@ -1639,7 +1639,7 @@ public readonly restartPolicy: string;
 
 Restart policy for all containers within the pod. One of Always, OnFailure, Never. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#restart_policy ReplicationController#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#restart_policy ReplicationController#restart_policy}
 
 ---
 
@@ -1655,7 +1655,7 @@ RuntimeClassName is a feature for selecting the container runtime configuration.
 
 The container runtime configuration is used to run a Pod's containers. More info: https://kubernetes.io/docs/concepts/containers/runtime-class
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#runtime_class_name ReplicationController#runtime_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#runtime_class_name ReplicationController#runtime_class_name}
 
 ---
 
@@ -1671,7 +1671,7 @@ If specified, the pod will be dispatched by specified scheduler.
 
 If not specified, the pod will be dispatched by default scheduler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#scheduler_name ReplicationController#scheduler_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#scheduler_name ReplicationController#scheduler_name}
 
 ---
 
@@ -1685,7 +1685,7 @@ public readonly securityContext: ReplicationControllerSpecTemplateSpecSecurityCo
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#security_context ReplicationController#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#security_context ReplicationController#security_context}
 
 ---
 
@@ -1699,7 +1699,7 @@ public readonly serviceAccountName: string;
 
 ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info: http://releases.k8s.io/HEAD/docs/design/service_accounts.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#service_account_name ReplicationController#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#service_account_name ReplicationController#service_account_name}
 
 ---
 
@@ -1715,7 +1715,7 @@ Share a single process namespace between all of the containers in a pod.
 
 When this is set containers will be able to view and signal processes from other containers in the same pod, and the first process in each container will not be assigned PID 1. HostPID and ShareProcessNamespace cannot both be set. Optional: Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#share_process_namespace ReplicationController#share_process_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#share_process_namespace ReplicationController#share_process_namespace}
 
 ---
 
@@ -1729,7 +1729,7 @@ public readonly subdomain: string;
 
 If specified, the fully qualified Pod hostname will be "...svc.". If not specified, the pod will not have a domainname at all..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#subdomain ReplicationController#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#subdomain ReplicationController#subdomain}
 
 ---
 
@@ -1745,7 +1745,7 @@ Optional duration in seconds the pod needs to terminate gracefully.
 
 May be decreased in delete request. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#termination_grace_period_seconds ReplicationController#termination_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#termination_grace_period_seconds ReplicationController#termination_grace_period_seconds}
 
 ---
 
@@ -1759,7 +1759,7 @@ public readonly toleration: IResolvable | ReplicationControllerSpecTemplateSpecT
 
 toleration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#toleration ReplicationController#toleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#toleration ReplicationController#toleration}
 
 ---
 
@@ -1773,7 +1773,7 @@ public readonly topologySpreadConstraint: IResolvable | ReplicationControllerSpe
 
 topology_spread_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#topology_spread_constraint ReplicationController#topology_spread_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#topology_spread_constraint ReplicationController#topology_spread_constraint}
 
 ---
 
@@ -1787,7 +1787,7 @@ public readonly volume: IResolvable | ReplicationControllerSpecTemplateSpecVolum
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#volume ReplicationController#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#volume ReplicationController#volume}
 
 ---
 
@@ -1821,7 +1821,7 @@ public readonly nodeAffinity: ReplicationControllerSpecTemplateSpecAffinityNodeA
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#node_affinity ReplicationController#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#node_affinity ReplicationController#node_affinity}
 
 ---
 
@@ -1835,7 +1835,7 @@ public readonly podAffinity: ReplicationControllerSpecTemplateSpecAffinityPodAff
 
 pod_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#pod_affinity ReplicationController#pod_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#pod_affinity ReplicationController#pod_affinity}
 
 ---
 
@@ -1849,7 +1849,7 @@ public readonly podAntiAffinity: ReplicationControllerSpecTemplateSpecAffinityPo
 
 pod_anti_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#pod_anti_affinity ReplicationController#pod_anti_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#pod_anti_affinity ReplicationController#pod_anti_affinity}
 
 ---
 
@@ -1882,7 +1882,7 @@ public readonly preferredDuringSchedulingIgnoredDuringExecution: IResolvable | R
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#preferred_during_scheduling_ignored_during_execution ReplicationController#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#preferred_during_scheduling_ignored_during_execution ReplicationController#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -1896,7 +1896,7 @@ public readonly requiredDuringSchedulingIgnoredDuringExecution: ReplicationContr
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#required_during_scheduling_ignored_during_execution ReplicationController#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#required_during_scheduling_ignored_during_execution ReplicationController#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -1929,7 +1929,7 @@ public readonly preference: ReplicationControllerSpecTemplateSpecAffinityNodeAff
 
 preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#preference ReplicationController#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#preference ReplicationController#preference}
 
 ---
 
@@ -1943,7 +1943,7 @@ public readonly weight: number;
 
 weight is in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#weight ReplicationController#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#weight ReplicationController#weight}
 
 ---
 
@@ -1976,7 +1976,7 @@ public readonly matchExpressions: IResolvable | ReplicationControllerSpecTemplat
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -1990,7 +1990,7 @@ public readonly matchFields: IResolvable | ReplicationControllerSpecTemplateSpec
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_fields ReplicationController#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_fields ReplicationController#match_fields}
 
 ---
 
@@ -2024,7 +2024,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -2040,7 +2040,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -2056,7 +2056,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -2090,7 +2090,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -2104,7 +2104,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -2120,7 +2120,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -2152,7 +2152,7 @@ public readonly nodeSelectorTerm: IResolvable | ReplicationControllerSpecTemplat
 
 node_selector_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#node_selector_term ReplicationController#node_selector_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#node_selector_term ReplicationController#node_selector_term}
 
 ---
 
@@ -2185,7 +2185,7 @@ public readonly matchExpressions: IResolvable | ReplicationControllerSpecTemplat
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -2199,7 +2199,7 @@ public readonly matchFields: IResolvable | ReplicationControllerSpecTemplateSpec
 
 match_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_fields ReplicationController#match_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_fields ReplicationController#match_fields}
 
 ---
 
@@ -2233,7 +2233,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -2249,7 +2249,7 @@ Operator represents a key's relationship to a set of values.
 
 Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -2265,7 +2265,7 @@ Values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -2299,7 +2299,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -2313,7 +2313,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists`, `DoesNotExist`, `Gt`, and `Lt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -2329,7 +2329,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -2362,7 +2362,7 @@ public readonly preferredDuringSchedulingIgnoredDuringExecution: IResolvable | R
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#preferred_during_scheduling_ignored_during_execution ReplicationController#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#preferred_during_scheduling_ignored_during_execution ReplicationController#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2376,7 +2376,7 @@ public readonly requiredDuringSchedulingIgnoredDuringExecution: IResolvable | Re
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#required_during_scheduling_ignored_during_execution ReplicationController#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#required_during_scheduling_ignored_during_execution ReplicationController#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -2409,7 +2409,7 @@ public readonly podAffinityTerm: ReplicationControllerSpecTemplateSpecAffinityPo
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#pod_affinity_term ReplicationController#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#pod_affinity_term ReplicationController#pod_affinity_term}
 
 ---
 
@@ -2423,7 +2423,7 @@ public readonly weight: number;
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#weight ReplicationController#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#weight ReplicationController#weight}
 
 ---
 
@@ -2458,7 +2458,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
 
 ---
 
@@ -2472,7 +2472,7 @@ public readonly labelSelector: IResolvable | ReplicationControllerSpecTemplateSp
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
 
 ---
 
@@ -2486,7 +2486,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
 
 ---
 
@@ -2500,7 +2500,7 @@ public readonly namespaceSelector: IResolvable | ReplicationControllerSpecTempla
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
 
 ---
 
@@ -2533,7 +2533,7 @@ public readonly matchExpressions: IResolvable | ReplicationControllerSpecTemplat
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -2549,7 +2549,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -2583,7 +2583,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -2597,7 +2597,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -2613,7 +2613,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -2646,7 +2646,7 @@ public readonly matchExpressions: IResolvable | ReplicationControllerSpecTemplat
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -2662,7 +2662,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -2696,7 +2696,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -2710,7 +2710,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -2726,7 +2726,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -2761,7 +2761,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
 
 ---
 
@@ -2775,7 +2775,7 @@ public readonly labelSelector: IResolvable | ReplicationControllerSpecTemplateSp
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
 
 ---
 
@@ -2789,7 +2789,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
 
 ---
 
@@ -2803,7 +2803,7 @@ public readonly namespaceSelector: IResolvable | ReplicationControllerSpecTempla
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
 
 ---
 
@@ -2836,7 +2836,7 @@ public readonly matchExpressions: IResolvable | ReplicationControllerSpecTemplat
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -2852,7 +2852,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -2886,7 +2886,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -2900,7 +2900,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -2916,7 +2916,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -2949,7 +2949,7 @@ public readonly matchExpressions: IResolvable | ReplicationControllerSpecTemplat
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -2965,7 +2965,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -2999,7 +2999,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -3013,7 +3013,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -3029,7 +3029,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -3062,7 +3062,7 @@ public readonly preferredDuringSchedulingIgnoredDuringExecution: IResolvable | R
 
 preferred_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#preferred_during_scheduling_ignored_during_execution ReplicationController#preferred_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#preferred_during_scheduling_ignored_during_execution ReplicationController#preferred_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3076,7 +3076,7 @@ public readonly requiredDuringSchedulingIgnoredDuringExecution: IResolvable | Re
 
 required_during_scheduling_ignored_during_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#required_during_scheduling_ignored_during_execution ReplicationController#required_during_scheduling_ignored_during_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#required_during_scheduling_ignored_during_execution ReplicationController#required_during_scheduling_ignored_during_execution}
 
 ---
 
@@ -3109,7 +3109,7 @@ public readonly podAffinityTerm: ReplicationControllerSpecTemplateSpecAffinityPo
 
 pod_affinity_term block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#pod_affinity_term ReplicationController#pod_affinity_term}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#pod_affinity_term ReplicationController#pod_affinity_term}
 
 ---
 
@@ -3123,7 +3123,7 @@ public readonly weight: number;
 
 weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#weight ReplicationController#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#weight ReplicationController#weight}
 
 ---
 
@@ -3158,7 +3158,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
 
 ---
 
@@ -3172,7 +3172,7 @@ public readonly labelSelector: IResolvable | ReplicationControllerSpecTemplateSp
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
 
 ---
 
@@ -3186,7 +3186,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
 
 ---
 
@@ -3200,7 +3200,7 @@ public readonly namespaceSelector: IResolvable | ReplicationControllerSpecTempla
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
 
 ---
 
@@ -3233,7 +3233,7 @@ public readonly matchExpressions: IResolvable | ReplicationControllerSpecTemplat
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -3249,7 +3249,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -3283,7 +3283,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -3297,7 +3297,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -3313,7 +3313,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -3346,7 +3346,7 @@ public readonly matchExpressions: IResolvable | ReplicationControllerSpecTemplat
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -3362,7 +3362,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -3396,7 +3396,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -3410,7 +3410,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -3426,7 +3426,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -3461,7 +3461,7 @@ public readonly topologyKey: string;
 
 empty topology key is interpreted by the scheduler as 'all topologies'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
 
 ---
 
@@ -3475,7 +3475,7 @@ public readonly labelSelector: IResolvable | ReplicationControllerSpecTemplateSp
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
 
 ---
 
@@ -3489,7 +3489,7 @@ public readonly namespaces: string[];
 
 namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means 'this pod's namespace'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#namespaces ReplicationController#namespaces}
 
 ---
 
@@ -3503,7 +3503,7 @@ public readonly namespaceSelector: IResolvable | ReplicationControllerSpecTempla
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#namespace_selector ReplicationController#namespace_selector}
 
 ---
 
@@ -3536,7 +3536,7 @@ public readonly matchExpressions: IResolvable | ReplicationControllerSpecTemplat
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -3552,7 +3552,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -3586,7 +3586,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -3600,7 +3600,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -3616,7 +3616,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -3649,7 +3649,7 @@ public readonly matchExpressions: IResolvable | ReplicationControllerSpecTemplat
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -3665,7 +3665,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -3699,7 +3699,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -3713,7 +3713,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -3729,7 +3729,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -3785,7 +3785,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -3801,7 +3801,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#args ReplicationController#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#args ReplicationController#args}
 
 ---
 
@@ -3817,7 +3817,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -3831,7 +3831,7 @@ public readonly env: IResolvable | ReplicationControllerSpecTemplateSpecContaine
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#env ReplicationController#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#env ReplicationController#env}
 
 ---
 
@@ -3845,7 +3845,7 @@ public readonly envFrom: IResolvable | ReplicationControllerSpecTemplateSpecCont
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#env_from ReplicationController#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#env_from ReplicationController#env_from}
 
 ---
 
@@ -3859,7 +3859,7 @@ public readonly image: string;
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#image ReplicationController#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#image ReplicationController#image}
 
 ---
 
@@ -3875,7 +3875,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#image_pull_policy ReplicationController#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#image_pull_policy ReplicationController#image_pull_policy}
 
 ---
 
@@ -3889,7 +3889,7 @@ public readonly lifecycle: ReplicationControllerSpecTemplateSpecContainerLifecyc
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#lifecycle ReplicationController#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#lifecycle ReplicationController#lifecycle}
 
 ---
 
@@ -3903,7 +3903,7 @@ public readonly livenessProbe: ReplicationControllerSpecTemplateSpecContainerLiv
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#liveness_probe ReplicationController#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#liveness_probe ReplicationController#liveness_probe}
 
 ---
 
@@ -3917,7 +3917,7 @@ public readonly port: IResolvable | ReplicationControllerSpecTemplateSpecContain
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -3931,7 +3931,7 @@ public readonly readinessProbe: ReplicationControllerSpecTemplateSpecContainerRe
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#readiness_probe ReplicationController#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#readiness_probe ReplicationController#readiness_probe}
 
 ---
 
@@ -3945,7 +3945,7 @@ public readonly resources: ReplicationControllerSpecTemplateSpecContainerResourc
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#resources ReplicationController#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#resources ReplicationController#resources}
 
 ---
 
@@ -3959,7 +3959,7 @@ public readonly restartPolicy: string;
 
 Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#restart_policy ReplicationController#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#restart_policy ReplicationController#restart_policy}
 
 ---
 
@@ -3973,7 +3973,7 @@ public readonly securityContext: ReplicationControllerSpecTemplateSpecContainerS
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#security_context ReplicationController#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#security_context ReplicationController#security_context}
 
 ---
 
@@ -3987,7 +3987,7 @@ public readonly startupProbe: ReplicationControllerSpecTemplateSpecContainerStar
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#startup_probe ReplicationController#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#startup_probe ReplicationController#startup_probe}
 
 ---
 
@@ -4003,7 +4003,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF. 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#stdin ReplicationController#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#stdin ReplicationController#stdin}
 
 ---
 
@@ -4019,7 +4019,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#stdin_once ReplicationController#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#stdin_once ReplicationController#stdin_once}
 
 ---
 
@@ -4035,7 +4035,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#termination_message_path ReplicationController#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#termination_message_path ReplicationController#termination_message_path}
 
 ---
 
@@ -4051,7 +4051,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#termination_message_policy ReplicationController#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#termination_message_policy ReplicationController#termination_message_policy}
 
 ---
 
@@ -4065,7 +4065,7 @@ public readonly tty: boolean | IResolvable;
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#tty ReplicationController#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#tty ReplicationController#tty}
 
 ---
 
@@ -4079,7 +4079,7 @@ public readonly volumeDevice: IResolvable | ReplicationControllerSpecTemplateSpe
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#volume_device ReplicationController#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#volume_device ReplicationController#volume_device}
 
 ---
 
@@ -4093,7 +4093,7 @@ public readonly volumeMount: IResolvable | ReplicationControllerSpecTemplateSpec
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#volume_mount ReplicationController#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#volume_mount ReplicationController#volume_mount}
 
 ---
 
@@ -4109,7 +4109,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#working_dir ReplicationController#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#working_dir ReplicationController#working_dir}
 
 ---
 
@@ -4143,7 +4143,7 @@ public readonly name: string;
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -4159,7 +4159,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -4173,7 +4173,7 @@ public readonly valueFrom: ReplicationControllerSpecTemplateSpecContainerEnvValu
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value_from ReplicationController#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value_from ReplicationController#value_from}
 
 ---
 
@@ -4207,7 +4207,7 @@ public readonly configMapRef: ReplicationControllerSpecTemplateSpecContainerEnvF
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#config_map_ref ReplicationController#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#config_map_ref ReplicationController#config_map_ref}
 
 ---
 
@@ -4221,7 +4221,7 @@ public readonly prefix: string;
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#prefix ReplicationController#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#prefix ReplicationController#prefix}
 
 ---
 
@@ -4235,7 +4235,7 @@ public readonly secretRef: ReplicationControllerSpecTemplateSpecContainerEnvFrom
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
 
 ---
 
@@ -4268,7 +4268,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -4282,7 +4282,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -4315,7 +4315,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -4329,7 +4329,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -4364,7 +4364,7 @@ public readonly configMapKeyRef: ReplicationControllerSpecTemplateSpecContainerE
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#config_map_key_ref ReplicationController#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#config_map_key_ref ReplicationController#config_map_key_ref}
 
 ---
 
@@ -4378,7 +4378,7 @@ public readonly fieldRef: ReplicationControllerSpecTemplateSpecContainerEnvValue
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
 
 ---
 
@@ -4392,7 +4392,7 @@ public readonly resourceFieldRef: ReplicationControllerSpecTemplateSpecContainer
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
 
 ---
 
@@ -4406,7 +4406,7 @@ public readonly secretKeyRef: ReplicationControllerSpecTemplateSpecContainerEnvV
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#secret_key_ref ReplicationController#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#secret_key_ref ReplicationController#secret_key_ref}
 
 ---
 
@@ -4440,7 +4440,7 @@ public readonly key: string;
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -4454,7 +4454,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -4468,7 +4468,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -4501,7 +4501,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#api_version ReplicationController#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#api_version ReplicationController#api_version}
 
 ---
 
@@ -4515,7 +4515,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#field_path ReplicationController#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#field_path ReplicationController#field_path}
 
 ---
 
@@ -4534,8 +4534,8 @@ const replicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
 
 ---
 
@@ -4549,7 +4549,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#resource ReplicationController#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#resource ReplicationController#resource}
 
 ---
 
@@ -4561,7 +4561,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#container_name ReplicationController#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#container_name ReplicationController#container_name}.
 
 ---
 
@@ -4573,7 +4573,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#divisor ReplicationController#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#divisor ReplicationController#divisor}.
 
 ---
 
@@ -4607,7 +4607,7 @@ public readonly key: string;
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -4621,7 +4621,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -4635,7 +4635,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -4668,7 +4668,7 @@ public readonly postStart: IResolvable | ReplicationControllerSpecTemplateSpecCo
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#post_start ReplicationController#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#post_start ReplicationController#post_start}
 
 ---
 
@@ -4682,7 +4682,7 @@ public readonly preStop: IResolvable | ReplicationControllerSpecTemplateSpecCont
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#pre_stop ReplicationController#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#pre_stop ReplicationController#pre_stop}
 
 ---
 
@@ -4716,7 +4716,7 @@ public readonly exec: ReplicationControllerSpecTemplateSpecContainerLifecyclePos
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -4730,7 +4730,7 @@ public readonly httpGet: ReplicationControllerSpecTemplateSpecContainerLifecycle
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -4744,7 +4744,7 @@ public readonly tcpSocket: IResolvable | ReplicationControllerSpecTemplateSpecCo
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -4778,7 +4778,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -4814,7 +4814,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -4828,7 +4828,7 @@ public readonly httpHeader: IResolvable | ReplicationControllerSpecTemplateSpecC
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -4842,7 +4842,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -4858,7 +4858,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -4872,7 +4872,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -4905,7 +4905,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -4919,7 +4919,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -4953,7 +4953,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -4987,7 +4987,7 @@ public readonly exec: ReplicationControllerSpecTemplateSpecContainerLifecyclePre
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -5001,7 +5001,7 @@ public readonly httpGet: ReplicationControllerSpecTemplateSpecContainerLifecycle
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -5015,7 +5015,7 @@ public readonly tcpSocket: IResolvable | ReplicationControllerSpecTemplateSpecCo
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -5049,7 +5049,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -5085,7 +5085,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -5099,7 +5099,7 @@ public readonly httpHeader: IResolvable | ReplicationControllerSpecTemplateSpecC
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -5113,7 +5113,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -5129,7 +5129,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -5143,7 +5143,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -5176,7 +5176,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -5190,7 +5190,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -5224,7 +5224,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -5264,7 +5264,7 @@ public readonly exec: ReplicationControllerSpecTemplateSpecContainerLivenessProb
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -5278,7 +5278,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
 
 ---
 
@@ -5292,7 +5292,7 @@ public readonly grpc: IResolvable | ReplicationControllerSpecTemplateSpecContain
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#grpc ReplicationController#grpc}
 
 ---
 
@@ -5306,7 +5306,7 @@ public readonly httpGet: ReplicationControllerSpecTemplateSpecContainerLivenessP
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -5320,7 +5320,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
 
 ---
 
@@ -5334,7 +5334,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
 
 ---
 
@@ -5348,7 +5348,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
 
 ---
 
@@ -5362,7 +5362,7 @@ public readonly tcpSocket: IResolvable | ReplicationControllerSpecTemplateSpecCo
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -5376,7 +5376,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
 
 ---
 
@@ -5410,7 +5410,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -5443,7 +5443,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -5457,7 +5457,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#service ReplicationController#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#service ReplicationController#service}
 
 ---
 
@@ -5493,7 +5493,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -5507,7 +5507,7 @@ public readonly httpHeader: IResolvable | ReplicationControllerSpecTemplateSpecC
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -5521,7 +5521,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -5537,7 +5537,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -5551,7 +5551,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -5584,7 +5584,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -5598,7 +5598,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -5632,7 +5632,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -5670,7 +5670,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#container_port ReplicationController#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#container_port ReplicationController#container_port}
 
 ---
 
@@ -5684,7 +5684,7 @@ public readonly hostIp: string;
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host_ip ReplicationController#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host_ip ReplicationController#host_ip}
 
 ---
 
@@ -5700,7 +5700,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host_port ReplicationController#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host_port ReplicationController#host_port}
 
 ---
 
@@ -5716,7 +5716,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -5730,7 +5730,7 @@ public readonly protocol: string;
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#protocol ReplicationController#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#protocol ReplicationController#protocol}
 
 ---
 
@@ -5770,7 +5770,7 @@ public readonly exec: ReplicationControllerSpecTemplateSpecContainerReadinessPro
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -5784,7 +5784,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
 
 ---
 
@@ -5798,7 +5798,7 @@ public readonly grpc: IResolvable | ReplicationControllerSpecTemplateSpecContain
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#grpc ReplicationController#grpc}
 
 ---
 
@@ -5812,7 +5812,7 @@ public readonly httpGet: ReplicationControllerSpecTemplateSpecContainerReadiness
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -5826,7 +5826,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
 
 ---
 
@@ -5840,7 +5840,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
 
 ---
 
@@ -5854,7 +5854,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
 
 ---
 
@@ -5868,7 +5868,7 @@ public readonly tcpSocket: IResolvable | ReplicationControllerSpecTemplateSpecCo
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -5882,7 +5882,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
 
 ---
 
@@ -5916,7 +5916,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -5949,7 +5949,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -5963,7 +5963,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#service ReplicationController#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#service ReplicationController#service}
 
 ---
 
@@ -5999,7 +5999,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -6013,7 +6013,7 @@ public readonly httpHeader: IResolvable | ReplicationControllerSpecTemplateSpecC
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -6027,7 +6027,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -6043,7 +6043,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -6057,7 +6057,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -6090,7 +6090,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -6104,7 +6104,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -6138,7 +6138,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -6171,7 +6171,7 @@ public readonly limits: {[ key: string ]: string};
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#limits ReplicationController#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#limits ReplicationController#limits}
 
 ---
 
@@ -6187,7 +6187,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#requests ReplicationController#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#requests ReplicationController#requests}
 
 ---
 
@@ -6229,7 +6229,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#allow_privilege_escalation ReplicationController#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#allow_privilege_escalation ReplicationController#allow_privilege_escalation}
 
 ---
 
@@ -6243,7 +6243,7 @@ public readonly capabilities: ReplicationControllerSpecTemplateSpecContainerSecu
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#capabilities ReplicationController#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#capabilities ReplicationController#capabilities}
 
 ---
 
@@ -6259,7 +6259,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#privileged ReplicationController#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#privileged ReplicationController#privileged}
 
 ---
 
@@ -6273,7 +6273,7 @@ public readonly readOnlyRootFilesystem: boolean | IResolvable;
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only_root_filesystem ReplicationController#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only_root_filesystem ReplicationController#read_only_root_filesystem}
 
 ---
 
@@ -6289,7 +6289,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#run_as_group ReplicationController#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#run_as_group ReplicationController#run_as_group}
 
 ---
 
@@ -6305,7 +6305,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#run_as_non_root ReplicationController#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#run_as_non_root ReplicationController#run_as_non_root}
 
 ---
 
@@ -6321,7 +6321,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#run_as_user ReplicationController#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#run_as_user ReplicationController#run_as_user}
 
 ---
 
@@ -6335,7 +6335,7 @@ public readonly seccompProfile: ReplicationControllerSpecTemplateSpecContainerSe
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#seccomp_profile ReplicationController#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#seccomp_profile ReplicationController#seccomp_profile}
 
 ---
 
@@ -6349,7 +6349,7 @@ public readonly seLinuxOptions: ReplicationControllerSpecTemplateSpecContainerSe
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#se_linux_options ReplicationController#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#se_linux_options ReplicationController#se_linux_options}
 
 ---
 
@@ -6382,7 +6382,7 @@ public readonly add: string[];
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#add ReplicationController#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#add ReplicationController#add}
 
 ---
 
@@ -6396,7 +6396,7 @@ public readonly drop: string[];
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#drop ReplicationController#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#drop ReplicationController#drop}
 
 ---
 
@@ -6431,7 +6431,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#localhost_profile ReplicationController#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#localhost_profile ReplicationController#localhost_profile}
 
 ---
 
@@ -6445,7 +6445,7 @@ public readonly type: string;
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#type ReplicationController#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#type ReplicationController#type}
 
 ---
 
@@ -6480,7 +6480,7 @@ public readonly level: string;
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#level ReplicationController#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#level ReplicationController#level}
 
 ---
 
@@ -6494,7 +6494,7 @@ public readonly role: string;
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#role ReplicationController#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#role ReplicationController#role}
 
 ---
 
@@ -6508,7 +6508,7 @@ public readonly type: string;
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#type ReplicationController#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#type ReplicationController#type}
 
 ---
 
@@ -6522,7 +6522,7 @@ public readonly user: string;
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#user ReplicationController#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#user ReplicationController#user}
 
 ---
 
@@ -6562,7 +6562,7 @@ public readonly exec: ReplicationControllerSpecTemplateSpecContainerStartupProbe
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -6576,7 +6576,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
 
 ---
 
@@ -6590,7 +6590,7 @@ public readonly grpc: IResolvable | ReplicationControllerSpecTemplateSpecContain
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#grpc ReplicationController#grpc}
 
 ---
 
@@ -6604,7 +6604,7 @@ public readonly httpGet: ReplicationControllerSpecTemplateSpecContainerStartupPr
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -6618,7 +6618,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
 
 ---
 
@@ -6632,7 +6632,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
 
 ---
 
@@ -6646,7 +6646,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
 
 ---
 
@@ -6660,7 +6660,7 @@ public readonly tcpSocket: IResolvable | ReplicationControllerSpecTemplateSpecCo
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -6674,7 +6674,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
 
 ---
 
@@ -6708,7 +6708,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -6741,7 +6741,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -6755,7 +6755,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#service ReplicationController#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#service ReplicationController#service}
 
 ---
 
@@ -6791,7 +6791,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -6805,7 +6805,7 @@ public readonly httpHeader: IResolvable | ReplicationControllerSpecTemplateSpecC
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -6819,7 +6819,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -6835,7 +6835,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -6849,7 +6849,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -6882,7 +6882,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -6896,7 +6896,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -6930,7 +6930,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -6963,7 +6963,7 @@ public readonly devicePath: string;
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#device_path ReplicationController#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#device_path ReplicationController#device_path}
 
 ---
 
@@ -6977,7 +6977,7 @@ public readonly name: string;
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -7014,7 +7014,7 @@ public readonly mountPath: string;
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#mount_path ReplicationController#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#mount_path ReplicationController#mount_path}
 
 ---
 
@@ -7028,7 +7028,7 @@ public readonly name: string;
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -7044,7 +7044,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#mount_propagation ReplicationController#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#mount_propagation ReplicationController#mount_propagation}
 
 ---
 
@@ -7058,7 +7058,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -7072,7 +7072,7 @@ public readonly subPath: string;
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#sub_path ReplicationController#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#sub_path ReplicationController#sub_path}
 
 ---
 
@@ -7086,7 +7086,7 @@ public readonly subPathExpr: string;
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#sub_path_expr ReplicationController#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#sub_path_expr ReplicationController#sub_path_expr}
 
 ---
 
@@ -7122,7 +7122,7 @@ A list of DNS name server IP addresses.
 
 This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#nameservers ReplicationController#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#nameservers ReplicationController#nameservers}
 
 ---
 
@@ -7136,7 +7136,7 @@ public readonly option: IResolvable | ReplicationControllerSpecTemplateSpecDnsCo
 
 option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#option ReplicationController#option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#option ReplicationController#option}
 
 ---
 
@@ -7152,7 +7152,7 @@ A list of DNS search domains for host-name lookup.
 
 This will be appended to the base search paths generated from DNSPolicy. Duplicated search paths will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#searches ReplicationController#searches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#searches ReplicationController#searches}
 
 ---
 
@@ -7185,7 +7185,7 @@ public readonly name: string;
 
 Name of the option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -7199,7 +7199,7 @@ public readonly value: string;
 
 Value of the option. Optional: Defaults to empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -7232,7 +7232,7 @@ public readonly hostnames: string[];
 
 Hostnames for the IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#hostnames ReplicationController#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#hostnames ReplicationController#hostnames}
 
 ---
 
@@ -7246,7 +7246,7 @@ public readonly ip: string;
 
 IP address of the host file entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#ip ReplicationController#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#ip ReplicationController#ip}
 
 ---
 
@@ -7278,7 +7278,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -7334,7 +7334,7 @@ Name of the container specified as a DNS_LABEL.
 
 Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -7350,7 +7350,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#args ReplicationController#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#args ReplicationController#args}
 
 ---
 
@@ -7366,7 +7366,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -7380,7 +7380,7 @@ public readonly env: IResolvable | ReplicationControllerSpecTemplateSpecInitCont
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#env ReplicationController#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#env ReplicationController#env}
 
 ---
 
@@ -7394,7 +7394,7 @@ public readonly envFrom: IResolvable | ReplicationControllerSpecTemplateSpecInit
 
 env_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#env_from ReplicationController#env_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#env_from ReplicationController#env_from}
 
 ---
 
@@ -7408,7 +7408,7 @@ public readonly image: string;
 
 Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#image ReplicationController#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#image ReplicationController#image}
 
 ---
 
@@ -7424,7 +7424,7 @@ Image pull policy.
 
 One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images/#updating-images
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#image_pull_policy ReplicationController#image_pull_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#image_pull_policy ReplicationController#image_pull_policy}
 
 ---
 
@@ -7438,7 +7438,7 @@ public readonly lifecycle: ReplicationControllerSpecTemplateSpecInitContainerLif
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#lifecycle ReplicationController#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#lifecycle ReplicationController#lifecycle}
 
 ---
 
@@ -7452,7 +7452,7 @@ public readonly livenessProbe: ReplicationControllerSpecTemplateSpecInitContaine
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#liveness_probe ReplicationController#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#liveness_probe ReplicationController#liveness_probe}
 
 ---
 
@@ -7466,7 +7466,7 @@ public readonly port: IResolvable | ReplicationControllerSpecTemplateSpecInitCon
 
 port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -7480,7 +7480,7 @@ public readonly readinessProbe: ReplicationControllerSpecTemplateSpecInitContain
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#readiness_probe ReplicationController#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#readiness_probe ReplicationController#readiness_probe}
 
 ---
 
@@ -7494,7 +7494,7 @@ public readonly resources: ReplicationControllerSpecTemplateSpecInitContainerRes
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#resources ReplicationController#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#resources ReplicationController#resources}
 
 ---
 
@@ -7508,7 +7508,7 @@ public readonly restartPolicy: string;
 
 Restart policy for designating init container as a sidecar. Can only be `Always`. More info: https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#pod-sidecar-containers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#restart_policy ReplicationController#restart_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#restart_policy ReplicationController#restart_policy}
 
 ---
 
@@ -7522,7 +7522,7 @@ public readonly securityContext: ReplicationControllerSpecTemplateSpecInitContai
 
 security_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#security_context ReplicationController#security_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#security_context ReplicationController#security_context}
 
 ---
 
@@ -7536,7 +7536,7 @@ public readonly startupProbe: ReplicationControllerSpecTemplateSpecInitContainer
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#startup_probe ReplicationController#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#startup_probe ReplicationController#startup_probe}
 
 ---
 
@@ -7552,7 +7552,7 @@ Whether this container should allocate a buffer for stdin in the container runti
 
 If this is not set, reads from stdin in the container will always result in EOF. 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#stdin ReplicationController#stdin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#stdin ReplicationController#stdin}
 
 ---
 
@@ -7568,7 +7568,7 @@ Whether the container runtime should close the stdin channel after it has been o
 
 When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#stdin_once ReplicationController#stdin_once}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#stdin_once ReplicationController#stdin_once}
 
 ---
 
@@ -7584,7 +7584,7 @@ Optional: Path at which the file to which the container's termination message wi
 
 Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#termination_message_path ReplicationController#termination_message_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#termination_message_path ReplicationController#termination_message_path}
 
 ---
 
@@ -7600,7 +7600,7 @@ Optional: Indicate how the termination message should be populated.
 
 File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#termination_message_policy ReplicationController#termination_message_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#termination_message_policy ReplicationController#termination_message_policy}
 
 ---
 
@@ -7614,7 +7614,7 @@ public readonly tty: boolean | IResolvable;
 
 Whether this container should allocate a TTY for itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#tty ReplicationController#tty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#tty ReplicationController#tty}
 
 ---
 
@@ -7628,7 +7628,7 @@ public readonly volumeDevice: IResolvable | ReplicationControllerSpecTemplateSpe
 
 volume_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#volume_device ReplicationController#volume_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#volume_device ReplicationController#volume_device}
 
 ---
 
@@ -7642,7 +7642,7 @@ public readonly volumeMount: IResolvable | ReplicationControllerSpecTemplateSpec
 
 volume_mount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#volume_mount ReplicationController#volume_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#volume_mount ReplicationController#volume_mount}
 
 ---
 
@@ -7658,7 +7658,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#working_dir ReplicationController#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#working_dir ReplicationController#working_dir}
 
 ---
 
@@ -7692,7 +7692,7 @@ public readonly name: string;
 
 Name of the environment variable. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -7708,7 +7708,7 @@ Variable references $(VAR_NAME) are expanded using the previous defined environm
 
 If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -7722,7 +7722,7 @@ public readonly valueFrom: ReplicationControllerSpecTemplateSpecInitContainerEnv
 
 value_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value_from ReplicationController#value_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value_from ReplicationController#value_from}
 
 ---
 
@@ -7756,7 +7756,7 @@ public readonly configMapRef: ReplicationControllerSpecTemplateSpecInitContainer
 
 config_map_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#config_map_ref ReplicationController#config_map_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#config_map_ref ReplicationController#config_map_ref}
 
 ---
 
@@ -7770,7 +7770,7 @@ public readonly prefix: string;
 
 An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#prefix ReplicationController#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#prefix ReplicationController#prefix}
 
 ---
 
@@ -7784,7 +7784,7 @@ public readonly secretRef: ReplicationControllerSpecTemplateSpecInitContainerEnv
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
 
 ---
 
@@ -7817,7 +7817,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -7831,7 +7831,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -7864,7 +7864,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -7878,7 +7878,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -7913,7 +7913,7 @@ public readonly configMapKeyRef: ReplicationControllerSpecTemplateSpecInitContai
 
 config_map_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#config_map_key_ref ReplicationController#config_map_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#config_map_key_ref ReplicationController#config_map_key_ref}
 
 ---
 
@@ -7927,7 +7927,7 @@ public readonly fieldRef: ReplicationControllerSpecTemplateSpecInitContainerEnvV
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
 
 ---
 
@@ -7941,7 +7941,7 @@ public readonly resourceFieldRef: ReplicationControllerSpecTemplateSpecInitConta
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
 
 ---
 
@@ -7955,7 +7955,7 @@ public readonly secretKeyRef: ReplicationControllerSpecTemplateSpecInitContainer
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#secret_key_ref ReplicationController#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#secret_key_ref ReplicationController#secret_key_ref}
 
 ---
 
@@ -7989,7 +7989,7 @@ public readonly key: string;
 
 The key to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -8003,7 +8003,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -8017,7 +8017,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the ConfigMap or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -8050,7 +8050,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#api_version ReplicationController#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#api_version ReplicationController#api_version}
 
 ---
 
@@ -8064,7 +8064,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#field_path ReplicationController#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#field_path ReplicationController#field_path}
 
 ---
 
@@ -8083,8 +8083,8 @@ const replicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFiel
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
 
 ---
 
@@ -8098,7 +8098,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#resource ReplicationController#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#resource ReplicationController#resource}
 
 ---
 
@@ -8110,7 +8110,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#container_name ReplicationController#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#container_name ReplicationController#container_name}.
 
 ---
 
@@ -8122,7 +8122,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#divisor ReplicationController#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#divisor ReplicationController#divisor}.
 
 ---
 
@@ -8156,7 +8156,7 @@ public readonly key: string;
 
 The key of the secret to select from. Must be a valid secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -8170,7 +8170,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -8184,7 +8184,7 @@ public readonly optional: boolean | IResolvable;
 
 Specify whether the Secret or its key must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -8217,7 +8217,7 @@ public readonly postStart: IResolvable | ReplicationControllerSpecTemplateSpecIn
 
 post_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#post_start ReplicationController#post_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#post_start ReplicationController#post_start}
 
 ---
 
@@ -8231,7 +8231,7 @@ public readonly preStop: IResolvable | ReplicationControllerSpecTemplateSpecInit
 
 pre_stop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#pre_stop ReplicationController#pre_stop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#pre_stop ReplicationController#pre_stop}
 
 ---
 
@@ -8265,7 +8265,7 @@ public readonly exec: ReplicationControllerSpecTemplateSpecInitContainerLifecycl
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -8279,7 +8279,7 @@ public readonly httpGet: ReplicationControllerSpecTemplateSpecInitContainerLifec
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -8293,7 +8293,7 @@ public readonly tcpSocket: IResolvable | ReplicationControllerSpecTemplateSpecIn
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -8327,7 +8327,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -8363,7 +8363,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -8377,7 +8377,7 @@ public readonly httpHeader: IResolvable | ReplicationControllerSpecTemplateSpecI
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -8391,7 +8391,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -8407,7 +8407,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -8421,7 +8421,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -8454,7 +8454,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -8468,7 +8468,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -8502,7 +8502,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -8536,7 +8536,7 @@ public readonly exec: ReplicationControllerSpecTemplateSpecInitContainerLifecycl
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -8550,7 +8550,7 @@ public readonly httpGet: ReplicationControllerSpecTemplateSpecInitContainerLifec
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -8564,7 +8564,7 @@ public readonly tcpSocket: IResolvable | ReplicationControllerSpecTemplateSpecIn
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -8598,7 +8598,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -8634,7 +8634,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -8648,7 +8648,7 @@ public readonly httpHeader: IResolvable | ReplicationControllerSpecTemplateSpecI
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -8662,7 +8662,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -8678,7 +8678,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -8692,7 +8692,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -8725,7 +8725,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -8739,7 +8739,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -8773,7 +8773,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -8813,7 +8813,7 @@ public readonly exec: ReplicationControllerSpecTemplateSpecInitContainerLiveness
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -8827,7 +8827,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
 
 ---
 
@@ -8841,7 +8841,7 @@ public readonly grpc: IResolvable | ReplicationControllerSpecTemplateSpecInitCon
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#grpc ReplicationController#grpc}
 
 ---
 
@@ -8855,7 +8855,7 @@ public readonly httpGet: ReplicationControllerSpecTemplateSpecInitContainerLiven
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -8869,7 +8869,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
 
 ---
 
@@ -8883,7 +8883,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
 
 ---
 
@@ -8897,7 +8897,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
 
 ---
 
@@ -8911,7 +8911,7 @@ public readonly tcpSocket: IResolvable | ReplicationControllerSpecTemplateSpecIn
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -8925,7 +8925,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
 
 ---
 
@@ -8959,7 +8959,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -8992,7 +8992,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -9006,7 +9006,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#service ReplicationController#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#service ReplicationController#service}
 
 ---
 
@@ -9042,7 +9042,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -9056,7 +9056,7 @@ public readonly httpHeader: IResolvable | ReplicationControllerSpecTemplateSpecI
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -9070,7 +9070,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -9086,7 +9086,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -9100,7 +9100,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -9133,7 +9133,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -9147,7 +9147,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -9181,7 +9181,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -9219,7 +9219,7 @@ Number of port to expose on the pod's IP address.
 
 This must be a valid port number, 0 < x < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#container_port ReplicationController#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#container_port ReplicationController#container_port}
 
 ---
 
@@ -9233,7 +9233,7 @@ public readonly hostIp: string;
 
 What host IP to bind the external port to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host_ip ReplicationController#host_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host_ip ReplicationController#host_ip}
 
 ---
 
@@ -9249,7 +9249,7 @@ Number of port to expose on the host.
 
 If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host_port ReplicationController#host_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host_port ReplicationController#host_port}
 
 ---
 
@@ -9265,7 +9265,7 @@ If specified, this must be an IANA_SVC_NAME and unique within the pod.
 
 Each named port in a pod must have a unique name. Name for the port that can be referred to by services
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -9279,7 +9279,7 @@ public readonly protocol: string;
 
 Protocol for port. Must be UDP or TCP. Defaults to "TCP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#protocol ReplicationController#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#protocol ReplicationController#protocol}
 
 ---
 
@@ -9319,7 +9319,7 @@ public readonly exec: ReplicationControllerSpecTemplateSpecInitContainerReadines
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -9333,7 +9333,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
 
 ---
 
@@ -9347,7 +9347,7 @@ public readonly grpc: IResolvable | ReplicationControllerSpecTemplateSpecInitCon
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#grpc ReplicationController#grpc}
 
 ---
 
@@ -9361,7 +9361,7 @@ public readonly httpGet: ReplicationControllerSpecTemplateSpecInitContainerReadi
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -9375,7 +9375,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
 
 ---
 
@@ -9389,7 +9389,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
 
 ---
 
@@ -9403,7 +9403,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
 
 ---
 
@@ -9417,7 +9417,7 @@ public readonly tcpSocket: IResolvable | ReplicationControllerSpecTemplateSpecIn
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -9431,7 +9431,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
 
 ---
 
@@ -9465,7 +9465,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -9498,7 +9498,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -9512,7 +9512,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#service ReplicationController#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#service ReplicationController#service}
 
 ---
 
@@ -9548,7 +9548,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -9562,7 +9562,7 @@ public readonly httpHeader: IResolvable | ReplicationControllerSpecTemplateSpecI
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -9576,7 +9576,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -9592,7 +9592,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -9606,7 +9606,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -9639,7 +9639,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -9653,7 +9653,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -9687,7 +9687,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -9720,7 +9720,7 @@ public readonly limits: {[ key: string ]: string};
 
 Describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#limits ReplicationController#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#limits ReplicationController#limits}
 
 ---
 
@@ -9736,7 +9736,7 @@ Requests describes the minimum amount of compute resources required.
 
 If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#requests ReplicationController#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#requests ReplicationController#requests}
 
 ---
 
@@ -9778,7 +9778,7 @@ AllowPrivilegeEscalation controls whether a process can gain more privileges tha
 
 This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#allow_privilege_escalation ReplicationController#allow_privilege_escalation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#allow_privilege_escalation ReplicationController#allow_privilege_escalation}
 
 ---
 
@@ -9792,7 +9792,7 @@ public readonly capabilities: ReplicationControllerSpecTemplateSpecInitContainer
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#capabilities ReplicationController#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#capabilities ReplicationController#capabilities}
 
 ---
 
@@ -9808,7 +9808,7 @@ Run container in privileged mode.
 
 Processes in privileged containers are essentially equivalent to root on the host. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#privileged ReplicationController#privileged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#privileged ReplicationController#privileged}
 
 ---
 
@@ -9822,7 +9822,7 @@ public readonly readOnlyRootFilesystem: boolean | IResolvable;
 
 Whether this container has a read-only root filesystem. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only_root_filesystem ReplicationController#read_only_root_filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only_root_filesystem ReplicationController#read_only_root_filesystem}
 
 ---
 
@@ -9838,7 +9838,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#run_as_group ReplicationController#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#run_as_group ReplicationController#run_as_group}
 
 ---
 
@@ -9854,7 +9854,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#run_as_non_root ReplicationController#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#run_as_non_root ReplicationController#run_as_non_root}
 
 ---
 
@@ -9870,7 +9870,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#run_as_user ReplicationController#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#run_as_user ReplicationController#run_as_user}
 
 ---
 
@@ -9884,7 +9884,7 @@ public readonly seccompProfile: ReplicationControllerSpecTemplateSpecInitContain
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#seccomp_profile ReplicationController#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#seccomp_profile ReplicationController#seccomp_profile}
 
 ---
 
@@ -9898,7 +9898,7 @@ public readonly seLinuxOptions: ReplicationControllerSpecTemplateSpecInitContain
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#se_linux_options ReplicationController#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#se_linux_options ReplicationController#se_linux_options}
 
 ---
 
@@ -9931,7 +9931,7 @@ public readonly add: string[];
 
 Added capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#add ReplicationController#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#add ReplicationController#add}
 
 ---
 
@@ -9945,7 +9945,7 @@ public readonly drop: string[];
 
 Removed capabilities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#drop ReplicationController#drop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#drop ReplicationController#drop}
 
 ---
 
@@ -9980,7 +9980,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#localhost_profile ReplicationController#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#localhost_profile ReplicationController#localhost_profile}
 
 ---
 
@@ -9994,7 +9994,7 @@ public readonly type: string;
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#type ReplicationController#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#type ReplicationController#type}
 
 ---
 
@@ -10029,7 +10029,7 @@ public readonly level: string;
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#level ReplicationController#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#level ReplicationController#level}
 
 ---
 
@@ -10043,7 +10043,7 @@ public readonly role: string;
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#role ReplicationController#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#role ReplicationController#role}
 
 ---
 
@@ -10057,7 +10057,7 @@ public readonly type: string;
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#type ReplicationController#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#type ReplicationController#type}
 
 ---
 
@@ -10071,7 +10071,7 @@ public readonly user: string;
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#user ReplicationController#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#user ReplicationController#user}
 
 ---
 
@@ -10111,7 +10111,7 @@ public readonly exec: ReplicationControllerSpecTemplateSpecInitContainerStartupP
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#exec ReplicationController#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#exec ReplicationController#exec}
 
 ---
 
@@ -10125,7 +10125,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#failure_threshold ReplicationController#failure_threshold}
 
 ---
 
@@ -10139,7 +10139,7 @@ public readonly grpc: IResolvable | ReplicationControllerSpecTemplateSpecInitCon
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#grpc ReplicationController#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#grpc ReplicationController#grpc}
 
 ---
 
@@ -10153,7 +10153,7 @@ public readonly httpGet: ReplicationControllerSpecTemplateSpecInitContainerStart
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_get ReplicationController#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_get ReplicationController#http_get}
 
 ---
 
@@ -10167,7 +10167,7 @@ public readonly initialDelaySeconds: number;
 
 Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#initial_delay_seconds ReplicationController#initial_delay_seconds}
 
 ---
 
@@ -10181,7 +10181,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#period_seconds ReplicationController#period_seconds}
 
 ---
 
@@ -10195,7 +10195,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#success_threshold ReplicationController#success_threshold}
 
 ---
 
@@ -10209,7 +10209,7 @@ public readonly tcpSocket: IResolvable | ReplicationControllerSpecTemplateSpecIn
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#tcp_socket ReplicationController#tcp_socket}
 
 ---
 
@@ -10223,7 +10223,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#timeout_seconds ReplicationController#timeout_seconds}
 
 ---
 
@@ -10257,7 +10257,7 @@ Command is the command line to execute inside the container, the working directo
 
 The command is simply exec'd, it is not run inside a shell, so traditional shell instructions. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#command ReplicationController#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#command ReplicationController#command}
 
 ---
 
@@ -10290,7 +10290,7 @@ public readonly port: number;
 
 Number of the port to access on the container. Number must be in the range 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -10304,7 +10304,7 @@ public readonly service: string;
 
 Name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#service ReplicationController#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#service ReplicationController#service}
 
 ---
 
@@ -10340,7 +10340,7 @@ public readonly host: string;
 
 Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host ReplicationController#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host ReplicationController#host}
 
 ---
 
@@ -10354,7 +10354,7 @@ public readonly httpHeader: IResolvable | ReplicationControllerSpecTemplateSpecI
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#http_header ReplicationController#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#http_header ReplicationController#http_header}
 
 ---
 
@@ -10368,7 +10368,7 @@ public readonly path: string;
 
 Path to access on the HTTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -10384,7 +10384,7 @@ Name or number of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -10398,7 +10398,7 @@ public readonly scheme: string;
 
 Scheme to use for connecting to the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#scheme ReplicationController#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#scheme ReplicationController#scheme}
 
 ---
 
@@ -10431,7 +10431,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -10445,7 +10445,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -10479,7 +10479,7 @@ Number or name of the port to access on the container.
 
 Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#port ReplicationController#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#port ReplicationController#port}
 
 ---
 
@@ -10512,7 +10512,7 @@ public readonly devicePath: string;
 
 Path within the container at which the volume device should be attached. For example '/dev/xvda'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#device_path ReplicationController#device_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#device_path ReplicationController#device_path}
 
 ---
 
@@ -10526,7 +10526,7 @@ public readonly name: string;
 
 This must match the Name of a PersistentVolumeClaim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -10563,7 +10563,7 @@ public readonly mountPath: string;
 
 Path within the container at which the volume should be mounted. Must not contain ':'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#mount_path ReplicationController#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#mount_path ReplicationController#mount_path}
 
 ---
 
@@ -10577,7 +10577,7 @@ public readonly name: string;
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -10593,7 +10593,7 @@ Mount propagation mode.
 
 mount_propagation determines how mounts are propagated from the host to container and the other way around. Valid values are None (default), HostToContainer and Bidirectional.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#mount_propagation ReplicationController#mount_propagation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#mount_propagation ReplicationController#mount_propagation}
 
 ---
 
@@ -10607,7 +10607,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -10621,7 +10621,7 @@ public readonly subPath: string;
 
 Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#sub_path ReplicationController#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#sub_path ReplicationController#sub_path}
 
 ---
 
@@ -10635,7 +10635,7 @@ public readonly subPathExpr: string;
 
 Dynamic path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#sub_path_expr ReplicationController#sub_path_expr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#sub_path_expr ReplicationController#sub_path_expr}
 
 ---
 
@@ -10667,7 +10667,7 @@ public readonly name: string;
 
 Name is the name of the operating system. The currently supported values are linux and windows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -10699,7 +10699,7 @@ public readonly conditionType: string;
 
 refers to a condition in the pod's condition list with matching type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#condition_type ReplicationController#condition_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#condition_type ReplicationController#condition_type}
 
 ---
 
@@ -10742,7 +10742,7 @@ A special supplemental group that applies to all containers in a pod.
 
 Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- If unset, the Kubelet will not modify the ownership and permissions of any volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#fs_group ReplicationController#fs_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#fs_group ReplicationController#fs_group}
 
 ---
 
@@ -10758,7 +10758,7 @@ fsGroupChangePolicy defines behavior of changing ownership and permission of the
 
 This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#fs_group_change_policy ReplicationController#fs_group_change_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#fs_group_change_policy ReplicationController#fs_group_change_policy}
 
 ---
 
@@ -10774,7 +10774,7 @@ The GID to run the entrypoint of the container process.
 
 Uses runtime default if unset. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#run_as_group ReplicationController#run_as_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#run_as_group ReplicationController#run_as_group}
 
 ---
 
@@ -10790,7 +10790,7 @@ Indicates that the container must run as a non-root user.
 
 If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#run_as_non_root ReplicationController#run_as_non_root}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#run_as_non_root ReplicationController#run_as_non_root}
 
 ---
 
@@ -10806,7 +10806,7 @@ The UID to run the entrypoint of the container process.
 
 Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#run_as_user ReplicationController#run_as_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#run_as_user ReplicationController#run_as_user}
 
 ---
 
@@ -10820,7 +10820,7 @@ public readonly seccompProfile: ReplicationControllerSpecTemplateSpecSecurityCon
 
 seccomp_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#seccomp_profile ReplicationController#seccomp_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#seccomp_profile ReplicationController#seccomp_profile}
 
 ---
 
@@ -10834,7 +10834,7 @@ public readonly seLinuxOptions: ReplicationControllerSpecTemplateSpecSecurityCon
 
 se_linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#se_linux_options ReplicationController#se_linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#se_linux_options ReplicationController#se_linux_options}
 
 ---
 
@@ -10850,7 +10850,7 @@ A list of groups applied to the first process run in each container, in addition
 
 If unspecified, no groups will be added to any container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#supplemental_groups ReplicationController#supplemental_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#supplemental_groups ReplicationController#supplemental_groups}
 
 ---
 
@@ -10864,7 +10864,7 @@ public readonly sysctl: IResolvable | ReplicationControllerSpecTemplateSpecSecur
 
 sysctl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#sysctl ReplicationController#sysctl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#sysctl ReplicationController#sysctl}
 
 ---
 
@@ -10878,7 +10878,7 @@ public readonly windowsOptions: ReplicationControllerSpecTemplateSpecSecurityCon
 
 windows_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#windows_options ReplicationController#windows_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#windows_options ReplicationController#windows_options}
 
 ---
 
@@ -10913,7 +10913,7 @@ Localhost Profile indicates a profile defined in a file on the node should be us
 
 The profile must be preconfigured on the node to work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#localhost_profile ReplicationController#localhost_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#localhost_profile ReplicationController#localhost_profile}
 
 ---
 
@@ -10927,7 +10927,7 @@ public readonly type: string;
 
 Type indicates which kind of seccomp profile will be applied. Valid options are: Localhost, RuntimeDefault, Unconfined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#type ReplicationController#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#type ReplicationController#type}
 
 ---
 
@@ -10962,7 +10962,7 @@ public readonly level: string;
 
 Level is SELinux level label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#level ReplicationController#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#level ReplicationController#level}
 
 ---
 
@@ -10976,7 +10976,7 @@ public readonly role: string;
 
 Role is a SELinux role label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#role ReplicationController#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#role ReplicationController#role}
 
 ---
 
@@ -10990,7 +10990,7 @@ public readonly type: string;
 
 Type is a SELinux type label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#type ReplicationController#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#type ReplicationController#type}
 
 ---
 
@@ -11004,7 +11004,7 @@ public readonly user: string;
 
 User is a SELinux user label that applies to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#user ReplicationController#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#user ReplicationController#user}
 
 ---
 
@@ -11037,7 +11037,7 @@ public readonly name: string;
 
 Name of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -11051,7 +11051,7 @@ public readonly value: string;
 
 Value of a property to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -11086,7 +11086,7 @@ public readonly gmsaCredentialSpec: string;
 
 GMSACredentialSpec is where the GMSA admission webhook inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#gmsa_credential_spec ReplicationController#gmsa_credential_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#gmsa_credential_spec ReplicationController#gmsa_credential_spec}
 
 ---
 
@@ -11100,7 +11100,7 @@ public readonly gmsaCredentialSpecName: string;
 
 GMSACredentialSpecName is the name of the GMSA credential spec to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#gmsa_credential_spec_name ReplicationController#gmsa_credential_spec_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#gmsa_credential_spec_name ReplicationController#gmsa_credential_spec_name}
 
 ---
 
@@ -11114,7 +11114,7 @@ public readonly hostProcess: boolean | IResolvable;
 
 HostProcess determines if a container should be run as a 'Host Process' container. Default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host_process ReplicationController#host_process}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host_process ReplicationController#host_process}
 
 ---
 
@@ -11130,7 +11130,7 @@ The UserName in Windows to run the entrypoint of the container process.
 
 Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#run_as_username ReplicationController#run_as_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#run_as_username ReplicationController#run_as_username}
 
 ---
 
@@ -11168,7 +11168,7 @@ Effect indicates the taint effect to match.
 
 Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#effect ReplicationController#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#effect ReplicationController#effect}
 
 ---
 
@@ -11184,7 +11184,7 @@ Key is the taint key that the toleration applies to.
 
 Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -11200,7 +11200,7 @@ Operator represents a key's relationship to the value.
 
 Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -11216,7 +11216,7 @@ TolerationSeconds represents the period of time the toleration (which must be of
 
 By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#toleration_seconds ReplicationController#toleration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#toleration_seconds ReplicationController#toleration_seconds}
 
 ---
 
@@ -11232,7 +11232,7 @@ Value is the taint value the toleration matches to.
 
 If the operator is Exists, the value should be empty, otherwise just a regular string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#value ReplicationController#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#value ReplicationController#value}
 
 ---
 
@@ -11271,7 +11271,7 @@ public readonly labelSelector: IResolvable | ReplicationControllerSpecTemplateSp
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#label_selector ReplicationController#label_selector}
 
 ---
 
@@ -11285,7 +11285,7 @@ public readonly matchLabelKeys: string[];
 
 is a set of pod label keys to select the pods over which spreading will be calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_label_keys ReplicationController#match_label_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_label_keys ReplicationController#match_label_keys}
 
 ---
 
@@ -11299,7 +11299,7 @@ public readonly maxSkew: number;
 
 describes the degree to which pods may be unevenly distributed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#max_skew ReplicationController#max_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#max_skew ReplicationController#max_skew}
 
 ---
 
@@ -11313,7 +11313,7 @@ public readonly minDomains: number;
 
 indicates a minimum number of eligible domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#min_domains ReplicationController#min_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#min_domains ReplicationController#min_domains}
 
 ---
 
@@ -11327,7 +11327,7 @@ public readonly nodeAffinityPolicy: string;
 
 indicates how we will treat Pod's nodeAffinity/nodeSelector when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#node_affinity_policy ReplicationController#node_affinity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#node_affinity_policy ReplicationController#node_affinity_policy}
 
 ---
 
@@ -11341,7 +11341,7 @@ public readonly nodeTaintsPolicy: string;
 
 indicates how we will treat node taints when calculating pod topology spread skew.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#node_taints_policy ReplicationController#node_taints_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#node_taints_policy ReplicationController#node_taints_policy}
 
 ---
 
@@ -11357,7 +11357,7 @@ the key of node labels.
 
 Nodes that have a label with this key and identical values are considered to be in the same topology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#topology_key ReplicationController#topology_key}
 
 ---
 
@@ -11371,7 +11371,7 @@ public readonly whenUnsatisfiable: string;
 
 indicates how to deal with a pod if it doesn't satisfy the spread constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#when_unsatisfiable ReplicationController#when_unsatisfiable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#when_unsatisfiable ReplicationController#when_unsatisfiable}
 
 ---
 
@@ -11404,7 +11404,7 @@ public readonly matchExpressions: IResolvable | ReplicationControllerSpecTemplat
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -11420,7 +11420,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -11454,7 +11454,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -11468,7 +11468,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -11484,7 +11484,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -11543,7 +11543,7 @@ public readonly awsElasticBlockStore: ReplicationControllerSpecTemplateSpecVolum
 
 aws_elastic_block_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#aws_elastic_block_store ReplicationController#aws_elastic_block_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#aws_elastic_block_store ReplicationController#aws_elastic_block_store}
 
 ---
 
@@ -11557,7 +11557,7 @@ public readonly azureDisk: ReplicationControllerSpecTemplateSpecVolumeAzureDisk;
 
 azure_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#azure_disk ReplicationController#azure_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#azure_disk ReplicationController#azure_disk}
 
 ---
 
@@ -11571,7 +11571,7 @@ public readonly azureFile: ReplicationControllerSpecTemplateSpecVolumeAzureFile;
 
 azure_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#azure_file ReplicationController#azure_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#azure_file ReplicationController#azure_file}
 
 ---
 
@@ -11585,7 +11585,7 @@ public readonly cephFs: ReplicationControllerSpecTemplateSpecVolumeCephFs;
 
 ceph_fs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#ceph_fs ReplicationController#ceph_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#ceph_fs ReplicationController#ceph_fs}
 
 ---
 
@@ -11599,7 +11599,7 @@ public readonly cinder: ReplicationControllerSpecTemplateSpecVolumeCinder;
 
 cinder block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#cinder ReplicationController#cinder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#cinder ReplicationController#cinder}
 
 ---
 
@@ -11613,7 +11613,7 @@ public readonly configMap: ReplicationControllerSpecTemplateSpecVolumeConfigMap;
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#config_map ReplicationController#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#config_map ReplicationController#config_map}
 
 ---
 
@@ -11627,7 +11627,7 @@ public readonly csi: ReplicationControllerSpecTemplateSpecVolumeCsi;
 
 csi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#csi ReplicationController#csi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#csi ReplicationController#csi}
 
 ---
 
@@ -11641,7 +11641,7 @@ public readonly downwardApi: ReplicationControllerSpecTemplateSpecVolumeDownward
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#downward_api ReplicationController#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#downward_api ReplicationController#downward_api}
 
 ---
 
@@ -11655,7 +11655,7 @@ public readonly emptyDir: ReplicationControllerSpecTemplateSpecVolumeEmptyDir;
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#empty_dir ReplicationController#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#empty_dir ReplicationController#empty_dir}
 
 ---
 
@@ -11669,7 +11669,7 @@ public readonly ephemeral: ReplicationControllerSpecTemplateSpecVolumeEphemeral;
 
 ephemeral block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#ephemeral ReplicationController#ephemeral}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#ephemeral ReplicationController#ephemeral}
 
 ---
 
@@ -11683,7 +11683,7 @@ public readonly fc: ReplicationControllerSpecTemplateSpecVolumeFc;
 
 fc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#fc ReplicationController#fc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#fc ReplicationController#fc}
 
 ---
 
@@ -11697,7 +11697,7 @@ public readonly flexVolume: ReplicationControllerSpecTemplateSpecVolumeFlexVolum
 
 flex_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#flex_volume ReplicationController#flex_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#flex_volume ReplicationController#flex_volume}
 
 ---
 
@@ -11711,7 +11711,7 @@ public readonly flocker: ReplicationControllerSpecTemplateSpecVolumeFlocker;
 
 flocker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#flocker ReplicationController#flocker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#flocker ReplicationController#flocker}
 
 ---
 
@@ -11725,7 +11725,7 @@ public readonly gcePersistentDisk: ReplicationControllerSpecTemplateSpecVolumeGc
 
 gce_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#gce_persistent_disk ReplicationController#gce_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#gce_persistent_disk ReplicationController#gce_persistent_disk}
 
 ---
 
@@ -11739,7 +11739,7 @@ public readonly gitRepo: ReplicationControllerSpecTemplateSpecVolumeGitRepo;
 
 git_repo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#git_repo ReplicationController#git_repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#git_repo ReplicationController#git_repo}
 
 ---
 
@@ -11753,7 +11753,7 @@ public readonly glusterfs: ReplicationControllerSpecTemplateSpecVolumeGlusterfs;
 
 glusterfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#glusterfs ReplicationController#glusterfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#glusterfs ReplicationController#glusterfs}
 
 ---
 
@@ -11767,7 +11767,7 @@ public readonly hostPath: ReplicationControllerSpecTemplateSpecVolumeHostPath;
 
 host_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#host_path ReplicationController#host_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#host_path ReplicationController#host_path}
 
 ---
 
@@ -11781,7 +11781,7 @@ public readonly iscsi: ReplicationControllerSpecTemplateSpecVolumeIscsi;
 
 iscsi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#iscsi ReplicationController#iscsi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#iscsi ReplicationController#iscsi}
 
 ---
 
@@ -11795,7 +11795,7 @@ public readonly local: ReplicationControllerSpecTemplateSpecVolumeLocal;
 
 local block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#local ReplicationController#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#local ReplicationController#local}
 
 ---
 
@@ -11809,7 +11809,7 @@ public readonly name: string;
 
 Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -11823,7 +11823,7 @@ public readonly nfs: ReplicationControllerSpecTemplateSpecVolumeNfs;
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#nfs ReplicationController#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#nfs ReplicationController#nfs}
 
 ---
 
@@ -11837,7 +11837,7 @@ public readonly persistentVolumeClaim: ReplicationControllerSpecTemplateSpecVolu
 
 persistent_volume_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#persistent_volume_claim ReplicationController#persistent_volume_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#persistent_volume_claim ReplicationController#persistent_volume_claim}
 
 ---
 
@@ -11851,7 +11851,7 @@ public readonly photonPersistentDisk: ReplicationControllerSpecTemplateSpecVolum
 
 photon_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#photon_persistent_disk ReplicationController#photon_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#photon_persistent_disk ReplicationController#photon_persistent_disk}
 
 ---
 
@@ -11865,7 +11865,7 @@ public readonly projected: IResolvable | ReplicationControllerSpecTemplateSpecVo
 
 projected block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#projected ReplicationController#projected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#projected ReplicationController#projected}
 
 ---
 
@@ -11879,7 +11879,7 @@ public readonly quobyte: ReplicationControllerSpecTemplateSpecVolumeQuobyte;
 
 quobyte block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#quobyte ReplicationController#quobyte}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#quobyte ReplicationController#quobyte}
 
 ---
 
@@ -11893,7 +11893,7 @@ public readonly rbd: ReplicationControllerSpecTemplateSpecVolumeRbd;
 
 rbd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#rbd ReplicationController#rbd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#rbd ReplicationController#rbd}
 
 ---
 
@@ -11907,7 +11907,7 @@ public readonly secret: ReplicationControllerSpecTemplateSpecVolumeSecret;
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#secret ReplicationController#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#secret ReplicationController#secret}
 
 ---
 
@@ -11921,7 +11921,7 @@ public readonly vsphereVolume: ReplicationControllerSpecTemplateSpecVolumeVspher
 
 vsphere_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#vsphere_volume ReplicationController#vsphere_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#vsphere_volume ReplicationController#vsphere_volume}
 
 ---
 
@@ -11956,7 +11956,7 @@ public readonly volumeId: string;
 
 Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#volume_id ReplicationController#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#volume_id ReplicationController#volume_id}
 
 ---
 
@@ -11972,7 +11972,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -11988,7 +11988,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#partition ReplicationController#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#partition ReplicationController#partition}
 
 ---
 
@@ -12002,7 +12002,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -12039,7 +12039,7 @@ public readonly cachingMode: string;
 
 Host Caching mode: None, Read Only, Read Write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#caching_mode ReplicationController#caching_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#caching_mode ReplicationController#caching_mode}
 
 ---
 
@@ -12053,7 +12053,7 @@ public readonly dataDiskUri: string;
 
 The URI the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#data_disk_uri ReplicationController#data_disk_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#data_disk_uri ReplicationController#data_disk_uri}
 
 ---
 
@@ -12067,7 +12067,7 @@ public readonly diskName: string;
 
 The Name of the data disk in the blob storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#disk_name ReplicationController#disk_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#disk_name ReplicationController#disk_name}
 
 ---
 
@@ -12083,7 +12083,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -12097,7 +12097,7 @@ public readonly kind: string;
 
 The type for the data disk. Expected values: Shared, Dedicated, Managed. Defaults to Shared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#kind ReplicationController#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#kind ReplicationController#kind}
 
 ---
 
@@ -12111,7 +12111,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -12146,7 +12146,7 @@ public readonly secretName: string;
 
 The name of secret that contains Azure Storage Account Name and Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#secret_name ReplicationController#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#secret_name ReplicationController#secret_name}
 
 ---
 
@@ -12160,7 +12160,7 @@ public readonly shareName: string;
 
 Share Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#share_name ReplicationController#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#share_name ReplicationController#share_name}
 
 ---
 
@@ -12174,7 +12174,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -12190,7 +12190,7 @@ The namespace of the secret that contains Azure Storage Account Name and Key.
 
 For Kubernetes up to 1.18.x the default is the same as the Pod. For Kubernetes 1.19.x and later the default is "default" namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#secret_namespace ReplicationController#secret_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#secret_namespace ReplicationController#secret_namespace}
 
 ---
 
@@ -12227,7 +12227,7 @@ public readonly monitors: string[];
 
 Monitors is a collection of Ceph monitors. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#monitors ReplicationController#monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#monitors ReplicationController#monitors}
 
 ---
 
@@ -12241,7 +12241,7 @@ public readonly path: string;
 
 Used as the mounted root, rather than the full Ceph tree, default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -12255,7 +12255,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to `false` (read/write). More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -12269,7 +12269,7 @@ public readonly secretFile: string;
 
 The path to key ring for User, default is `/etc/ceph/user.secret`. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#secret_file ReplicationController#secret_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#secret_file ReplicationController#secret_file}
 
 ---
 
@@ -12283,7 +12283,7 @@ public readonly secretRef: ReplicationControllerSpecTemplateSpecVolumeCephFsSecr
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
 
 ---
 
@@ -12297,7 +12297,7 @@ public readonly user: string;
 
 User is the rados user name, default is admin. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#user ReplicationController#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#user ReplicationController#user}
 
 ---
 
@@ -12330,7 +12330,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -12344,7 +12344,7 @@ public readonly namespace: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#namespace ReplicationController#namespace}
 
 ---
 
@@ -12378,7 +12378,7 @@ public readonly volumeId: string;
 
 Volume ID used to identify the volume in Cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#volume_id ReplicationController#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#volume_id ReplicationController#volume_id}
 
 ---
 
@@ -12394,7 +12394,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -12408,7 +12408,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write). More info: https://examples.k8s.io/mysql-cinder-pd/README.md.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -12445,7 +12445,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
 
 ---
 
@@ -12459,7 +12459,7 @@ public readonly items: IResolvable | ReplicationControllerSpecTemplateSpecVolume
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#items ReplicationController#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#items ReplicationController#items}
 
 ---
 
@@ -12473,7 +12473,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -12487,7 +12487,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the ConfigMap or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -12521,7 +12521,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -12537,7 +12537,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#mode ReplicationController#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#mode ReplicationController#mode}
 
 ---
 
@@ -12553,7 +12553,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -12589,7 +12589,7 @@ public readonly driver: string;
 
 the name of the volume driver to use. More info: https://kubernetes.io/docs/concepts/storage/volumes/#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#driver ReplicationController#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#driver ReplicationController#driver}
 
 ---
 
@@ -12605,7 +12605,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -12619,7 +12619,7 @@ public readonly nodePublishSecretRef: ReplicationControllerSpecTemplateSpecVolum
 
 node_publish_secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#node_publish_secret_ref ReplicationController#node_publish_secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#node_publish_secret_ref ReplicationController#node_publish_secret_ref}
 
 ---
 
@@ -12633,7 +12633,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to set the read-only property in VolumeMounts to "true". If omitted, the default is "false". More info: https://kubernetes.io/docs/concepts/storage/volumes#csi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -12647,7 +12647,7 @@ public readonly volumeAttributes: {[ key: string ]: string};
 
 Attributes of the volume to publish.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#volume_attributes ReplicationController#volume_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#volume_attributes ReplicationController#volume_attributes}
 
 ---
 
@@ -12679,7 +12679,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -12714,7 +12714,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
 
 ---
 
@@ -12728,7 +12728,7 @@ public readonly items: IResolvable | ReplicationControllerSpecTemplateSpecVolume
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#items ReplicationController#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#items ReplicationController#items}
 
 ---
 
@@ -12763,7 +12763,7 @@ public readonly fieldRef: ReplicationControllerSpecTemplateSpecVolumeDownwardApi
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
 
 ---
 
@@ -12779,7 +12779,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -12795,7 +12795,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#mode ReplicationController#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#mode ReplicationController#mode}
 
 ---
 
@@ -12809,7 +12809,7 @@ public readonly resourceFieldRef: ReplicationControllerSpecTemplateSpecVolumeDow
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
 
 ---
 
@@ -12842,7 +12842,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to "v1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#api_version ReplicationController#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#api_version ReplicationController#api_version}
 
 ---
 
@@ -12856,7 +12856,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#field_path ReplicationController#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#field_path ReplicationController#field_path}
 
 ---
 
@@ -12874,9 +12874,9 @@ const replicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
 
 ---
 
@@ -12888,7 +12888,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#container_name ReplicationController#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#container_name ReplicationController#container_name}.
 
 ---
 
@@ -12902,7 +12902,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#resource ReplicationController#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#resource ReplicationController#resource}
 
 ---
 
@@ -12914,7 +12914,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#divisor ReplicationController#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#divisor ReplicationController#divisor}.
 
 ---
 
@@ -12949,7 +12949,7 @@ What type of storage medium should back this directory.
 
 The default is "" which means to use the node's default medium. Must be one of ["" "Memory" "HugePages" "HugePages-2Mi" "HugePages-1Gi"]. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#medium ReplicationController#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#medium ReplicationController#medium}
 
 ---
 
@@ -12963,7 +12963,7 @@ public readonly sizeLimit: string;
 
 Total amount of local storage required for this EmptyDir volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#size_limit ReplicationController#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#size_limit ReplicationController#size_limit}
 
 ---
 
@@ -12995,7 +12995,7 @@ public readonly volumeClaimTemplate: ReplicationControllerSpecTemplateSpecVolume
 
 volume_claim_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#volume_claim_template ReplicationController#volume_claim_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#volume_claim_template ReplicationController#volume_claim_template}
 
 ---
 
@@ -13028,7 +13028,7 @@ public readonly spec: ReplicationControllerSpecTemplateSpecVolumeEphemeralVolume
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#spec ReplicationController#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#spec ReplicationController#spec}
 
 ---
 
@@ -13042,7 +13042,7 @@ public readonly metadata: ReplicationControllerSpecTemplateSpecVolumeEphemeralVo
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#metadata ReplicationController#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#metadata ReplicationController#metadata}
 
 ---
 
@@ -13077,7 +13077,7 @@ An unstructured key value map stored with the persistent volume claim that may b
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#annotations ReplicationController#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#annotations ReplicationController#annotations}
 
 ---
 
@@ -13093,7 +13093,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#labels ReplicationController#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#labels ReplicationController#labels}
 
 ---
 
@@ -13130,7 +13130,7 @@ public readonly accessModes: string[];
 
 A set of the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#access_modes ReplicationController#access_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#access_modes ReplicationController#access_modes}
 
 ---
 
@@ -13144,7 +13144,7 @@ public readonly resources: ReplicationControllerSpecTemplateSpecVolumeEphemeralV
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#resources ReplicationController#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#resources ReplicationController#resources}
 
 ---
 
@@ -13158,7 +13158,7 @@ public readonly selector: ReplicationControllerSpecTemplateSpecVolumeEphemeralVo
 
 selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#selector ReplicationController#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#selector ReplicationController#selector}
 
 ---
 
@@ -13172,7 +13172,7 @@ public readonly storageClassName: string;
 
 Name of the storage class requested by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#storage_class_name ReplicationController#storage_class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#storage_class_name ReplicationController#storage_class_name}
 
 ---
 
@@ -13186,7 +13186,7 @@ public readonly volumeMode: string;
 
 Defines what type of volume is required by the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#volume_mode ReplicationController#volume_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#volume_mode ReplicationController#volume_mode}
 
 ---
 
@@ -13200,7 +13200,7 @@ public readonly volumeName: string;
 
 The binding reference to the PersistentVolume backing this claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#volume_name ReplicationController#volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#volume_name ReplicationController#volume_name}
 
 ---
 
@@ -13233,7 +13233,7 @@ public readonly limits: {[ key: string ]: string};
 
 Map describing the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#limits ReplicationController#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#limits ReplicationController#limits}
 
 ---
 
@@ -13249,7 +13249,7 @@ Map describing the minimum amount of compute resources required.
 
 If this is omitted for a container, it defaults to `limits` if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#requests ReplicationController#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#requests ReplicationController#requests}
 
 ---
 
@@ -13282,7 +13282,7 @@ public readonly matchExpressions: IResolvable | ReplicationControllerSpecTemplat
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_expressions ReplicationController#match_expressions}
 
 ---
 
@@ -13298,7 +13298,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#match_labels ReplicationController#match_labels}
 
 ---
 
@@ -13332,7 +13332,7 @@ public readonly key: string;
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -13346,7 +13346,7 @@ public readonly operator: string;
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#operator ReplicationController#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#operator ReplicationController#operator}
 
 ---
 
@@ -13362,7 +13362,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#values ReplicationController#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#values ReplicationController#values}
 
 ---
 
@@ -13397,7 +13397,7 @@ public readonly lun: number;
 
 FC target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#lun ReplicationController#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#lun ReplicationController#lun}
 
 ---
 
@@ -13411,7 +13411,7 @@ public readonly targetWwNs: string[];
 
 FC target worldwide names (WWNs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#target_ww_ns ReplicationController#target_ww_ns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#target_ww_ns ReplicationController#target_ww_ns}
 
 ---
 
@@ -13427,7 +13427,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -13441,7 +13441,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -13477,7 +13477,7 @@ public readonly driver: string;
 
 Driver is the name of the driver to use for this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#driver ReplicationController#driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#driver ReplicationController#driver}
 
 ---
 
@@ -13493,7 +13493,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -13507,7 +13507,7 @@ public readonly options: {[ key: string ]: string};
 
 Extra command options if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#options ReplicationController#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#options ReplicationController#options}
 
 ---
 
@@ -13521,7 +13521,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false (read/write).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -13535,7 +13535,7 @@ public readonly secretRef: ReplicationControllerSpecTemplateSpecVolumeFlexVolume
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
 
 ---
 
@@ -13568,7 +13568,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -13582,7 +13582,7 @@ public readonly namespace: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#namespace ReplicationController#namespace}
 
 ---
 
@@ -13615,7 +13615,7 @@ public readonly datasetName: string;
 
 Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#dataset_name ReplicationController#dataset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#dataset_name ReplicationController#dataset_name}
 
 ---
 
@@ -13629,7 +13629,7 @@ public readonly datasetUuid: string;
 
 UUID of the dataset. This is unique identifier of a Flocker dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#dataset_uuid ReplicationController#dataset_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#dataset_uuid ReplicationController#dataset_uuid}
 
 ---
 
@@ -13664,7 +13664,7 @@ public readonly pdName: string;
 
 Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#pd_name ReplicationController#pd_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#pd_name ReplicationController#pd_name}
 
 ---
 
@@ -13680,7 +13680,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -13696,7 +13696,7 @@ The partition in the volume that you want to mount.
 
 If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#partition ReplicationController#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#partition ReplicationController#partition}
 
 ---
 
@@ -13710,7 +13710,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -13746,7 +13746,7 @@ Target directory name.
 
 Must not contain or start with '..'. If '.' is supplied, the volume directory will be the git repository. Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#directory ReplicationController#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#directory ReplicationController#directory}
 
 ---
 
@@ -13760,7 +13760,7 @@ public readonly repository: string;
 
 Repository URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#repository ReplicationController#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#repository ReplicationController#repository}
 
 ---
 
@@ -13774,7 +13774,7 @@ public readonly revision: string;
 
 Commit hash for the specified revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#revision ReplicationController#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#revision ReplicationController#revision}
 
 ---
 
@@ -13808,7 +13808,7 @@ public readonly endpointsName: string;
 
 The endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#endpoints_name ReplicationController#endpoints_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#endpoints_name ReplicationController#endpoints_name}
 
 ---
 
@@ -13822,7 +13822,7 @@ public readonly path: string;
 
 The Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -13836,7 +13836,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -13869,7 +13869,7 @@ public readonly path: string;
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -13883,7 +13883,7 @@ public readonly type: string;
 
 Type for HostPath volume. Allowed values are "" (default), DirectoryOrCreate, Directory, FileOrCreate, File, Socket, CharDevice and BlockDevice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#type ReplicationController#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#type ReplicationController#type}
 
 ---
 
@@ -13920,7 +13920,7 @@ public readonly iqn: string;
 
 Target iSCSI Qualified Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#iqn ReplicationController#iqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#iqn ReplicationController#iqn}
 
 ---
 
@@ -13936,7 +13936,7 @@ iSCSI target portal.
 
 The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#target_portal ReplicationController#target_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#target_portal ReplicationController#target_portal}
 
 ---
 
@@ -13952,7 +13952,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -13966,7 +13966,7 @@ public readonly iscsiInterface: string;
 
 iSCSI interface name that uses an iSCSI transport. Defaults to 'default' (tcp).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#iscsi_interface ReplicationController#iscsi_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#iscsi_interface ReplicationController#iscsi_interface}
 
 ---
 
@@ -13980,7 +13980,7 @@ public readonly lun: number;
 
 iSCSI target lun number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#lun ReplicationController#lun}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#lun ReplicationController#lun}
 
 ---
 
@@ -13994,7 +13994,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -14026,7 +14026,7 @@ public readonly path: string;
 
 Path of the directory on the host. More info: https://kubernetes.io/docs/concepts/storage/volumes#local.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -14060,7 +14060,7 @@ public readonly path: string;
 
 Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -14074,7 +14074,7 @@ public readonly server: string;
 
 Server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#server ReplicationController#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#server ReplicationController#server}
 
 ---
 
@@ -14088,7 +14088,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -14121,7 +14121,7 @@ public readonly claimName: string;
 
 ClaimName is the name of a PersistentVolumeClaim in the same.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#claim_name ReplicationController#claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#claim_name ReplicationController#claim_name}
 
 ---
 
@@ -14135,7 +14135,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Will force the ReadOnly setting in VolumeMounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -14168,7 +14168,7 @@ public readonly pdId: string;
 
 ID that identifies Photon Controller persistent disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#pd_id ReplicationController#pd_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#pd_id ReplicationController#pd_id}
 
 ---
 
@@ -14184,7 +14184,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -14217,7 +14217,7 @@ public readonly sources: IResolvable | ReplicationControllerSpecTemplateSpecVolu
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#sources ReplicationController#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#sources ReplicationController#sources}
 
 ---
 
@@ -14233,7 +14233,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
 
 ---
 
@@ -14268,7 +14268,7 @@ public readonly configMap: IResolvable | ReplicationControllerSpecTemplateSpecVo
 
 config_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#config_map ReplicationController#config_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#config_map ReplicationController#config_map}
 
 ---
 
@@ -14282,7 +14282,7 @@ public readonly downwardApi: ReplicationControllerSpecTemplateSpecVolumeProjecte
 
 downward_api block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#downward_api ReplicationController#downward_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#downward_api ReplicationController#downward_api}
 
 ---
 
@@ -14296,7 +14296,7 @@ public readonly secret: IResolvable | ReplicationControllerSpecTemplateSpecVolum
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#secret ReplicationController#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#secret ReplicationController#secret}
 
 ---
 
@@ -14310,7 +14310,7 @@ public readonly serviceAccountToken: ReplicationControllerSpecTemplateSpecVolume
 
 service_account_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#service_account_token ReplicationController#service_account_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#service_account_token ReplicationController#service_account_token}
 
 ---
 
@@ -14344,7 +14344,7 @@ public readonly items: IResolvable | ReplicationControllerSpecTemplateSpecVolume
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#items ReplicationController#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#items ReplicationController#items}
 
 ---
 
@@ -14358,7 +14358,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -14372,7 +14372,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the ConfigMap or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -14406,7 +14406,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -14422,7 +14422,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#mode ReplicationController#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#mode ReplicationController#mode}
 
 ---
 
@@ -14438,7 +14438,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -14470,7 +14470,7 @@ public readonly items: IResolvable | ReplicationControllerSpecTemplateSpecVolume
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#items ReplicationController#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#items ReplicationController#items}
 
 ---
 
@@ -14507,7 +14507,7 @@ Path is the relative path name of the file to be created.
 
 Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -14521,7 +14521,7 @@ public readonly fieldRef: ReplicationControllerSpecTemplateSpecVolumeProjectedSo
 
 field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#field_ref ReplicationController#field_ref}
 
 ---
 
@@ -14537,7 +14537,7 @@ Mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#mode ReplicationController#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#mode ReplicationController#mode}
 
 ---
 
@@ -14551,7 +14551,7 @@ public readonly resourceFieldRef: ReplicationControllerSpecTemplateSpecVolumePro
 
 resource_field_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#resource_field_ref ReplicationController#resource_field_ref}
 
 ---
 
@@ -14584,7 +14584,7 @@ public readonly apiVersion: string;
 
 Version of the schema the FieldPath is written in terms of, defaults to 'v1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#api_version ReplicationController#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#api_version ReplicationController#api_version}
 
 ---
 
@@ -14598,7 +14598,7 @@ public readonly fieldPath: string;
 
 Path of the field to select in the specified API version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#field_path ReplicationController#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#field_path ReplicationController#field_path}
 
 ---
 
@@ -14616,9 +14616,9 @@ const replicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.containerName">containerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#container_name ReplicationController#container_name}. |
 | <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.resource">resource</a></code> | <code>string</code> | Resource to select. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.property.divisor">divisor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#divisor ReplicationController#divisor}. |
 
 ---
 
@@ -14630,7 +14630,7 @@ public readonly containerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#container_name ReplicationController#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#container_name ReplicationController#container_name}.
 
 ---
 
@@ -14644,7 +14644,7 @@ public readonly resource: string;
 
 Resource to select.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#resource ReplicationController#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#resource ReplicationController#resource}
 
 ---
 
@@ -14656,7 +14656,7 @@ public readonly divisor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#divisor ReplicationController#divisor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#divisor ReplicationController#divisor}.
 
 ---
 
@@ -14690,7 +14690,7 @@ public readonly items: IResolvable | ReplicationControllerSpecTemplateSpecVolume
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#items ReplicationController#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#items ReplicationController#items}
 
 ---
 
@@ -14704,7 +14704,7 @@ public readonly name: string;
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -14718,7 +14718,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the Secret or it's keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -14752,7 +14752,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -14768,7 +14768,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#mode ReplicationController#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#mode ReplicationController#mode}
 
 ---
 
@@ -14784,7 +14784,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -14818,7 +14818,7 @@ public readonly path: string;
 
 Path specifies a relative path to the mount point of the projected volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -14832,7 +14832,7 @@ public readonly audience: string;
 
 Audience is the intended audience of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#audience ReplicationController#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#audience ReplicationController#audience}
 
 ---
 
@@ -14848,7 +14848,7 @@ ExpirationSeconds is the expected duration of validity of the service account to
 
 It defaults to 1 hour and must be at least 10 minutes (600 seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#expiration_seconds ReplicationController#expiration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#expiration_seconds ReplicationController#expiration_seconds}
 
 ---
 
@@ -14884,7 +14884,7 @@ public readonly registry: string;
 
 Registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#registry ReplicationController#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#registry ReplicationController#registry}
 
 ---
 
@@ -14898,7 +14898,7 @@ public readonly volume: string;
 
 Volume is a string that references an already created Quobyte volume by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#volume ReplicationController#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#volume ReplicationController#volume}
 
 ---
 
@@ -14912,7 +14912,7 @@ public readonly group: string;
 
 Group to map volume access to Default is no group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#group ReplicationController#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#group ReplicationController#group}
 
 ---
 
@@ -14926,7 +14926,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the Quobyte volume to be mounted with read-only permissions. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -14940,7 +14940,7 @@ public readonly user: string;
 
 User to map volume access to Defaults to serivceaccount user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#user ReplicationController#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#user ReplicationController#user}
 
 ---
 
@@ -14979,7 +14979,7 @@ public readonly cephMonitors: string[];
 
 A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#ceph_monitors ReplicationController#ceph_monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#ceph_monitors ReplicationController#ceph_monitors}
 
 ---
 
@@ -14993,7 +14993,7 @@ public readonly rbdImage: string;
 
 The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#rbd_image ReplicationController#rbd_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#rbd_image ReplicationController#rbd_image}
 
 ---
 
@@ -15009,7 +15009,7 @@ Filesystem type of the volume that you want to mount.
 
 Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -15023,7 +15023,7 @@ public readonly keyring: string;
 
 Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#keyring ReplicationController#keyring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#keyring ReplicationController#keyring}
 
 ---
 
@@ -15037,7 +15037,7 @@ public readonly radosUser: string;
 
 The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#rados_user ReplicationController#rados_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#rados_user ReplicationController#rados_user}
 
 ---
 
@@ -15051,7 +15051,7 @@ public readonly rbdPool: string;
 
 The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#rbd_pool ReplicationController#rbd_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#rbd_pool ReplicationController#rbd_pool}
 
 ---
 
@@ -15065,7 +15065,7 @@ public readonly readOnly: boolean | IResolvable;
 
 Whether to force the read-only setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#read_only ReplicationController#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#read_only ReplicationController#read_only}
 
 ---
 
@@ -15079,7 +15079,7 @@ public readonly secretRef: ReplicationControllerSpecTemplateSpecVolumeRbdSecretR
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#secret_ref ReplicationController#secret_ref}
 
 ---
 
@@ -15112,7 +15112,7 @@ public readonly name: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#name ReplicationController#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#name ReplicationController#name}
 
 ---
 
@@ -15126,7 +15126,7 @@ public readonly namespace: string;
 
 Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#namespace ReplicationController#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#namespace ReplicationController#namespace}
 
 ---
 
@@ -15163,7 +15163,7 @@ Optional: mode bits to use on created files by default.
 
 Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#default_mode ReplicationController#default_mode}
 
 ---
 
@@ -15177,7 +15177,7 @@ public readonly items: IResolvable | ReplicationControllerSpecTemplateSpecVolume
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#items ReplicationController#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#items ReplicationController#items}
 
 ---
 
@@ -15191,7 +15191,7 @@ public readonly optional: boolean | IResolvable;
 
 Optional: Specify whether the Secret or its keys must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#optional ReplicationController#optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#optional ReplicationController#optional}
 
 ---
 
@@ -15205,7 +15205,7 @@ public readonly secretName: string;
 
 Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#secret_name ReplicationController#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#secret_name ReplicationController#secret_name}
 
 ---
 
@@ -15239,7 +15239,7 @@ public readonly key: string;
 
 The key to project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#key ReplicationController#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#key ReplicationController#key}
 
 ---
 
@@ -15255,7 +15255,7 @@ Optional: mode bits to use on this file, must be a value between 0 and 0777.
 
 If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#mode ReplicationController#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#mode ReplicationController#mode}
 
 ---
 
@@ -15271,7 +15271,7 @@ The relative path of the file to map the key to.
 
 May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#path ReplicationController#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#path ReplicationController#path}
 
 ---
 
@@ -15304,7 +15304,7 @@ public readonly volumePath: string;
 
 Path that identifies vSphere volume vmdk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#volume_path ReplicationController#volume_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#volume_path ReplicationController#volume_path}
 
 ---
 
@@ -15320,7 +15320,7 @@ Filesystem type to mount.
 
 Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#fs_type ReplicationController#fs_type}
 
 ---
 
@@ -15338,9 +15338,9 @@ const replicationControllerTimeouts: replicationController.ReplicationController
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#create ReplicationController#create}. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#delete ReplicationController#delete}. |
-| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#update ReplicationController#update}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#create ReplicationController#create}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#delete ReplicationController#delete}. |
+| <code><a href="#@cdktn/provider-kubernetes.replicationController.ReplicationControllerTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#update ReplicationController#update}. |
 
 ---
 
@@ -15352,7 +15352,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#create ReplicationController#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#create ReplicationController#create}.
 
 ---
 
@@ -15364,7 +15364,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#delete ReplicationController#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#delete ReplicationController#delete}.
 
 ---
 
@@ -15376,7 +15376,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/replication_controller#update ReplicationController#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/replication_controller#update ReplicationController#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### Manifest <a name="Manifest" id="@cdktn/provider-kubernetes.manifest.Manifest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest kubernetes_manifest}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest kubernetes_manifest}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.manifest.Manifest.Initializer"></a>
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 A Kubernetes manifest describing the desired state of the resource in HCL format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#manifest Manifest#manifest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#manifest Manifest#manifest}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of manifest fields whose values can be altered by the API server during 'apply'. Defaults to: ["metadata.annotations", "metadata.labels"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#computed_fields Manifest#computed_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#computed_fields Manifest#computed_fields}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 field_manager block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#field_manager Manifest#field_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#field_manager Manifest#field_manager}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resulting resource state, as returned by the API server after applying the desired state from `manifest`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#object Manifest#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#object Manifest#object}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#timeouts Manifest#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#timeouts Manifest#timeouts}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 wait block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#wait Manifest#wait}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#wait Manifest#wait}
 
 ---
 
@@ -180,7 +180,7 @@ A map of attribute paths and desired patterns to be matched.
 
 After each apply the provider will wait for all attributes listed here to reach a value that matches the desired pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#wait_for Manifest#wait_for}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#wait_for Manifest#wait_for}
 
 ---
 
@@ -588,7 +588,7 @@ def put_field_manager(
 
 Force changes against conflicts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#force_conflicts Manifest#force_conflicts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#force_conflicts Manifest#force_conflicts}
 
 ---
 
@@ -598,7 +598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name to use for the field manager when creating and updating the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#name Manifest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#name Manifest#name}
 
 ---
 
@@ -618,7 +618,7 @@ def put_timeouts(
 
 Timeout for the create operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#create Manifest#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#create Manifest#create}
 
 ---
 
@@ -628,7 +628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Timeout for the delete operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#delete Manifest#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#delete Manifest#delete}
 
 ---
 
@@ -638,7 +638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Timeout for the update operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#update Manifest#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#update Manifest#update}
 
 ---
 
@@ -658,7 +658,7 @@ def put_wait(
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#condition Manifest#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#condition Manifest#condition}
 
 ---
 
@@ -668,7 +668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A map of paths to fields to wait for a specific field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#fields Manifest#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#fields Manifest#fields}
 
 ---
 
@@ -678,7 +678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Wait for rollout to complete on resources that support `kubectl rollout status`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#rollout Manifest#rollout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#rollout Manifest#rollout}
 
 ---
 
@@ -694,7 +694,7 @@ def put_wait_for(
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#fields Manifest#fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#fields Manifest#fields}.
 
 ---
 
@@ -848,7 +848,7 @@ The construct id used in the generated config for the Manifest to import.
 
 The id of the existing Manifest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1323,7 +1323,7 @@ manifest: typing.Mapping[typing.Any]
 
 A Kubernetes manifest describing the desired state of the resource in HCL format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#manifest Manifest#manifest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#manifest Manifest#manifest}
 
 ---
 
@@ -1337,7 +1337,7 @@ computed_fields: typing.List[str]
 
 List of manifest fields whose values can be altered by the API server during 'apply'. Defaults to: ["metadata.annotations", "metadata.labels"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#computed_fields Manifest#computed_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#computed_fields Manifest#computed_fields}
 
 ---
 
@@ -1351,7 +1351,7 @@ field_manager: ManifestFieldManager
 
 field_manager block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#field_manager Manifest#field_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#field_manager Manifest#field_manager}
 
 ---
 
@@ -1365,7 +1365,7 @@ object: typing.Mapping[typing.Any]
 
 The resulting resource state, as returned by the API server after applying the desired state from `manifest`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#object Manifest#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#object Manifest#object}
 
 ---
 
@@ -1379,7 +1379,7 @@ timeouts: ManifestTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#timeouts Manifest#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#timeouts Manifest#timeouts}
 
 ---
 
@@ -1393,7 +1393,7 @@ wait: ManifestWait
 
 wait block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#wait Manifest#wait}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#wait Manifest#wait}
 
 ---
 
@@ -1409,7 +1409,7 @@ A map of attribute paths and desired patterns to be matched.
 
 After each apply the provider will wait for all attributes listed here to reach a value that matches the desired pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#wait_for Manifest#wait_for}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#wait_for Manifest#wait_for}
 
 ---
 
@@ -1445,7 +1445,7 @@ force_conflicts: bool | IResolvable
 
 Force changes against conflicts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#force_conflicts Manifest#force_conflicts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#force_conflicts Manifest#force_conflicts}
 
 ---
 
@@ -1459,7 +1459,7 @@ name: str
 
 The name to use for the field manager when creating and updating the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#name Manifest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#name Manifest#name}
 
 ---
 
@@ -1497,7 +1497,7 @@ create: str
 
 Timeout for the create operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#create Manifest#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#create Manifest#create}
 
 ---
 
@@ -1511,7 +1511,7 @@ delete: str
 
 Timeout for the delete operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#delete Manifest#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#delete Manifest#delete}
 
 ---
 
@@ -1525,7 +1525,7 @@ update: str
 
 Timeout for the update operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#update Manifest#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#update Manifest#update}
 
 ---
 
@@ -1563,7 +1563,7 @@ condition: IResolvable | typing.List[ManifestWaitCondition]
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#condition Manifest#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#condition Manifest#condition}
 
 ---
 
@@ -1577,7 +1577,7 @@ fields: typing.Mapping[str]
 
 A map of paths to fields to wait for a specific field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#fields Manifest#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#fields Manifest#fields}
 
 ---
 
@@ -1591,7 +1591,7 @@ rollout: bool | IResolvable
 
 Wait for rollout to complete on resources that support `kubectl rollout status`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#rollout Manifest#rollout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#rollout Manifest#rollout}
 
 ---
 
@@ -1627,7 +1627,7 @@ status: str
 
 The condition status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#status Manifest#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#status Manifest#status}
 
 ---
 
@@ -1641,7 +1641,7 @@ type: str
 
 The type of condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#type Manifest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#type Manifest#type}
 
 ---
 
@@ -1661,7 +1661,7 @@ manifest.ManifestWaitFor(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.manifest.ManifestWaitFor.property.fields">fields</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#fields Manifest#fields}. |
+| <code><a href="#@cdktn/provider-kubernetes.manifest.ManifestWaitFor.property.fields">fields</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#fields Manifest#fields}. |
 
 ---
 
@@ -1673,7 +1673,7 @@ fields: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/manifest#fields Manifest#fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/manifest#fields Manifest#fields}.
 
 ---
 

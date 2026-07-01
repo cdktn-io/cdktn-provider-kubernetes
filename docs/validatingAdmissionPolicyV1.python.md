@@ -4,7 +4,7 @@
 
 ### ValidatingAdmissionPolicyV1 <a name="ValidatingAdmissionPolicyV1" id="@cdktn/provider-kubernetes.validatingAdmissionPolicyV1.ValidatingAdmissionPolicyV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1 kubernetes_validating_admission_policy_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1 kubernetes_validating_admission_policy_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.validatingAdmissionPolicyV1.ValidatingAdmissionPolicyV1.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Rule defining a set of permissions for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#spec ValidatingAdmissionPolicyV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#spec ValidatingAdmissionPolicyV1#spec}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The unique ID for this terraform resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#id ValidatingAdmissionPolicyV1#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#id ValidatingAdmissionPolicyV1#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#metadata ValidatingAdmissionPolicyV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#metadata ValidatingAdmissionPolicyV1#metadata}
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#timeouts ValidatingAdmissionPolicyV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#timeouts ValidatingAdmissionPolicyV1#timeouts}
 
 ---
 
@@ -557,7 +557,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 
 They are not queryable and should be preserved when modifying objects. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#annotations ValidatingAdmissionPolicyV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#annotations ValidatingAdmissionPolicyV1#annotations}
 
 ---
 
@@ -571,7 +571,7 @@ If this field is used, the name returned to the client will be different than th
 If this field is specified and the generated name exists, the server will return a 409.
 Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#generate_name ValidatingAdmissionPolicyV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#generate_name ValidatingAdmissionPolicyV1#generate_name}
 
 ---
 
@@ -581,7 +581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#generation ValidatingAdmissionPolicyV1#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#generation ValidatingAdmissionPolicyV1#generation}
 
 ---
 
@@ -593,7 +593,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#labels ValidatingAdmissionPolicyV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#labels ValidatingAdmissionPolicyV1#labels}
 
 ---
 
@@ -605,7 +605,7 @@ Name must be unique within a namespace.
 
 Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#name ValidatingAdmissionPolicyV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#name ValidatingAdmissionPolicyV1#name}
 
 ---
 
@@ -618,7 +618,7 @@ Namespace defines the space within which each name must be unique.
 An empty namespace is equivalent to the "default" namespace, but "default" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.
 Must be a DNS_LABEL. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#namespace ValidatingAdmissionPolicyV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#namespace ValidatingAdmissionPolicyV1#namespace}
 
 ---
 
@@ -631,7 +631,7 @@ An opaque value that represents the internal version of this object that can be 
 May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.
 Populated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#resource_version ValidatingAdmissionPolicyV1#resource_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#resource_version ValidatingAdmissionPolicyV1#resource_version}
 
 ---
 
@@ -644,7 +644,7 @@ UID is the unique in time and space value for this object.
 It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.
 Populated by the system. Read-only. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#uid ValidatingAdmissionPolicyV1#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#uid ValidatingAdmissionPolicyV1#uid}
 
 ---
 
@@ -668,7 +668,7 @@ def put_spec(
 
 auditAnnotations contains CEL expressions which are used to produce audit annotations for the audit event of the API request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#audit_annotations ValidatingAdmissionPolicyV1#audit_annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#audit_annotations ValidatingAdmissionPolicyV1#audit_annotations}
 
 ---
 
@@ -678,7 +678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 failurePolicy defines how to handle failures for the admission policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#failure_policy ValidatingAdmissionPolicyV1#failure_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#failure_policy ValidatingAdmissionPolicyV1#failure_policy}
 
 ---
 
@@ -688,7 +688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 MatchConstraints specifies what resources this policy is designed to validate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#match_constraints ValidatingAdmissionPolicyV1#match_constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#match_constraints ValidatingAdmissionPolicyV1#match_constraints}
 
 ---
 
@@ -698,7 +698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 MatchConditions is a list of conditions that must be met for a request to be validated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#match_conditions ValidatingAdmissionPolicyV1#match_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#match_conditions ValidatingAdmissionPolicyV1#match_conditions}
 
 ---
 
@@ -708,7 +708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ParamKind specifies the kind of resources used to parameterize this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#param_kind ValidatingAdmissionPolicyV1#param_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#param_kind ValidatingAdmissionPolicyV1#param_kind}
 
 ---
 
@@ -718,7 +718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Validations contain CEL expressions which is used to apply the validation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#validations ValidatingAdmissionPolicyV1#validations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#validations ValidatingAdmissionPolicyV1#validations}
 
 ---
 
@@ -728,7 +728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Variables contain definitions of variables that can be used in composition of other expressions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#variables ValidatingAdmissionPolicyV1#variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#variables ValidatingAdmissionPolicyV1#variables}
 
 ---
 
@@ -749,7 +749,7 @@ def put_timeouts(
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#create ValidatingAdmissionPolicyV1#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#create ValidatingAdmissionPolicyV1#create}
 
 ---
 
@@ -759,7 +759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#delete ValidatingAdmissionPolicyV1#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#delete ValidatingAdmissionPolicyV1#delete}
 
 ---
 
@@ -769,7 +769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#read ValidatingAdmissionPolicyV1#read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#read ValidatingAdmissionPolicyV1#read}
 
 ---
 
@@ -779,7 +779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#update ValidatingAdmissionPolicyV1#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#update ValidatingAdmissionPolicyV1#update}
 
 ---
 
@@ -915,7 +915,7 @@ The construct id used in the generated config for the ValidatingAdmissionPolicyV
 
 The id of the existing ValidatingAdmissionPolicyV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1318,7 +1318,7 @@ spec: ValidatingAdmissionPolicyV1Spec
 
 Rule defining a set of permissions for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#spec ValidatingAdmissionPolicyV1#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#spec ValidatingAdmissionPolicyV1#spec}
 
 ---
 
@@ -1332,7 +1332,7 @@ id: str
 
 The unique ID for this terraform resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#id ValidatingAdmissionPolicyV1#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#id ValidatingAdmissionPolicyV1#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1349,7 +1349,7 @@ metadata: ValidatingAdmissionPolicyV1Metadata
 
 Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#metadata ValidatingAdmissionPolicyV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#metadata ValidatingAdmissionPolicyV1#metadata}
 
 ---
 
@@ -1363,7 +1363,7 @@ timeouts: ValidatingAdmissionPolicyV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#timeouts ValidatingAdmissionPolicyV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#timeouts ValidatingAdmissionPolicyV1#timeouts}
 
 ---
 
@@ -1413,7 +1413,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 
 They are not queryable and should be preserved when modifying objects. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#annotations ValidatingAdmissionPolicyV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#annotations ValidatingAdmissionPolicyV1#annotations}
 
 ---
 
@@ -1431,7 +1431,7 @@ If this field is used, the name returned to the client will be different than th
 If this field is specified and the generated name exists, the server will return a 409.
 Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#generate_name ValidatingAdmissionPolicyV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#generate_name ValidatingAdmissionPolicyV1#generate_name}
 
 ---
 
@@ -1445,7 +1445,7 @@ generation: typing.Union[int, float]
 
 A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#generation ValidatingAdmissionPolicyV1#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#generation ValidatingAdmissionPolicyV1#generation}
 
 ---
 
@@ -1461,7 +1461,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#labels ValidatingAdmissionPolicyV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#labels ValidatingAdmissionPolicyV1#labels}
 
 ---
 
@@ -1477,7 +1477,7 @@ Name must be unique within a namespace.
 
 Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#name ValidatingAdmissionPolicyV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#name ValidatingAdmissionPolicyV1#name}
 
 ---
 
@@ -1494,7 +1494,7 @@ Namespace defines the space within which each name must be unique.
 An empty namespace is equivalent to the "default" namespace, but "default" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.
 Must be a DNS_LABEL. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#namespace ValidatingAdmissionPolicyV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#namespace ValidatingAdmissionPolicyV1#namespace}
 
 ---
 
@@ -1511,7 +1511,7 @@ An opaque value that represents the internal version of this object that can be 
 May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.
 Populated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#resource_version ValidatingAdmissionPolicyV1#resource_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#resource_version ValidatingAdmissionPolicyV1#resource_version}
 
 ---
 
@@ -1528,7 +1528,7 @@ UID is the unique in time and space value for this object.
 It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.
 Populated by the system. Read-only. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#uid ValidatingAdmissionPolicyV1#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#uid ValidatingAdmissionPolicyV1#uid}
 
 ---
 
@@ -1574,7 +1574,7 @@ audit_annotations: IResolvable | typing.List[ValidatingAdmissionPolicyV1SpecAudi
 
 auditAnnotations contains CEL expressions which are used to produce audit annotations for the audit event of the API request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#audit_annotations ValidatingAdmissionPolicyV1#audit_annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#audit_annotations ValidatingAdmissionPolicyV1#audit_annotations}
 
 ---
 
@@ -1588,7 +1588,7 @@ failure_policy: str
 
 failurePolicy defines how to handle failures for the admission policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#failure_policy ValidatingAdmissionPolicyV1#failure_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#failure_policy ValidatingAdmissionPolicyV1#failure_policy}
 
 ---
 
@@ -1602,7 +1602,7 @@ match_constraints: ValidatingAdmissionPolicyV1SpecMatchConstraints
 
 MatchConstraints specifies what resources this policy is designed to validate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#match_constraints ValidatingAdmissionPolicyV1#match_constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#match_constraints ValidatingAdmissionPolicyV1#match_constraints}
 
 ---
 
@@ -1616,7 +1616,7 @@ match_conditions: IResolvable | typing.List[ValidatingAdmissionPolicyV1SpecMatch
 
 MatchConditions is a list of conditions that must be met for a request to be validated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#match_conditions ValidatingAdmissionPolicyV1#match_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#match_conditions ValidatingAdmissionPolicyV1#match_conditions}
 
 ---
 
@@ -1630,7 +1630,7 @@ param_kind: ValidatingAdmissionPolicyV1SpecParamKind
 
 ParamKind specifies the kind of resources used to parameterize this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#param_kind ValidatingAdmissionPolicyV1#param_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#param_kind ValidatingAdmissionPolicyV1#param_kind}
 
 ---
 
@@ -1644,7 +1644,7 @@ validations: IResolvable | typing.List[ValidatingAdmissionPolicyV1SpecValidation
 
 Validations contain CEL expressions which is used to apply the validation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#validations ValidatingAdmissionPolicyV1#validations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#validations ValidatingAdmissionPolicyV1#validations}
 
 ---
 
@@ -1658,7 +1658,7 @@ variables: IResolvable | typing.List[ValidatingAdmissionPolicyV1SpecVariables]
 
 Variables contain definitions of variables that can be used in composition of other expressions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#variables ValidatingAdmissionPolicyV1#variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#variables ValidatingAdmissionPolicyV1#variables}
 
 ---
 
@@ -1694,7 +1694,7 @@ key: str
 
 key specifies the audit annotation key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#key ValidatingAdmissionPolicyV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#key ValidatingAdmissionPolicyV1#key}
 
 ---
 
@@ -1708,7 +1708,7 @@ value_expression: str
 
 valueExpression represents the expression which is evaluated by CEL to produce an audit annotation value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#value_expression ValidatingAdmissionPolicyV1#value_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#value_expression ValidatingAdmissionPolicyV1#value_expression}
 
 ---
 
@@ -1744,7 +1744,7 @@ expression: str
 
 Expression represents the expression which will be evaluated by CEL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#expression ValidatingAdmissionPolicyV1#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#expression ValidatingAdmissionPolicyV1#expression}
 
 ---
 
@@ -1758,7 +1758,7 @@ name: str
 
 Name is an identifier for this match condition, used for strategic merging of MatchConditions, as well as providing an identifier for logging purposes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#name ValidatingAdmissionPolicyV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#name ValidatingAdmissionPolicyV1#name}
 
 ---
 
@@ -1800,7 +1800,7 @@ exclude_resource_rules: IResolvable | typing.List[ValidatingAdmissionPolicyV1Spe
 
 ExcludeResourceRules describes what operations on what resources/subresources the ValidatingAdmissionPolicy should not care about.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#exclude_resource_rules ValidatingAdmissionPolicyV1#exclude_resource_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#exclude_resource_rules ValidatingAdmissionPolicyV1#exclude_resource_rules}
 
 ---
 
@@ -1814,7 +1814,7 @@ match_policy: str
 
 matchPolicy defines how the MatchResources list is used to match incoming requests. Allowed values are Exact or Equivalent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#match_policy ValidatingAdmissionPolicyV1#match_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#match_policy ValidatingAdmissionPolicyV1#match_policy}
 
 ---
 
@@ -1828,7 +1828,7 @@ namespace_selector: ValidatingAdmissionPolicyV1SpecMatchConstraintsNamespaceSele
 
 NamespaceSelector decides whether to run the admission control policy on an object based on whether the namespace for that object matches the selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#namespace_selector ValidatingAdmissionPolicyV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#namespace_selector ValidatingAdmissionPolicyV1#namespace_selector}
 
 ---
 
@@ -1842,7 +1842,7 @@ object_selector: ValidatingAdmissionPolicyV1SpecMatchConstraintsObjectSelector
 
 ObjectSelector decides whether to run the validation based on if the object has matching labels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#object_selector ValidatingAdmissionPolicyV1#object_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#object_selector ValidatingAdmissionPolicyV1#object_selector}
 
 ---
 
@@ -1856,7 +1856,7 @@ resource_rules: IResolvable | typing.List[ValidatingAdmissionPolicyV1SpecMatchCo
 
 ResourceRules describes what operations on what resources/subresources the ValidatingAdmissionPolicy matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#resource_rules ValidatingAdmissionPolicyV1#resource_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#resource_rules ValidatingAdmissionPolicyV1#resource_rules}
 
 ---
 
@@ -1902,7 +1902,7 @@ APIGroups is the API groups the resources belong to.
 
 '*' is all groups. If '*' is present, the length of the slice must be one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#api_groups ValidatingAdmissionPolicyV1#api_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#api_groups ValidatingAdmissionPolicyV1#api_groups}
 
 ---
 
@@ -1918,7 +1918,7 @@ APIVersions is the API versions the resources belong to.
 
 '*' is all versions. If '*' is present, the length of the slice must be one. Required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#api_versions ValidatingAdmissionPolicyV1#api_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#api_versions ValidatingAdmissionPolicyV1#api_versions}
 
 ---
 
@@ -1932,7 +1932,7 @@ operations: typing.List[str]
 
 Operations is the operations the admission hook cares about - CREATE, UPDATE, DELETE, CONNECT or * for all of those operations and any future admission operations that are added.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#operations ValidatingAdmissionPolicyV1#operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#operations ValidatingAdmissionPolicyV1#operations}
 
 ---
 
@@ -1946,7 +1946,7 @@ resources: typing.List[str]
 
 Resources is a list of resources this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#resources ValidatingAdmissionPolicyV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#resources ValidatingAdmissionPolicyV1#resources}
 
 ---
 
@@ -1962,7 +1962,7 @@ ResourceNames is an optional white list of names that the rule applies to.
 
 An empty set means that everything is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#resource_names ValidatingAdmissionPolicyV1#resource_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#resource_names ValidatingAdmissionPolicyV1#resource_names}
 
 ---
 
@@ -1976,7 +1976,7 @@ scope: str
 
 scope specifies the scope of this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#scope ValidatingAdmissionPolicyV1#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#scope ValidatingAdmissionPolicyV1#scope}
 
 ---
 
@@ -2012,7 +2012,7 @@ match_expressions: IResolvable | typing.List[ValidatingAdmissionPolicyV1SpecMatc
 
 matchExpressions is a list of label selector requirements. The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#match_expressions ValidatingAdmissionPolicyV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#match_expressions ValidatingAdmissionPolicyV1#match_expressions}
 
 ---
 
@@ -2028,7 +2028,7 @@ matchLabels is a map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#match_labels ValidatingAdmissionPolicyV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#match_labels ValidatingAdmissionPolicyV1#match_labels}
 
 ---
 
@@ -2066,7 +2066,7 @@ key: str
 
 key is the label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#key ValidatingAdmissionPolicyV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#key ValidatingAdmissionPolicyV1#key}
 
 ---
 
@@ -2080,7 +2080,7 @@ operator: str
 
 operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#operator ValidatingAdmissionPolicyV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#operator ValidatingAdmissionPolicyV1#operator}
 
 ---
 
@@ -2096,7 +2096,7 @@ values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#values ValidatingAdmissionPolicyV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#values ValidatingAdmissionPolicyV1#values}
 
 ---
 
@@ -2130,7 +2130,7 @@ label_selector: ValidatingAdmissionPolicyV1SpecMatchConstraintsObjectSelectorLab
 
 A label query over a set of resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#label_selector ValidatingAdmissionPolicyV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#label_selector ValidatingAdmissionPolicyV1#label_selector}
 
 ---
 
@@ -2166,7 +2166,7 @@ match_expressions: IResolvable | typing.List[ValidatingAdmissionPolicyV1SpecMatc
 
 matchExpressions is a list of label selector requirements. The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#match_expressions ValidatingAdmissionPolicyV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#match_expressions ValidatingAdmissionPolicyV1#match_expressions}
 
 ---
 
@@ -2182,7 +2182,7 @@ matchLabels is a map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#match_labels ValidatingAdmissionPolicyV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#match_labels ValidatingAdmissionPolicyV1#match_labels}
 
 ---
 
@@ -2220,7 +2220,7 @@ key: str
 
 key is the label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#key ValidatingAdmissionPolicyV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#key ValidatingAdmissionPolicyV1#key}
 
 ---
 
@@ -2234,7 +2234,7 @@ operator: str
 
 operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#operator ValidatingAdmissionPolicyV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#operator ValidatingAdmissionPolicyV1#operator}
 
 ---
 
@@ -2250,7 +2250,7 @@ values is an array of string values.
 
 If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#values ValidatingAdmissionPolicyV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#values ValidatingAdmissionPolicyV1#values}
 
 ---
 
@@ -2296,7 +2296,7 @@ APIGroups is the API groups the resources belong to.
 
 '*' is all groups. If '*' is present, the length of the slice must be one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#api_groups ValidatingAdmissionPolicyV1#api_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#api_groups ValidatingAdmissionPolicyV1#api_groups}
 
 ---
 
@@ -2312,7 +2312,7 @@ APIVersions is the API versions the resources belong to.
 
 '*' is all versions. If '*' is present, the length of the slice must be one. Required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#api_versions ValidatingAdmissionPolicyV1#api_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#api_versions ValidatingAdmissionPolicyV1#api_versions}
 
 ---
 
@@ -2326,7 +2326,7 @@ operations: typing.List[str]
 
 Operations is the operations the admission hook cares about - CREATE, UPDATE, DELETE, CONNECT or * for all of those operations and any future admission operations that are added.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#operations ValidatingAdmissionPolicyV1#operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#operations ValidatingAdmissionPolicyV1#operations}
 
 ---
 
@@ -2340,7 +2340,7 @@ resources: typing.List[str]
 
 Resources is a list of resources this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#resources ValidatingAdmissionPolicyV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#resources ValidatingAdmissionPolicyV1#resources}
 
 ---
 
@@ -2356,7 +2356,7 @@ ResourceNames is an optional white list of names that the rule applies to.
 
 An empty set means that everything is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#resource_names ValidatingAdmissionPolicyV1#resource_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#resource_names ValidatingAdmissionPolicyV1#resource_names}
 
 ---
 
@@ -2370,7 +2370,7 @@ scope: str
 
 scope specifies the scope of this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#scope ValidatingAdmissionPolicyV1#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#scope ValidatingAdmissionPolicyV1#scope}
 
 ---
 
@@ -2406,7 +2406,7 @@ api_version: str
 
 APIVersion is the API group version the resources belong to. In format of "group/version".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#api_version ValidatingAdmissionPolicyV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#api_version ValidatingAdmissionPolicyV1#api_version}
 
 ---
 
@@ -2420,7 +2420,7 @@ kind: str
 
 Kind is the API kind the resources belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#kind ValidatingAdmissionPolicyV1#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#kind ValidatingAdmissionPolicyV1#kind}
 
 ---
 
@@ -2460,7 +2460,7 @@ expression: str
 
 Expression represents the expression which will be evaluated by CEL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#expression ValidatingAdmissionPolicyV1#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#expression ValidatingAdmissionPolicyV1#expression}
 
 ---
 
@@ -2474,7 +2474,7 @@ message: str
 
 Message represents the message displayed when validation fails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#message ValidatingAdmissionPolicyV1#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#message ValidatingAdmissionPolicyV1#message}
 
 ---
 
@@ -2488,7 +2488,7 @@ message_expression: str
 
 Message Expression declares a CEL expression that evaluates to the validation failure message that is returned when this rule fails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#message_expression ValidatingAdmissionPolicyV1#message_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#message_expression ValidatingAdmissionPolicyV1#message_expression}
 
 ---
 
@@ -2502,7 +2502,7 @@ reason: str
 
 Reason represents a machine-readable description of why this validation failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#reason ValidatingAdmissionPolicyV1#reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#reason ValidatingAdmissionPolicyV1#reason}
 
 ---
 
@@ -2538,7 +2538,7 @@ expression: str
 
 Expression is the expression that will be evaluated as the value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#expression ValidatingAdmissionPolicyV1#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#expression ValidatingAdmissionPolicyV1#expression}
 
 ---
 
@@ -2552,7 +2552,7 @@ name: str
 
 Name is the name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#name ValidatingAdmissionPolicyV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#name ValidatingAdmissionPolicyV1#name}
 
 ---
 
@@ -2592,7 +2592,7 @@ create: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#create ValidatingAdmissionPolicyV1#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#create ValidatingAdmissionPolicyV1#create}
 
 ---
 
@@ -2606,7 +2606,7 @@ delete: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#delete ValidatingAdmissionPolicyV1#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#delete ValidatingAdmissionPolicyV1#delete}
 
 ---
 
@@ -2620,7 +2620,7 @@ read: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#read ValidatingAdmissionPolicyV1#read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#read ValidatingAdmissionPolicyV1#read}
 
 ---
 
@@ -2634,7 +2634,7 @@ update: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#update ValidatingAdmissionPolicyV1#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#update ValidatingAdmissionPolicyV1#update}
 
 ---
 
@@ -6813,7 +6813,7 @@ def put_label_selector(
 
 matchExpressions is a list of label selector requirements. The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#match_expressions ValidatingAdmissionPolicyV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#match_expressions ValidatingAdmissionPolicyV1#match_expressions}
 
 ---
 
@@ -6825,7 +6825,7 @@ matchLabels is a map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#match_labels ValidatingAdmissionPolicyV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#match_labels ValidatingAdmissionPolicyV1#match_labels}
 
 ---
 
@@ -7169,7 +7169,7 @@ def put_namespace_selector(
 
 matchExpressions is a list of label selector requirements. The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#match_expressions ValidatingAdmissionPolicyV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#match_expressions ValidatingAdmissionPolicyV1#match_expressions}
 
 ---
 
@@ -7181,7 +7181,7 @@ matchLabels is a map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#match_labels ValidatingAdmissionPolicyV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#match_labels ValidatingAdmissionPolicyV1#match_labels}
 
 ---
 
@@ -7199,7 +7199,7 @@ def put_object_selector(
 
 A label query over a set of resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#label_selector ValidatingAdmissionPolicyV1#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#label_selector ValidatingAdmissionPolicyV1#label_selector}
 
 ---
 
@@ -8297,7 +8297,7 @@ def put_match_constraints(
 
 ExcludeResourceRules describes what operations on what resources/subresources the ValidatingAdmissionPolicy should not care about.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#exclude_resource_rules ValidatingAdmissionPolicyV1#exclude_resource_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#exclude_resource_rules ValidatingAdmissionPolicyV1#exclude_resource_rules}
 
 ---
 
@@ -8307,7 +8307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 matchPolicy defines how the MatchResources list is used to match incoming requests. Allowed values are Exact or Equivalent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#match_policy ValidatingAdmissionPolicyV1#match_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#match_policy ValidatingAdmissionPolicyV1#match_policy}
 
 ---
 
@@ -8317,7 +8317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 NamespaceSelector decides whether to run the admission control policy on an object based on whether the namespace for that object matches the selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#namespace_selector ValidatingAdmissionPolicyV1#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#namespace_selector ValidatingAdmissionPolicyV1#namespace_selector}
 
 ---
 
@@ -8327,7 +8327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ObjectSelector decides whether to run the validation based on if the object has matching labels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#object_selector ValidatingAdmissionPolicyV1#object_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#object_selector ValidatingAdmissionPolicyV1#object_selector}
 
 ---
 
@@ -8337,7 +8337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ResourceRules describes what operations on what resources/subresources the ValidatingAdmissionPolicy matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#resource_rules ValidatingAdmissionPolicyV1#resource_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#resource_rules ValidatingAdmissionPolicyV1#resource_rules}
 
 ---
 
@@ -8356,7 +8356,7 @@ def put_param_kind(
 
 APIVersion is the API group version the resources belong to. In format of "group/version".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#api_version ValidatingAdmissionPolicyV1#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#api_version ValidatingAdmissionPolicyV1#api_version}
 
 ---
 
@@ -8366,7 +8366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Kind is the API kind the resources belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/validating_admission_policy_v1#kind ValidatingAdmissionPolicyV1#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/validating_admission_policy_v1#kind ValidatingAdmissionPolicyV1#kind}
 
 ---
 

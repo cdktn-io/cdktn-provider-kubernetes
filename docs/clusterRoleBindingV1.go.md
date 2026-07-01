@@ -4,7 +4,7 @@
 
 ### ClusterRoleBindingV1 <a name="ClusterRoleBindingV1" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1 kubernetes_cluster_role_binding_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1 kubernetes_cluster_role_binding_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.Initializer"></a>
 
@@ -535,7 +535,7 @@ The construct id used in the generated config for the ClusterRoleBindingV1 to im
 
 The id of the existing ClusterRoleBindingV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,7 +854,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/clusterr
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.roleRef">RoleRef</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a></code> | role_ref block. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.subject">Subject</a></code> | <code>interface{}</code> | subject block. |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#id ClusterRoleBindingV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#id ClusterRoleBindingV1#id}. |
 
 ---
 
@@ -938,7 +938,7 @@ Metadata ClusterRoleBindingV1Metadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#metadata ClusterRoleBindingV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#metadata ClusterRoleBindingV1#metadata}
 
 ---
 
@@ -952,7 +952,7 @@ RoleRef ClusterRoleBindingV1RoleRef
 
 role_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#role_ref ClusterRoleBindingV1#role_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#role_ref ClusterRoleBindingV1#role_ref}
 
 ---
 
@@ -966,7 +966,7 @@ Subject interface{}
 
 subject block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#subject ClusterRoleBindingV1#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#subject ClusterRoleBindingV1#subject}
 
 ---
 
@@ -978,7 +978,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#id ClusterRoleBindingV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#id ClusterRoleBindingV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1023,7 +1023,7 @@ An unstructured key value map stored with the clusterRoleBinding that may be use
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#annotations ClusterRoleBindingV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#annotations ClusterRoleBindingV1#annotations}
 
 ---
 
@@ -1039,7 +1039,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#generate_name ClusterRoleBindingV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#generate_name ClusterRoleBindingV1#generate_name}
 
 ---
 
@@ -1055,7 +1055,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#labels ClusterRoleBindingV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#labels ClusterRoleBindingV1#labels}
 
 ---
 
@@ -1069,7 +1069,7 @@ Name *string
 
 Name of the clusterRoleBinding, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#name ClusterRoleBindingV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#name ClusterRoleBindingV1#name}
 
 ---
 
@@ -1107,7 +1107,7 @@ ApiGroup *string
 
 The API group of the user. The only value possible at the moment is `rbac.authorization.k8s.io`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#api_group ClusterRoleBindingV1#api_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#api_group ClusterRoleBindingV1#api_group}
 
 ---
 
@@ -1121,7 +1121,7 @@ Kind *string
 
 The kind of resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#kind ClusterRoleBindingV1#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#kind ClusterRoleBindingV1#kind}
 
 ---
 
@@ -1135,7 +1135,7 @@ Name *string
 
 The name of the User to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#name ClusterRoleBindingV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#name ClusterRoleBindingV1#name}
 
 ---
 
@@ -1175,7 +1175,7 @@ Kind *string
 
 The kind of resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#kind ClusterRoleBindingV1#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#kind ClusterRoleBindingV1#kind}
 
 ---
 
@@ -1189,7 +1189,7 @@ Name *string
 
 The name of the resource to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#name ClusterRoleBindingV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#name ClusterRoleBindingV1#name}
 
 ---
 
@@ -1203,7 +1203,7 @@ ApiGroup *string
 
 The API group of the subject resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#api_group ClusterRoleBindingV1#api_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#api_group ClusterRoleBindingV1#api_group}
 
 ---
 
@@ -1217,7 +1217,7 @@ Namespace *string
 
 The Namespace of the subject resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_binding_v1#namespace ClusterRoleBindingV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_binding_v1#namespace ClusterRoleBindingV1#namespace}
 
 ---
 

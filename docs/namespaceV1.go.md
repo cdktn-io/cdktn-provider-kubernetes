@@ -4,7 +4,7 @@
 
 ### NamespaceV1 <a name="NamespaceV1" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/namespace_v1 kubernetes_namespace_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1 kubernetes_namespace_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the NamespaceV1 to import.
 
 The id of the existing NamespaceV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/namespace_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/namespac
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/namespace_v1#id NamespaceV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#id NamespaceV1#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Timeouts">NamespaceV1Timeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.waitForDefaultServiceAccount">WaitForDefaultServiceAccount</a></code> | <code>interface{}</code> | Terraform will wait for the default service account to be created. |
 
@@ -939,7 +939,7 @@ Metadata NamespaceV1Metadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/namespace_v1#metadata NamespaceV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#metadata NamespaceV1#metadata}
 
 ---
 
@@ -951,7 +951,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/namespace_v1#id NamespaceV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#id NamespaceV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -968,7 +968,7 @@ Timeouts NamespaceV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/namespace_v1#timeouts NamespaceV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#timeouts NamespaceV1#timeouts}
 
 ---
 
@@ -982,7 +982,7 @@ WaitForDefaultServiceAccount interface{}
 
 Terraform will wait for the default service account to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/namespace_v1#wait_for_default_service_account NamespaceV1#wait_for_default_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#wait_for_default_service_account NamespaceV1#wait_for_default_service_account}
 
 ---
 
@@ -1024,7 +1024,7 @@ An unstructured key value map stored with the namespace that may be used to stor
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/namespace_v1#annotations NamespaceV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#annotations NamespaceV1#annotations}
 
 ---
 
@@ -1040,7 +1040,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/namespace_v1#generate_name NamespaceV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#generate_name NamespaceV1#generate_name}
 
 ---
 
@@ -1056,7 +1056,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/namespace_v1#labels NamespaceV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#labels NamespaceV1#labels}
 
 ---
 
@@ -1070,7 +1070,7 @@ Name *string
 
 Name of the namespace, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/namespace_v1#name NamespaceV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#name NamespaceV1#name}
 
 ---
 
@@ -1090,7 +1090,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/namespac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/namespace_v1#delete NamespaceV1#delete}. |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#delete NamespaceV1#delete}. |
 
 ---
 
@@ -1102,7 +1102,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/namespace_v1#delete NamespaceV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#delete NamespaceV1#delete}.
 
 ---
 
