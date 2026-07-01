@@ -4,7 +4,7 @@
 
 ### NetworkPolicy <a name="NetworkPolicy" id="@cdktn/provider-kubernetes.networkPolicy.NetworkPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy kubernetes_network_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy kubernetes_network_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.networkPolicy.NetworkPolicy.Initializer"></a>
 
@@ -38,7 +38,7 @@ NetworkPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-kubernetes.networkPolicy.NetworkPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.networkPolicy.NetworkPolicy.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.networkPolicy.NetworkPolicyMetadata">NetworkPolicyMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.networkPolicy.NetworkPolicy.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.networkPolicy.NetworkPolicySpec">NetworkPolicySpec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.networkPolicy.NetworkPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#id NetworkPolicy#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.networkPolicy.NetworkPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#id NetworkPolicy#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#metadata NetworkPolicy#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#metadata NetworkPolicy#metadata}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#spec NetworkPolicy#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#spec NetworkPolicy#spec}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#id NetworkPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#id NetworkPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -611,7 +611,7 @@ The construct id used in the generated config for the NetworkPolicy to import.
 
 The id of the existing NetworkPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,7 +906,7 @@ NetworkPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-kubernetes.networkPolicy.NetworkPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.networkPolicy.NetworkPolicyConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.networkPolicy.NetworkPolicyMetadata">NetworkPolicyMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.networkPolicy.NetworkPolicyConfig.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-kubernetes.networkPolicy.NetworkPolicySpec">NetworkPolicySpec</a></code> | spec block. |
-| <code><a href="#@cdktn/provider-kubernetes.networkPolicy.NetworkPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#id NetworkPolicy#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.networkPolicy.NetworkPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#id NetworkPolicy#id}. |
 
 ---
 
@@ -990,7 +990,7 @@ public NetworkPolicyMetadata getMetadata();
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#metadata NetworkPolicy#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#metadata NetworkPolicy#metadata}
 
 ---
 
@@ -1004,7 +1004,7 @@ public NetworkPolicySpec getSpec();
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#spec NetworkPolicy#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#spec NetworkPolicy#spec}
 
 ---
 
@@ -1016,7 +1016,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#id NetworkPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#id NetworkPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1063,7 +1063,7 @@ An unstructured key value map stored with the network policy that may be used to
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#annotations NetworkPolicy#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#annotations NetworkPolicy#annotations}
 
 ---
 
@@ -1079,7 +1079,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#generate_name NetworkPolicy#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#generate_name NetworkPolicy#generate_name}
 
 ---
 
@@ -1095,7 +1095,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#labels NetworkPolicy#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#labels NetworkPolicy#labels}
 
 ---
 
@@ -1109,7 +1109,7 @@ public java.lang.String getName();
 
 Name of the network policy, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#name NetworkPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#name NetworkPolicy#name}
 
 ---
 
@@ -1123,7 +1123,7 @@ public java.lang.String getNamespace();
 
 Namespace defines the space within which name of the network policy must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#namespace NetworkPolicy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#namespace NetworkPolicy#namespace}
 
 ---
 
@@ -1163,7 +1163,7 @@ public NetworkPolicySpecPodSelector getPodSelector();
 
 pod_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#pod_selector NetworkPolicy#pod_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#pod_selector NetworkPolicy#pod_selector}
 
 ---
 
@@ -1179,7 +1179,7 @@ policyTypes is a list of rule types that the NetworkPolicy relates to.
 
 Valid options are ["Ingress"], ["Egress"], or ["Ingress", "Egress"]. If this field is not specified, it will default based on the existence of ingress or egress rules; policies that contain an egress section are assumed to affect egress, and all policies (whether or not they contain an ingress section) are assumed to affect ingress. If you want to write an egress-only policy, you must explicitly specify policyTypes [ "Egress" ]. Likewise, if you want to write a policy that specifies that no egress is allowed, you must specify a policyTypes value that include "Egress" (since such a policy would not include an egress section and would otherwise default to just [ "Ingress" ]). This field is beta-level in 1.8
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#policy_types NetworkPolicy#policy_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#policy_types NetworkPolicy#policy_types}
 
 ---
 
@@ -1193,7 +1193,7 @@ public IResolvable|java.util.List<NetworkPolicySpecEgress> getEgress();
 
 egress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#egress NetworkPolicy#egress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#egress NetworkPolicy#egress}
 
 ---
 
@@ -1207,7 +1207,7 @@ public IResolvable|java.util.List<NetworkPolicySpecIngress> getIngress();
 
 ingress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#ingress NetworkPolicy#ingress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#ingress NetworkPolicy#ingress}
 
 ---
 
@@ -1243,7 +1243,7 @@ public IResolvable|java.util.List<NetworkPolicySpecEgressPorts> getPorts();
 
 ports block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#ports NetworkPolicy#ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#ports NetworkPolicy#ports}
 
 ---
 
@@ -1257,7 +1257,7 @@ public IResolvable|java.util.List<NetworkPolicySpecEgressTo> getTo();
 
 to block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#to NetworkPolicy#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#to NetworkPolicy#to}
 
 ---
 
@@ -1297,7 +1297,7 @@ endPort indicates that the range of ports from port to endPort if set, inclusive
 
 This field cannot be defined if the port field is not defined or if the port field is defined as a named (string) port. The endPort must be equal or greater than port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#end_port NetworkPolicy#end_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#end_port NetworkPolicy#end_port}
 
 ---
 
@@ -1313,7 +1313,7 @@ port represents the port on the given protocol.
 
 This can either be a numerical or named port on a pod. If this field is not provided, this matches all port names and numbers. If present, only traffic on the specified protocol AND port will be matched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#port NetworkPolicy#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#port NetworkPolicy#port}
 
 ---
 
@@ -1329,7 +1329,7 @@ protocol represents the protocol (TCP, UDP, or SCTP) which traffic must match.
 
 If not specified, this field defaults to TCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#protocol NetworkPolicy#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#protocol NetworkPolicy#protocol}
 
 ---
 
@@ -1367,7 +1367,7 @@ public NetworkPolicySpecEgressToIpBlock getIpBlock();
 
 ip_block block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#ip_block NetworkPolicy#ip_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#ip_block NetworkPolicy#ip_block}
 
 ---
 
@@ -1381,7 +1381,7 @@ public NetworkPolicySpecEgressToNamespaceSelector getNamespaceSelector();
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#namespace_selector NetworkPolicy#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#namespace_selector NetworkPolicy#namespace_selector}
 
 ---
 
@@ -1395,7 +1395,7 @@ public NetworkPolicySpecEgressToPodSelector getPodSelector();
 
 pod_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#pod_selector NetworkPolicy#pod_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#pod_selector NetworkPolicy#pod_selector}
 
 ---
 
@@ -1431,7 +1431,7 @@ public java.lang.String getCidr();
 
 cidr is a string representing the IPBlock Valid examples are "192.168.1.0/24" or "2001:db8::/64".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#cidr NetworkPolicy#cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#cidr NetworkPolicy#cidr}
 
 ---
 
@@ -1445,7 +1445,7 @@ public java.util.List<java.lang.String> getExcept();
 
 except is a slice of CIDRs that should not be included within an IPBlock Valid examples are "192.168.1.0/24" or "2001:db8::/64" Except values will be rejected if they are outside the cidr range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#except NetworkPolicy#except}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#except NetworkPolicy#except}
 
 ---
 
@@ -1481,7 +1481,7 @@ public IResolvable|java.util.List<NetworkPolicySpecEgressToNamespaceSelectorMatc
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
 
 ---
 
@@ -1497,7 +1497,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#match_labels NetworkPolicy#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#match_labels NetworkPolicy#match_labels}
 
 ---
 
@@ -1535,7 +1535,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#key NetworkPolicy#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#key NetworkPolicy#key}
 
 ---
 
@@ -1549,7 +1549,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#operator NetworkPolicy#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#operator NetworkPolicy#operator}
 
 ---
 
@@ -1565,7 +1565,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#values NetworkPolicy#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#values NetworkPolicy#values}
 
 ---
 
@@ -1601,7 +1601,7 @@ public IResolvable|java.util.List<NetworkPolicySpecEgressToPodSelectorMatchExpre
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
 
 ---
 
@@ -1617,7 +1617,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#match_labels NetworkPolicy#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#match_labels NetworkPolicy#match_labels}
 
 ---
 
@@ -1655,7 +1655,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#key NetworkPolicy#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#key NetworkPolicy#key}
 
 ---
 
@@ -1669,7 +1669,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#operator NetworkPolicy#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#operator NetworkPolicy#operator}
 
 ---
 
@@ -1685,7 +1685,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#values NetworkPolicy#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#values NetworkPolicy#values}
 
 ---
 
@@ -1721,7 +1721,7 @@ public IResolvable|java.util.List<NetworkPolicySpecIngressFrom> getFrom();
 
 from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#from NetworkPolicy#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#from NetworkPolicy#from}
 
 ---
 
@@ -1735,7 +1735,7 @@ public IResolvable|java.util.List<NetworkPolicySpecIngressPorts> getPorts();
 
 ports block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#ports NetworkPolicy#ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#ports NetworkPolicy#ports}
 
 ---
 
@@ -1773,7 +1773,7 @@ public NetworkPolicySpecIngressFromIpBlock getIpBlock();
 
 ip_block block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#ip_block NetworkPolicy#ip_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#ip_block NetworkPolicy#ip_block}
 
 ---
 
@@ -1787,7 +1787,7 @@ public NetworkPolicySpecIngressFromNamespaceSelector getNamespaceSelector();
 
 namespace_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#namespace_selector NetworkPolicy#namespace_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#namespace_selector NetworkPolicy#namespace_selector}
 
 ---
 
@@ -1801,7 +1801,7 @@ public NetworkPolicySpecIngressFromPodSelector getPodSelector();
 
 pod_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#pod_selector NetworkPolicy#pod_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#pod_selector NetworkPolicy#pod_selector}
 
 ---
 
@@ -1837,7 +1837,7 @@ public java.lang.String getCidr();
 
 cidr is a string representing the IPBlock Valid examples are "192.168.1.0/24" or "2001:db8::/64".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#cidr NetworkPolicy#cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#cidr NetworkPolicy#cidr}
 
 ---
 
@@ -1851,7 +1851,7 @@ public java.util.List<java.lang.String> getExcept();
 
 except is a slice of CIDRs that should not be included within an IPBlock Valid examples are "192.168.1.0/24" or "2001:db8::/64" Except values will be rejected if they are outside the cidr range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#except NetworkPolicy#except}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#except NetworkPolicy#except}
 
 ---
 
@@ -1887,7 +1887,7 @@ public IResolvable|java.util.List<NetworkPolicySpecIngressFromNamespaceSelectorM
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
 
 ---
 
@@ -1903,7 +1903,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#match_labels NetworkPolicy#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#match_labels NetworkPolicy#match_labels}
 
 ---
 
@@ -1941,7 +1941,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#key NetworkPolicy#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#key NetworkPolicy#key}
 
 ---
 
@@ -1955,7 +1955,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#operator NetworkPolicy#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#operator NetworkPolicy#operator}
 
 ---
 
@@ -1971,7 +1971,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#values NetworkPolicy#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#values NetworkPolicy#values}
 
 ---
 
@@ -2007,7 +2007,7 @@ public IResolvable|java.util.List<NetworkPolicySpecIngressFromPodSelectorMatchEx
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
 
 ---
 
@@ -2023,7 +2023,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#match_labels NetworkPolicy#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#match_labels NetworkPolicy#match_labels}
 
 ---
 
@@ -2061,7 +2061,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#key NetworkPolicy#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#key NetworkPolicy#key}
 
 ---
 
@@ -2075,7 +2075,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#operator NetworkPolicy#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#operator NetworkPolicy#operator}
 
 ---
 
@@ -2091,7 +2091,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#values NetworkPolicy#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#values NetworkPolicy#values}
 
 ---
 
@@ -2131,7 +2131,7 @@ endPort indicates that the range of ports from port to endPort if set, inclusive
 
 This field cannot be defined if the port field is not defined or if the port field is defined as a named (string) port. The endPort must be equal or greater than port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#end_port NetworkPolicy#end_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#end_port NetworkPolicy#end_port}
 
 ---
 
@@ -2147,7 +2147,7 @@ port represents the port on the given protocol.
 
 This can either be a numerical or named port on a pod. If this field is not provided, this matches all port names and numbers. If present, only traffic on the specified protocol AND port will be matched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#port NetworkPolicy#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#port NetworkPolicy#port}
 
 ---
 
@@ -2163,7 +2163,7 @@ protocol represents the protocol (TCP, UDP, or SCTP) which traffic must match.
 
 If not specified, this field defaults to TCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#protocol NetworkPolicy#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#protocol NetworkPolicy#protocol}
 
 ---
 
@@ -2199,7 +2199,7 @@ public IResolvable|java.util.List<NetworkPolicySpecPodSelectorMatchExpressions> 
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#match_expressions NetworkPolicy#match_expressions}
 
 ---
 
@@ -2215,7 +2215,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#match_labels NetworkPolicy#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#match_labels NetworkPolicy#match_labels}
 
 ---
 
@@ -2253,7 +2253,7 @@ public java.lang.String getKey();
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#key NetworkPolicy#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#key NetworkPolicy#key}
 
 ---
 
@@ -2267,7 +2267,7 @@ public java.lang.String getOperator();
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#operator NetworkPolicy#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#operator NetworkPolicy#operator}
 
 ---
 
@@ -2283,7 +2283,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/network_policy#values NetworkPolicy#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/network_policy#values NetworkPolicy#values}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ClusterRoleV1 <a name="ClusterRoleV1" id="@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1 kubernetes_cluster_role_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1 kubernetes_cluster_role_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1.Initializer"></a>
 
@@ -41,7 +41,7 @@ clusterRoleV1.ClusterRoleV1(
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1Metadata">ClusterRoleV1Metadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1.Initializer.parameter.aggregationRule">aggregation_rule</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1AggregationRule">ClusterRoleV1AggregationRule</a></code> | aggregation_rule block. |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#id ClusterRoleV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#id ClusterRoleV1#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1.Initializer.parameter.rule">rule</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1Rule">ClusterRoleV1Rule</a>]</code> | rule block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#metadata ClusterRoleV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#metadata ClusterRoleV1#metadata}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 aggregation_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#aggregation_rule ClusterRoleV1#aggregation_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#aggregation_rule ClusterRoleV1#aggregation_rule}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#id ClusterRoleV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#id ClusterRoleV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#rule ClusterRoleV1#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#rule ClusterRoleV1#rule}
 
 ---
 
@@ -546,7 +546,7 @@ def put_aggregation_rule(
 
 cluster_role_selectors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#cluster_role_selectors ClusterRoleV1#cluster_role_selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#cluster_role_selectors ClusterRoleV1#cluster_role_selectors}
 
 ---
 
@@ -569,7 +569,7 @@ An unstructured key value map stored with the clusterRole that may be used to st
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#annotations ClusterRoleV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#annotations ClusterRoleV1#annotations}
 
 ---
 
@@ -581,7 +581,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#generate_name ClusterRoleV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#generate_name ClusterRoleV1#generate_name}
 
 ---
 
@@ -593,7 +593,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#labels ClusterRoleV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#labels ClusterRoleV1#labels}
 
 ---
 
@@ -603,7 +603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the clusterRole, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#name ClusterRoleV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#name ClusterRoleV1#name}
 
 ---
 
@@ -753,7 +753,7 @@ The construct id used in the generated config for the ClusterRoleV1 to import.
 
 The id of the existing ClusterRoleV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1066,7 +1066,7 @@ cluster_role_selectors: IResolvable | typing.List[ClusterRoleV1AggregationRuleCl
 
 cluster_role_selectors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#cluster_role_selectors ClusterRoleV1#cluster_role_selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#cluster_role_selectors ClusterRoleV1#cluster_role_selectors}
 
 ---
 
@@ -1102,7 +1102,7 @@ match_expressions: IResolvable | typing.List[ClusterRoleV1AggregationRuleCluster
 
 match_expressions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#match_expressions ClusterRoleV1#match_expressions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#match_expressions ClusterRoleV1#match_expressions}
 
 ---
 
@@ -1118,7 +1118,7 @@ A map of {key,value} pairs.
 
 A single {key,value} in the matchLabels map is equivalent to an element of `match_expressions`, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#match_labels ClusterRoleV1#match_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#match_labels ClusterRoleV1#match_labels}
 
 ---
 
@@ -1156,7 +1156,7 @@ key: str
 
 The label key that the selector applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#key ClusterRoleV1#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#key ClusterRoleV1#key}
 
 ---
 
@@ -1170,7 +1170,7 @@ operator: str
 
 A key's relationship to a set of values. Valid operators ard `In`, `NotIn`, `Exists` and `DoesNotExist`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#operator ClusterRoleV1#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#operator ClusterRoleV1#operator}
 
 ---
 
@@ -1186,7 +1186,7 @@ An array of string values.
 
 If the operator is `In` or `NotIn`, the values array must be non-empty. If the operator is `Exists` or `DoesNotExist`, the values array must be empty. This array is replaced during a strategic merge patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#values ClusterRoleV1#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#values ClusterRoleV1#values}
 
 ---
 
@@ -1225,7 +1225,7 @@ clusterRoleV1.ClusterRoleV1Config(
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1Config.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1Metadata">ClusterRoleV1Metadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1Config.property.aggregationRule">aggregation_rule</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1AggregationRule">ClusterRoleV1AggregationRule</a></code> | aggregation_rule block. |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#id ClusterRoleV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#id ClusterRoleV1#id}. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1Config.property.rule">rule</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.clusterRoleV1.ClusterRoleV1Rule">ClusterRoleV1Rule</a>]</code> | rule block. |
 
 ---
@@ -1310,7 +1310,7 @@ metadata: ClusterRoleV1Metadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#metadata ClusterRoleV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#metadata ClusterRoleV1#metadata}
 
 ---
 
@@ -1324,7 +1324,7 @@ aggregation_rule: ClusterRoleV1AggregationRule
 
 aggregation_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#aggregation_rule ClusterRoleV1#aggregation_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#aggregation_rule ClusterRoleV1#aggregation_rule}
 
 ---
 
@@ -1336,7 +1336,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#id ClusterRoleV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#id ClusterRoleV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1353,7 +1353,7 @@ rule: IResolvable | typing.List[ClusterRoleV1Rule]
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#rule ClusterRoleV1#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#rule ClusterRoleV1#rule}
 
 ---
 
@@ -1395,7 +1395,7 @@ An unstructured key value map stored with the clusterRole that may be used to st
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#annotations ClusterRoleV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#annotations ClusterRoleV1#annotations}
 
 ---
 
@@ -1411,7 +1411,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#generate_name ClusterRoleV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#generate_name ClusterRoleV1#generate_name}
 
 ---
 
@@ -1427,7 +1427,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#labels ClusterRoleV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#labels ClusterRoleV1#labels}
 
 ---
 
@@ -1441,7 +1441,7 @@ name: str
 
 Name of the clusterRole, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#name ClusterRoleV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#name ClusterRoleV1#name}
 
 ---
 
@@ -1485,7 +1485,7 @@ Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestri
 
 VerbAll represents all kinds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#verbs ClusterRoleV1#verbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#verbs ClusterRoleV1#verbs}
 
 ---
 
@@ -1501,7 +1501,7 @@ APIGroups is the name of the APIGroup that contains the resources.
 
 If multiple API groups are specified, any action requested against one of the enumerated resources in any API group will be allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#api_groups ClusterRoleV1#api_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#api_groups ClusterRoleV1#api_groups}
 
 ---
 
@@ -1517,7 +1517,7 @@ NonResourceURLs is a set of partial urls that a user should have access to.
 
 *s are allowed, but only as the full, final step in the path Since non-resource URLs are not namespaced, this field is only applicable for ClusterRoles referenced from a ClusterRoleBinding. Rules can either apply to API resources (such as "pods" or "secrets") or non-resource URL paths (such as "/api"), but not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#non_resource_urls ClusterRoleV1#non_resource_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#non_resource_urls ClusterRoleV1#non_resource_urls}
 
 ---
 
@@ -1533,7 +1533,7 @@ ResourceNames is an optional white list of names that the rule applies to.
 
 An empty set means that everything is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#resource_names ClusterRoleV1#resource_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#resource_names ClusterRoleV1#resource_names}
 
 ---
 
@@ -1547,7 +1547,7 @@ resources: typing.List[str]
 
 Resources is a list of resources this rule applies to. ResourceAll represents all resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.0/docs/resources/cluster_role_v1#resources ClusterRoleV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/cluster_role_v1#resources ClusterRoleV1#resources}
 
 ---
 
