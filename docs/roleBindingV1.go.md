@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/rolebindingv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/rolebindingv1"
 
 rolebindingv1.NewRoleBindingV1(scope Construct, id *string, config RoleBindingV1Config) RoleBindingV1
 ```
@@ -446,7 +446,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/rolebindingv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/rolebindingv1"
 
 rolebindingv1.RoleBindingV1_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/rolebindingv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/rolebindingv1"
 
 rolebindingv1.RoleBindingV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ rolebindingv1.RoleBindingV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/rolebindingv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/rolebindingv1"
 
 rolebindingv1.RoleBindingV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ rolebindingv1.RoleBindingV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/rolebindingv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/rolebindingv1"
 
 rolebindingv1.RoleBindingV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -823,7 +823,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/rolebindingv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/rolebindingv1"
 
 &rolebindingv1.RoleBindingV1Config {
 	Connection: interface{},
@@ -833,8 +833,8 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/rolebind
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.roleBindingV1.RoleBindingV1Metadata,
-	RoleRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.roleBindingV1.RoleBindingV1RoleRef,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.roleBindingV1.RoleBindingV1Metadata,
+	RoleRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.roleBindingV1.RoleBindingV1RoleRef,
 	Subject: interface{},
 	Id: *string,
 }
@@ -990,7 +990,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/rolebindingv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/rolebindingv1"
 
 &rolebindingv1.RoleBindingV1Metadata {
 	Annotations: *map[string]*string,
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/rolebindingv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/rolebindingv1"
 
 &rolebindingv1.RoleBindingV1RoleRef {
 	ApiGroup: *string,
@@ -1160,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/rolebindingv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/rolebindingv1"
 
 &rolebindingv1.RoleBindingV1Subject {
 	Kind: *string,
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/rolebindingv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/rolebindingv1"
 
 rolebindingv1.NewRoleBindingV1MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleBindingV1MetadataOutputReference
 ```
@@ -1671,7 +1671,7 @@ func InternalValue() RoleBindingV1Metadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/rolebindingv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/rolebindingv1"
 
 rolebindingv1.NewRoleBindingV1RoleRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleBindingV1RoleRefOutputReference
 ```
@@ -1986,7 +1986,7 @@ func InternalValue() RoleBindingV1RoleRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1SubjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/rolebindingv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/rolebindingv1"
 
 rolebindingv1.NewRoleBindingV1SubjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RoleBindingV1SubjectList
 ```
@@ -2146,7 +2146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1SubjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/rolebindingv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/rolebindingv1"
 
 rolebindingv1.NewRoleBindingV1SubjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RoleBindingV1SubjectOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 datakubernetesendpointslicev1.NewDataKubernetesEndpointSliceV1(scope Construct, id *string, config DataKubernetesEndpointSliceV1Config) DataKubernetesEndpointSliceV1
 ```
@@ -318,7 +318,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 datakubernetesendpointslicev1.DataKubernetesEndpointSliceV1_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 datakubernetesendpointslicev1.DataKubernetesEndpointSliceV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datakubernetesendpointslicev1.DataKubernetesEndpointSliceV1_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 datakubernetesendpointslicev1.DataKubernetesEndpointSliceV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datakubernetesendpointslicev1.DataKubernetesEndpointSliceV1_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 datakubernetesendpointslicev1.DataKubernetesEndpointSliceV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -662,7 +662,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 &datakubernetesendpointslicev1.DataKubernetesEndpointSliceV1Config {
 	Connection: interface{},
@@ -672,7 +672,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakube
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1Metadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1Metadata,
 	Id: *string,
 }
 ```
@@ -797,7 +797,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1Endpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 &datakubernetesendpointslicev1.DataKubernetesEndpointSliceV1Endpoint {
 
@@ -810,7 +810,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakube
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1EndpointCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 &datakubernetesendpointslicev1.DataKubernetesEndpointSliceV1EndpointCondition {
 
@@ -823,7 +823,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakube
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1EndpointTargetRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 &datakubernetesendpointslicev1.DataKubernetesEndpointSliceV1EndpointTargetRef {
 
@@ -836,7 +836,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakube
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 &datakubernetesendpointslicev1.DataKubernetesEndpointSliceV1Metadata {
 	Annotations: *map[string]*string,
@@ -940,7 +940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1Port.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 &datakubernetesendpointslicev1.DataKubernetesEndpointSliceV1Port {
 
@@ -955,7 +955,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakube
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1EndpointConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 datakubernetesendpointslicev1.NewDataKubernetesEndpointSliceV1EndpointConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataKubernetesEndpointSliceV1EndpointConditionList
 ```
@@ -1104,7 +1104,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1EndpointConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 datakubernetesendpointslicev1.NewDataKubernetesEndpointSliceV1EndpointConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataKubernetesEndpointSliceV1EndpointConditionOutputReference
 ```
@@ -1404,7 +1404,7 @@ func InternalValue() DataKubernetesEndpointSliceV1EndpointCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1EndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 datakubernetesendpointslicev1.NewDataKubernetesEndpointSliceV1EndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataKubernetesEndpointSliceV1EndpointList
 ```
@@ -1553,7 +1553,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1EndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 datakubernetesendpointslicev1.NewDataKubernetesEndpointSliceV1EndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataKubernetesEndpointSliceV1EndpointOutputReference
 ```
@@ -1886,7 +1886,7 @@ func InternalValue() DataKubernetesEndpointSliceV1Endpoint
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1EndpointTargetRefList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 datakubernetesendpointslicev1.NewDataKubernetesEndpointSliceV1EndpointTargetRefList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataKubernetesEndpointSliceV1EndpointTargetRefList
 ```
@@ -2035,7 +2035,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1EndpointTargetRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 datakubernetesendpointslicev1.NewDataKubernetesEndpointSliceV1EndpointTargetRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataKubernetesEndpointSliceV1EndpointTargetRefOutputReference
 ```
@@ -2357,7 +2357,7 @@ func InternalValue() DataKubernetesEndpointSliceV1EndpointTargetRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 datakubernetesendpointslicev1.NewDataKubernetesEndpointSliceV1MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataKubernetesEndpointSliceV1MetadataOutputReference
 ```
@@ -2784,7 +2784,7 @@ func InternalValue() DataKubernetesEndpointSliceV1Metadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1PortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 datakubernetesendpointslicev1.NewDataKubernetesEndpointSliceV1PortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataKubernetesEndpointSliceV1PortList
 ```
@@ -2933,7 +2933,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesEndpointSliceV1.DataKubernetesEndpointSliceV1PortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v15/datakubernetesendpointslicev1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesendpointslicev1"
 
 datakubernetesendpointslicev1.NewDataKubernetesEndpointSliceV1PortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataKubernetesEndpointSliceV1PortOutputReference
 ```
