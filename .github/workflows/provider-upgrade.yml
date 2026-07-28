@@ -16,7 +16,7 @@ jobs:
     env:
       PROJEN_APP_ID: ${{ secrets.PROJEN_APP_ID }}
       PROJEN_APP_PRIVATE_KEY: ${{ secrets.PROJEN_APP_PRIVATE_KEY }}
-      NODE_OPTIONS: --max-old-space-size=31744
+      NODE_OPTIONS: --max-old-space-size=28672
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
