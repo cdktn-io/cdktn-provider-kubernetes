@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/certificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/certificatesigningrequestv1"
 
 certificatesigningrequestv1.NewCertificateSigningRequestV1(scope Construct, id *string, config CertificateSigningRequestV1Config) CertificateSigningRequestV1
 ```
@@ -460,7 +460,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/certificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/certificatesigningrequestv1"
 
 certificatesigningrequestv1.CertificateSigningRequestV1_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/certificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/certificatesigningrequestv1"
 
 certificatesigningrequestv1.CertificateSigningRequestV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ certificatesigningrequestv1.CertificateSigningRequestV1_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/certificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/certificatesigningrequestv1"
 
 certificatesigningrequestv1.CertificateSigningRequestV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ certificatesigningrequestv1.CertificateSigningRequestV1_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/certificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/certificatesigningrequestv1"
 
 certificatesigningrequestv1.CertificateSigningRequestV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/certificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/certificatesigningrequestv1"
 
 &certificatesigningrequestv1.CertificateSigningRequestV1Config {
 	Connection: interface{},
@@ -880,11 +880,11 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/certific
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.certificateSigningRequestV1.CertificateSigningRequestV1Metadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.certificateSigningRequestV1.CertificateSigningRequestV1Spec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.certificateSigningRequestV1.CertificateSigningRequestV1Metadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.certificateSigningRequestV1.CertificateSigningRequestV1Spec,
 	AutoApprove: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.certificateSigningRequestV1.CertificateSigningRequestV1Timeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.certificateSigningRequestV1.CertificateSigningRequestV1Timeouts,
 }
 ```
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/certificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/certificatesigningrequestv1"
 
 &certificatesigningrequestv1.CertificateSigningRequestV1Metadata {
 	Annotations: *map[string]*string,
@@ -1141,7 +1141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1Spec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/certificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/certificatesigningrequestv1"
 
 &certificatesigningrequestv1.CertificateSigningRequestV1Spec {
 	Request: *string,
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/certificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/certificatesigningrequestv1"
 
 &certificatesigningrequestv1.CertificateSigningRequestV1Timeouts {
 	Create: *string,
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/certificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/certificatesigningrequestv1"
 
 certificatesigningrequestv1.NewCertificateSigningRequestV1MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificateSigningRequestV1MetadataOutputReference
 ```
@@ -1705,7 +1705,7 @@ func InternalValue() CertificateSigningRequestV1Metadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1SpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/certificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/certificatesigningrequestv1"
 
 certificatesigningrequestv1.NewCertificateSigningRequestV1SpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificateSigningRequestV1SpecOutputReference
 ```
@@ -2056,7 +2056,7 @@ func InternalValue() CertificateSigningRequestV1Spec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/certificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/certificatesigningrequestv1"
 
 certificatesigningrequestv1.NewCertificateSigningRequestV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificateSigningRequestV1TimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.Pod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPod(scope Construct, id *string, config PodConfig) Pod
 ```
@@ -460,7 +460,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.pod.Pod.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.Pod_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.pod.Pod.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.Pod_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ pod.Pod_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.pod.Pod.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.Pod_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ pod.Pod_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.pod.Pod.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.Pod_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -859,7 +859,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodConfig {
 	Connection: interface{},
@@ -869,11 +869,11 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodMetadata,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpec,
 	Id: *string,
 	TargetState: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodTimeouts,
 }
 ```
 
@@ -1044,7 +1044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodMetadata {
 	Annotations: *map[string]*string,
@@ -1148,14 +1148,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpec {
 	ActiveDeadlineSeconds: *f64,
-	Affinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecAffinity,
+	Affinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecAffinity,
 	AutomountServiceAccountToken: interface{},
 	Container: interface{},
-	DnsConfig: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecDnsConfig,
+	DnsConfig: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecDnsConfig,
 	DnsPolicy: *string,
 	EnableServiceLinks: interface{},
 	HostAliases: interface{},
@@ -1167,13 +1167,13 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
 	InitContainer: interface{},
 	NodeName: *string,
 	NodeSelector: *map[string]*string,
-	Os: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecOs,
+	Os: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecOs,
 	PriorityClassName: *string,
 	ReadinessGate: interface{},
 	RestartPolicy: *string,
 	RuntimeClassName: *string,
 	SchedulerName: *string,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecSecurityContext,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecSecurityContext,
 	ServiceAccountName: *string,
 	ShareProcessNamespace: interface{},
 	Subdomain: *string,
@@ -1666,12 +1666,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinity {
-	NodeAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecAffinityNodeAffinity,
-	PodAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecAffinityPodAffinity,
-	PodAntiAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecAffinityPodAntiAffinity,
+	NodeAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecAffinityNodeAffinity,
+	PodAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecAffinityPodAffinity,
+	PodAntiAffinity: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecAffinityPodAntiAffinity,
 }
 ```
 
@@ -1732,11 +1732,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityNodeAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
-	RequiredDuringSchedulingIgnoredDuringExecution: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution,
+	RequiredDuringSchedulingIgnoredDuringExecution: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution,
 }
 ```
 
@@ -1782,10 +1782,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	Preference: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference,
+	Preference: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference,
 	Weight: *f64,
 }
 ```
@@ -1832,7 +1832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference {
 	MatchExpressions: interface{},
@@ -1882,7 +1882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions {
 	Key: *string,
@@ -1952,7 +1952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields {
 	Key: *string,
@@ -2020,7 +2020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	NodeSelectorTerm: interface{},
@@ -2054,7 +2054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm {
 	MatchExpressions: interface{},
@@ -2104,7 +2104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions {
 	Key: *string,
@@ -2174,7 +2174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFields {
 	Key: *string,
@@ -2242,7 +2242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
@@ -2292,10 +2292,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
+	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
 	Weight: *f64,
 }
 ```
@@ -2342,7 +2342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm {
 	TopologyKey: *string,
@@ -2424,7 +2424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector {
 	MatchExpressions: interface{},
@@ -2476,7 +2476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions {
 	Key: *string,
@@ -2544,7 +2544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector {
 	MatchExpressions: interface{},
@@ -2596,7 +2596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -2664,7 +2664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	TopologyKey: *string,
@@ -2746,7 +2746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector {
 	MatchExpressions: interface{},
@@ -2798,7 +2798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions {
 	Key: *string,
@@ -2866,7 +2866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector {
 	MatchExpressions: interface{},
@@ -2918,7 +2918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -2986,7 +2986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAntiAffinity {
 	PreferredDuringSchedulingIgnoredDuringExecution: interface{},
@@ -3036,10 +3036,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution {
-	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
+	PodAffinityTerm: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm,
 	Weight: *f64,
 }
 ```
@@ -3086,7 +3086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm {
 	TopologyKey: *string,
@@ -3168,7 +3168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector {
 	MatchExpressions: interface{},
@@ -3220,7 +3220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3288,7 +3288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3340,7 +3340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3408,7 +3408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution {
 	TopologyKey: *string,
@@ -3490,7 +3490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector {
 	MatchExpressions: interface{},
@@ -3542,7 +3542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions {
 	Key: *string,
@@ -3610,7 +3610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelector {
 	MatchExpressions: interface{},
@@ -3662,7 +3662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressions {
 	Key: *string,
@@ -3730,7 +3730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainer {
 	Name: *string,
@@ -3740,14 +3740,14 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
 	EnvFrom: interface{},
 	Image: *string,
 	ImagePullPolicy: *string,
-	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerLifecycle,
-	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerLivenessProbe,
+	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerLifecycle,
+	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerLivenessProbe,
 	Port: interface{},
-	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerReadinessProbe,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerResources,
+	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerReadinessProbe,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerResources,
 	RestartPolicy: *string,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerSecurityContext,
-	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerStartupProbe,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerSecurityContext,
+	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerStartupProbe,
 	Stdin: interface{},
 	StdinOnce: interface{},
 	TerminationMessagePath: *string,
@@ -4134,12 +4134,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerEnv {
 	Name: *string,
 	Value: *string,
-	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerEnvValueFrom,
+	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerEnvValueFrom,
 }
 ```
 
@@ -4202,12 +4202,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerEnvFrom {
-	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerEnvFromConfigMapRef,
+	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerEnvFromConfigMapRef,
 	Prefix: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerEnvFromSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerEnvFromSecretRef,
 }
 ```
 
@@ -4268,7 +4268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvFromConfigMapRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerEnvFromConfigMapRef {
 	Name: *string,
@@ -4318,7 +4318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvFromSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerEnvFromSecretRef {
 	Name: *string,
@@ -4368,13 +4368,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvValueFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerEnvValueFrom {
-	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerEnvValueFromConfigMapKeyRef,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerEnvValueFromFieldRef,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerEnvValueFromResourceFieldRef,
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerEnvValueFromSecretKeyRef,
+	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerEnvValueFromConfigMapKeyRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerEnvValueFromFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerEnvValueFromResourceFieldRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerEnvValueFromSecretKeyRef,
 }
 ```
 
@@ -4450,7 +4450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvValueFromConfigMapKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerEnvValueFromConfigMapKeyRef {
 	Key: *string,
@@ -4516,7 +4516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvValueFromFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerEnvValueFromFieldRef {
 	ApiVersion: *string,
@@ -4566,7 +4566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvValueFromResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerEnvValueFromResourceFieldRef {
 	Resource: *string,
@@ -4628,7 +4628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvValueFromSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerEnvValueFromSecretKeyRef {
 	Key: *string,
@@ -4694,7 +4694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLifecycle {
 	PostStart: interface{},
@@ -4744,11 +4744,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePostStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLifecyclePostStart {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerLifecyclePostStartExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerLifecyclePostStartHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerLifecyclePostStartExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerLifecyclePostStartHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -4810,7 +4810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePostStartExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLifecyclePostStartExec {
 	Command: *[]*string,
@@ -4846,7 +4846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePostStartHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLifecyclePostStartHttpGet {
 	Host: *string,
@@ -4946,7 +4946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePostStartHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLifecyclePostStartHttpGetHttpHeader {
 	Name: *string,
@@ -4996,7 +4996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePostStartTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLifecyclePostStartTcpSocket {
 	Port: *string,
@@ -5032,11 +5032,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePreStop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLifecyclePreStop {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerLifecyclePreStopExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerLifecyclePreStopHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerLifecyclePreStopExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerLifecyclePreStopHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -5098,7 +5098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLifecyclePreStopExec {
 	Command: *[]*string,
@@ -5134,7 +5134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLifecyclePreStopHttpGet {
 	Host: *string,
@@ -5234,7 +5234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLifecyclePreStopHttpGetHttpHeader {
 	Name: *string,
@@ -5284,7 +5284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLifecyclePreStopTcpSocket {
 	Port: *string,
@@ -5320,13 +5320,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLivenessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerLivenessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerLivenessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerLivenessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -5482,7 +5482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLivenessProbeExec {
 	Command: *[]*string,
@@ -5518,7 +5518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLivenessProbeGrpc {
 	Port: *f64,
@@ -5568,7 +5568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLivenessProbeHttpGet {
 	Host: *string,
@@ -5668,7 +5668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLivenessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -5718,7 +5718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerLivenessProbeTcpSocket {
 	Port: *string,
@@ -5754,7 +5754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerPort {
 	ContainerPort: *f64,
@@ -5858,13 +5858,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerReadinessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerReadinessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerReadinessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerReadinessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerReadinessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -6020,7 +6020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerReadinessProbeExec {
 	Command: *[]*string,
@@ -6056,7 +6056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerReadinessProbeGrpc {
 	Port: *f64,
@@ -6106,7 +6106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerReadinessProbeHttpGet {
 	Host: *string,
@@ -6206,7 +6206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerReadinessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -6256,7 +6256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerReadinessProbeTcpSocket {
 	Port: *string,
@@ -6292,7 +6292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerResources {
 	Limits: *map[string]*string,
@@ -6344,18 +6344,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerSecurityContext {
 	AllowPrivilegeEscalation: interface{},
-	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerSecurityContextCapabilities,
+	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerSecurityContextCapabilities,
 	Privileged: interface{},
 	ReadOnlyRootFilesystem: interface{},
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerSecurityContextSeLinuxOptions,
 }
 ```
 
@@ -6516,7 +6516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerSecurityContextCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerSecurityContextCapabilities {
 	Add: *[]*string,
@@ -6566,7 +6566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -6618,7 +6618,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -6700,13 +6700,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerStartupProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerStartupProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerStartupProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecContainerStartupProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecContainerStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -6862,7 +6862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerStartupProbeExec {
 	Command: *[]*string,
@@ -6898,7 +6898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerStartupProbeGrpc {
 	Port: *f64,
@@ -6948,7 +6948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerStartupProbeHttpGet {
 	Host: *string,
@@ -7048,7 +7048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerStartupProbeHttpGetHttpHeader {
 	Name: *string,
@@ -7098,7 +7098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerStartupProbeTcpSocket {
 	Port: *string,
@@ -7134,7 +7134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerVolumeDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerVolumeDevice {
 	DevicePath: *string,
@@ -7184,7 +7184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecContainerVolumeMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecContainerVolumeMount {
 	MountPath: *string,
@@ -7300,7 +7300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecDnsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecDnsConfig {
 	Nameservers: *[]*string,
@@ -7370,7 +7370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecDnsConfigOption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecDnsConfigOption {
 	Name: *string,
@@ -7420,7 +7420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecHostAliases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecHostAliases {
 	Hostnames: *[]*string,
@@ -7470,7 +7470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecImagePullSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecImagePullSecrets {
 	Name: *string,
@@ -7504,7 +7504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainer {
 	Name: *string,
@@ -7514,14 +7514,14 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
 	EnvFrom: interface{},
 	Image: *string,
 	ImagePullPolicy: *string,
-	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerLifecycle,
-	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerLivenessProbe,
+	Lifecycle: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerLifecycle,
+	LivenessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerLivenessProbe,
 	Port: interface{},
-	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerReadinessProbe,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerResources,
+	ReadinessProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerReadinessProbe,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerResources,
 	RestartPolicy: *string,
-	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerSecurityContext,
-	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerStartupProbe,
+	SecurityContext: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerSecurityContext,
+	StartupProbe: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerStartupProbe,
 	Stdin: interface{},
 	StdinOnce: interface{},
 	TerminationMessagePath: *string,
@@ -7908,12 +7908,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerEnv {
 	Name: *string,
 	Value: *string,
-	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerEnvValueFrom,
+	ValueFrom: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerEnvValueFrom,
 }
 ```
 
@@ -7976,12 +7976,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerEnvFrom {
-	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerEnvFromConfigMapRef,
+	ConfigMapRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerEnvFromConfigMapRef,
 	Prefix: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerEnvFromSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerEnvFromSecretRef,
 }
 ```
 
@@ -8042,7 +8042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvFromConfigMapRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerEnvFromConfigMapRef {
 	Name: *string,
@@ -8092,7 +8092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvFromSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerEnvFromSecretRef {
 	Name: *string,
@@ -8142,13 +8142,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvValueFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerEnvValueFrom {
-	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerEnvValueFromConfigMapKeyRef,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerEnvValueFromFieldRef,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerEnvValueFromResourceFieldRef,
-	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerEnvValueFromSecretKeyRef,
+	ConfigMapKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerEnvValueFromConfigMapKeyRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerEnvValueFromFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerEnvValueFromResourceFieldRef,
+	SecretKeyRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerEnvValueFromSecretKeyRef,
 }
 ```
 
@@ -8224,7 +8224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvValueFromConfigMapKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerEnvValueFromConfigMapKeyRef {
 	Key: *string,
@@ -8290,7 +8290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvValueFromFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerEnvValueFromFieldRef {
 	ApiVersion: *string,
@@ -8340,7 +8340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvValueFromResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerEnvValueFromResourceFieldRef {
 	Resource: *string,
@@ -8402,7 +8402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvValueFromSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerEnvValueFromSecretKeyRef {
 	Key: *string,
@@ -8468,7 +8468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLifecycle {
 	PostStart: interface{},
@@ -8518,11 +8518,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePostStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLifecyclePostStart {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerLifecyclePostStartExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerLifecyclePostStartHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerLifecyclePostStartExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerLifecyclePostStartHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -8584,7 +8584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePostStartExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLifecyclePostStartExec {
 	Command: *[]*string,
@@ -8620,7 +8620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePostStartHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLifecyclePostStartHttpGet {
 	Host: *string,
@@ -8720,7 +8720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePostStartHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLifecyclePostStartHttpGetHttpHeader {
 	Name: *string,
@@ -8770,7 +8770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePostStartTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLifecyclePostStartTcpSocket {
 	Port: *string,
@@ -8806,11 +8806,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLifecyclePreStop {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerLifecyclePreStopExec,
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerLifecyclePreStopHttpGet,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerLifecyclePreStopExec,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerLifecyclePreStopHttpGet,
 	TcpSocket: interface{},
 }
 ```
@@ -8872,7 +8872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLifecyclePreStopExec {
 	Command: *[]*string,
@@ -8908,7 +8908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLifecyclePreStopHttpGet {
 	Host: *string,
@@ -9008,7 +9008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLifecyclePreStopHttpGetHttpHeader {
 	Name: *string,
@@ -9058,7 +9058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLifecyclePreStopTcpSocket {
 	Port: *string,
@@ -9094,13 +9094,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLivenessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerLivenessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerLivenessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerLivenessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -9256,7 +9256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLivenessProbeExec {
 	Command: *[]*string,
@@ -9292,7 +9292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLivenessProbeGrpc {
 	Port: *f64,
@@ -9342,7 +9342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLivenessProbeHttpGet {
 	Host: *string,
@@ -9442,7 +9442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLivenessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -9492,7 +9492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerLivenessProbeTcpSocket {
 	Port: *string,
@@ -9528,7 +9528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerPort {
 	ContainerPort: *f64,
@@ -9632,13 +9632,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerReadinessProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerReadinessProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerReadinessProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerReadinessProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerReadinessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -9794,7 +9794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerReadinessProbeExec {
 	Command: *[]*string,
@@ -9830,7 +9830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerReadinessProbeGrpc {
 	Port: *f64,
@@ -9880,7 +9880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerReadinessProbeHttpGet {
 	Host: *string,
@@ -9980,7 +9980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerReadinessProbeHttpGetHttpHeader {
 	Name: *string,
@@ -10030,7 +10030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerReadinessProbeTcpSocket {
 	Port: *string,
@@ -10066,7 +10066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerResources {
 	Limits: *map[string]*string,
@@ -10118,18 +10118,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerSecurityContext {
 	AllowPrivilegeEscalation: interface{},
-	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerSecurityContextCapabilities,
+	Capabilities: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerSecurityContextCapabilities,
 	Privileged: interface{},
 	ReadOnlyRootFilesystem: interface{},
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerSecurityContextSeLinuxOptions,
 }
 ```
 
@@ -10290,7 +10290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerSecurityContextCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerSecurityContextCapabilities {
 	Add: *[]*string,
@@ -10340,7 +10340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -10392,7 +10392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -10474,13 +10474,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerStartupProbe {
-	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerStartupProbeExec,
+	Exec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerStartupProbeExec,
 	FailureThreshold: *f64,
 	Grpc: interface{},
-	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecInitContainerStartupProbeHttpGet,
+	HttpGet: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecInitContainerStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
@@ -10636,7 +10636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerStartupProbeExec {
 	Command: *[]*string,
@@ -10672,7 +10672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerStartupProbeGrpc {
 	Port: *f64,
@@ -10722,7 +10722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerStartupProbeHttpGet {
 	Host: *string,
@@ -10822,7 +10822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbeHttpGetHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerStartupProbeHttpGetHttpHeader {
 	Name: *string,
@@ -10872,7 +10872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerStartupProbeTcpSocket {
 	Port: *string,
@@ -10908,7 +10908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerVolumeDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerVolumeDevice {
 	DevicePath: *string,
@@ -10958,7 +10958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerVolumeMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecInitContainerVolumeMount {
 	MountPath: *string,
@@ -11074,7 +11074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecOs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecOs {
 	Name: *string,
@@ -11108,7 +11108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecReadinessGate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecReadinessGate {
 	ConditionType: *string,
@@ -11142,7 +11142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecSecurityContext {
 	FsGroup: *string,
@@ -11150,11 +11150,11 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
 	RunAsGroup: *string,
 	RunAsNonRoot: interface{},
 	RunAsUser: *string,
-	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecSecurityContextSeccompProfile,
-	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecSecurityContextSeLinuxOptions,
+	SeccompProfile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecSecurityContextSeccompProfile,
+	SeLinuxOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecSecurityContextSeLinuxOptions,
 	SupplementalGroups: *[]*f64,
 	Sysctl: interface{},
-	WindowsOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecSecurityContextWindowsOptions,
+	WindowsOptions: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecSecurityContextWindowsOptions,
 }
 ```
 
@@ -11332,7 +11332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecSecurityContextSeccompProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecSecurityContextSeccompProfile {
 	LocalhostProfile: *string,
@@ -11384,7 +11384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecSecurityContextSeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecSecurityContextSeLinuxOptions {
 	Level: *string,
@@ -11466,7 +11466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecSecurityContextSysctl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecSecurityContextSysctl {
 	Name: *string,
@@ -11516,7 +11516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecSecurityContextWindowsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecSecurityContextWindowsOptions {
 	GmsaCredentialSpec: *string,
@@ -11600,7 +11600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecToleration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecToleration {
 	Effect: *string,
@@ -11708,7 +11708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecTopologySpreadConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecTopologySpreadConstraint {
 	LabelSelector: interface{},
@@ -11856,7 +11856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecTopologySpreadConstraintLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecTopologySpreadConstraintLabelSelector {
 	MatchExpressions: interface{},
@@ -11908,7 +11908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions {
 	Key: *string,
@@ -11976,37 +11976,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolume {
-	AwsElasticBlockStore: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeAwsElasticBlockStore,
-	AzureDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeAzureDisk,
-	AzureFile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeAzureFile,
-	CephFs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeCephFs,
-	Cinder: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeCinder,
-	ConfigMap: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeConfigMap,
-	Csi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeCsi,
-	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeDownwardApi,
-	EmptyDir: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeEmptyDir,
-	Ephemeral: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeEphemeral,
-	Fc: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeFc,
-	FlexVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeFlexVolume,
-	Flocker: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeFlocker,
-	GcePersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeGcePersistentDisk,
-	GitRepo: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeGitRepo,
-	Glusterfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeGlusterfs,
-	HostPath: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeHostPath,
-	Iscsi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeIscsi,
-	Local: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeLocal,
+	AwsElasticBlockStore: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeAwsElasticBlockStore,
+	AzureDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeAzureDisk,
+	AzureFile: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeAzureFile,
+	CephFs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeCephFs,
+	Cinder: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeCinder,
+	ConfigMap: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeConfigMap,
+	Csi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeCsi,
+	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeDownwardApi,
+	EmptyDir: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeEmptyDir,
+	Ephemeral: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeEphemeral,
+	Fc: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeFc,
+	FlexVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeFlexVolume,
+	Flocker: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeFlocker,
+	GcePersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeGcePersistentDisk,
+	GitRepo: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeGitRepo,
+	Glusterfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeGlusterfs,
+	HostPath: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeHostPath,
+	Iscsi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeIscsi,
+	Local: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeLocal,
 	Name: *string,
-	Nfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeNfs,
-	PersistentVolumeClaim: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumePersistentVolumeClaim,
-	PhotonPersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumePhotonPersistentDisk,
+	Nfs: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeNfs,
+	PersistentVolumeClaim: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumePersistentVolumeClaim,
+	PhotonPersistentDisk: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumePhotonPersistentDisk,
 	Projected: interface{},
-	Quobyte: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeQuobyte,
-	Rbd: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeRbd,
-	Secret: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeSecret,
-	VsphereVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeVsphereVolume,
+	Quobyte: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeQuobyte,
+	Rbd: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeRbd,
+	Secret: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeSecret,
+	VsphereVolume: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeVsphereVolume,
 }
 ```
 
@@ -12442,7 +12442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeAwsElasticBlockStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeAwsElasticBlockStore {
 	VolumeId: *string,
@@ -12528,7 +12528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeAzureDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeAzureDisk {
 	CachingMode: *string,
@@ -12644,7 +12644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeAzureFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeAzureFile {
 	SecretName: *string,
@@ -12728,14 +12728,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeCephFs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeCephFs {
 	Monitors: *[]*string,
 	Path: *string,
 	ReadOnly: interface{},
 	SecretFile: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeCephFsSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeCephFsSecretRef,
 	User: *string,
 }
 ```
@@ -12842,7 +12842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeCephFsSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeCephFsSecretRef {
 	Name: *string,
@@ -12892,7 +12892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeCinder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeCinder {
 	VolumeId: *string,
@@ -12960,7 +12960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeConfigMap {
 	DefaultMode: *string,
@@ -13044,7 +13044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeConfigMapItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeConfigMapItems {
 	Key: *string,
@@ -13114,12 +13114,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeCsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeCsi {
 	Driver: *string,
 	FsType: *string,
-	NodePublishSecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeCsiNodePublishSecretRef,
+	NodePublishSecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeCsiNodePublishSecretRef,
 	ReadOnly: interface{},
 	VolumeAttributes: *map[string]*string,
 }
@@ -13214,7 +13214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeCsiNodePublishSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeCsiNodePublishSecretRef {
 	Name: *string,
@@ -13248,7 +13248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeDownwardApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeDownwardApi {
 	DefaultMode: *string,
@@ -13300,13 +13300,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeDownwardApiItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeDownwardApiItems {
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeDownwardApiItemsFieldRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeDownwardApiItemsFieldRef,
 	Path: *string,
 	Mode: *string,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeDownwardApiItemsResourceFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeDownwardApiItemsResourceFieldRef,
 }
 ```
 
@@ -13386,7 +13386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeDownwardApiItemsFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeDownwardApiItemsFieldRef {
 	ApiVersion: *string,
@@ -13436,7 +13436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeDownwardApiItemsResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeDownwardApiItemsResourceFieldRef {
 	ContainerName: *string,
@@ -13498,7 +13498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEmptyDir.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeEmptyDir {
 	Medium: *string,
@@ -13550,10 +13550,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeral.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeEphemeral {
-	VolumeClaimTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeEphemeralVolumeClaimTemplate,
+	VolumeClaimTemplate: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeEphemeralVolumeClaimTemplate,
 }
 ```
 
@@ -13584,11 +13584,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeralVolumeClaimTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeEphemeralVolumeClaimTemplate {
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpec,
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeEphemeralVolumeClaimTemplateMetadata,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpec,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeEphemeralVolumeClaimTemplateMetadata,
 }
 ```
 
@@ -13634,7 +13634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeralVolumeClaimTemplateMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeEphemeralVolumeClaimTemplateMetadata {
 	Annotations: *map[string]*string,
@@ -13688,12 +13688,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpec {
 	AccessModes: *[]*string,
-	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecResources,
-	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelector,
+	Resources: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecResources,
+	Selector: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelector,
 	StorageClassName: *string,
 	VolumeMode: *string,
 	VolumeName: *string,
@@ -13802,7 +13802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecResources {
 	Limits: *map[string]*string,
@@ -13854,7 +13854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelector {
 	MatchExpressions: interface{},
@@ -13906,7 +13906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressions {
 	Key: *string,
@@ -13974,7 +13974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeFc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeFc {
 	Lun: *f64,
@@ -14058,14 +14058,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeFlexVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeFlexVolume {
 	Driver: *string,
 	FsType: *string,
 	Options: *map[string]*string,
 	ReadOnly: interface{},
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeFlexVolumeSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeFlexVolumeSecretRef,
 }
 ```
 
@@ -14158,7 +14158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeFlexVolumeSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeFlexVolumeSecretRef {
 	Name: *string,
@@ -14208,7 +14208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeFlocker.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeFlocker {
 	DatasetName: *string,
@@ -14258,7 +14258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeGcePersistentDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeGcePersistentDisk {
 	PdName: *string,
@@ -14344,7 +14344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeGitRepo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeGitRepo {
 	Directory: *string,
@@ -14412,7 +14412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeGlusterfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeGlusterfs {
 	EndpointsName: *string,
@@ -14478,7 +14478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeHostPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeHostPath {
 	Path: *string,
@@ -14528,7 +14528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeIscsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeIscsi {
 	Iqn: *string,
@@ -14646,7 +14646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeLocal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeLocal {
 	Path: *string,
@@ -14680,7 +14680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeNfs {
 	Path: *string,
@@ -14746,7 +14746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumePersistentVolumeClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumePersistentVolumeClaim {
 	ClaimName: *string,
@@ -14796,7 +14796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumePhotonPersistentDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumePhotonPersistentDisk {
 	PdId: *string,
@@ -14848,7 +14848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjected.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeProjected {
 	Sources: interface{},
@@ -14900,13 +14900,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeProjectedSources {
 	ConfigMap: interface{},
-	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeProjectedSourcesDownwardApi,
+	DownwardApi: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeProjectedSourcesDownwardApi,
 	Secret: interface{},
-	ServiceAccountToken: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeProjectedSourcesServiceAccountToken,
+	ServiceAccountToken: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeProjectedSourcesServiceAccountToken,
 }
 ```
 
@@ -14982,7 +14982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesConfigMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeProjectedSourcesConfigMap {
 	Items: interface{},
@@ -15048,7 +15048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesConfigMapItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeProjectedSourcesConfigMapItems {
 	Key: *string,
@@ -15118,7 +15118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeProjectedSourcesDownwardApi {
 	Items: interface{},
@@ -15152,13 +15152,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeProjectedSourcesDownwardApiItems {
 	Path: *string,
-	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRef,
+	FieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRef,
 	Mode: *string,
-	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef,
+	ResourceFieldRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef,
 }
 ```
 
@@ -15238,7 +15238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRef {
 	ApiVersion: *string,
@@ -15288,7 +15288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef {
 	ContainerName: *string,
@@ -15350,7 +15350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeProjectedSourcesSecret {
 	Items: interface{},
@@ -15416,7 +15416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeProjectedSourcesSecretItems {
 	Key: *string,
@@ -15486,7 +15486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesServiceAccountToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeProjectedSourcesServiceAccountToken {
 	Path: *string,
@@ -15554,7 +15554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeQuobyte.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeQuobyte {
 	Registry: *string,
@@ -15652,7 +15652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeRbd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeRbd {
 	CephMonitors: *[]*string,
@@ -15662,7 +15662,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
 	RadosUser: *string,
 	RbdPool: *string,
 	ReadOnly: interface{},
-	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.pod.PodSpecVolumeRbdSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.pod.PodSpecVolumeRbdSecretRef,
 }
 ```
 
@@ -15800,7 +15800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeRbdSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeRbdSecretRef {
 	Name: *string,
@@ -15850,7 +15850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeSecret {
 	DefaultMode: *string,
@@ -15934,7 +15934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeSecretItems {
 	Key: *string,
@@ -16004,7 +16004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeVsphereVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodSpecVolumeVsphereVolume {
 	VolumePath: *string,
@@ -16056,7 +16056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.pod.PodTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 &pod.PodTimeouts {
 	Create: *string,
@@ -16104,7 +16104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodMetadataOutputReference
 ```
@@ -16531,7 +16531,7 @@ func InternalValue() PodMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecAffinityNodeAffinityOutputReference
 ```
@@ -16864,7 +16864,7 @@ func InternalValue() PodSpecAffinityNodeAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -17024,7 +17024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -17348,7 +17348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList
 ```
@@ -17508,7 +17508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference
 ```
@@ -17862,7 +17862,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsList
 ```
@@ -18022,7 +18022,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFieldsOutputReference
 ```
@@ -18362,7 +18362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference
 ```
@@ -18695,7 +18695,7 @@ func InternalValue() PodSpecAffinityNodeAffinityPreferredDuringSchedulingIgnored
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList
 ```
@@ -18855,7 +18855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList
 ```
@@ -19015,7 +19015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference
 ```
@@ -19369,7 +19369,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsList
 ```
@@ -19529,7 +19529,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchFieldsOutputReference
 ```
@@ -19869,7 +19869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference
 ```
@@ -20220,7 +20220,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -20511,7 +20511,7 @@ func InternalValue() PodSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredD
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecAffinityOutputReference
 ```
@@ -20886,7 +20886,7 @@ func InternalValue() PodSpecAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecAffinityPodAffinityOutputReference
 ```
@@ -21219,7 +21219,7 @@ func InternalValue() PodSpecAffinityPodAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -21379,7 +21379,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -21703,7 +21703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 ```
@@ -21863,7 +21863,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList
 ```
@@ -22023,7 +22023,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference
 ```
@@ -22377,7 +22377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference
 ```
@@ -22715,7 +22715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 ```
@@ -22875,7 +22875,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList
 ```
@@ -23035,7 +23035,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -23389,7 +23389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference
 ```
@@ -23727,7 +23727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference
 ```
@@ -24111,7 +24111,7 @@ func InternalValue() PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredD
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList
 ```
@@ -24271,7 +24271,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList
 ```
@@ -24431,7 +24431,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference
 ```
@@ -24785,7 +24785,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference
 ```
@@ -25123,7 +25123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -25283,7 +25283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList
 ```
@@ -25443,7 +25443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList
 ```
@@ -25603,7 +25603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -25957,7 +25957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference
 ```
@@ -26295,7 +26295,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -26697,7 +26697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecAffinityPodAntiAffinityOutputReference
 ```
@@ -27030,7 +27030,7 @@ func InternalValue() PodSpecAffinityPodAntiAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -27190,7 +27190,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -27514,7 +27514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList
 ```
@@ -27674,7 +27674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList
 ```
@@ -27834,7 +27834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference
 ```
@@ -28188,7 +28188,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference
 ```
@@ -28526,7 +28526,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorList
 ```
@@ -28686,7 +28686,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsList
 ```
@@ -28846,7 +28846,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -29200,7 +29200,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermNamespaceSelectorOutputReference
 ```
@@ -29538,7 +29538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference
 ```
@@ -29922,7 +29922,7 @@ func InternalValue() PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgno
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList
 ```
@@ -30082,7 +30082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList
 ```
@@ -30242,7 +30242,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference
 ```
@@ -30596,7 +30596,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference
 ```
@@ -30934,7 +30934,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList
 ```
@@ -31094,7 +31094,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorList
 ```
@@ -31254,7 +31254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsList
 ```
@@ -31414,7 +31414,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorMatchExpressionsOutputReference
 ```
@@ -31768,7 +31768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionNamespaceSelectorOutputReference
 ```
@@ -32106,7 +32106,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference
 ```
@@ -32508,7 +32508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvFromConfigMapRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerEnvFromConfigMapRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerEnvFromConfigMapRefOutputReference
 ```
@@ -32808,7 +32808,7 @@ func InternalValue() PodSpecContainerEnvFromConfigMapRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerEnvFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerEnvFromList
 ```
@@ -32968,7 +32968,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerEnvFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerEnvFromOutputReference
 ```
@@ -33348,7 +33348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvFromSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerEnvFromSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerEnvFromSecretRefOutputReference
 ```
@@ -33648,7 +33648,7 @@ func InternalValue() PodSpecContainerEnvFromSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerEnvList
 ```
@@ -33808,7 +33808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerEnvOutputReference
 ```
@@ -34168,7 +34168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvValueFromConfigMapKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerEnvValueFromConfigMapKeyRefOutputReference
 ```
@@ -34504,7 +34504,7 @@ func InternalValue() PodSpecContainerEnvValueFromConfigMapKeyRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvValueFromFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerEnvValueFromFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerEnvValueFromFieldRefOutputReference
 ```
@@ -34811,7 +34811,7 @@ func InternalValue() PodSpecContainerEnvValueFromFieldRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvValueFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerEnvValueFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerEnvValueFromOutputReference
 ```
@@ -35228,7 +35228,7 @@ func InternalValue() PodSpecContainerEnvValueFrom
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvValueFromResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerEnvValueFromResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerEnvValueFromResourceFieldRefOutputReference
 ```
@@ -35557,7 +35557,7 @@ func InternalValue() PodSpecContainerEnvValueFromResourceFieldRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerEnvValueFromSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerEnvValueFromSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerEnvValueFromSecretKeyRefOutputReference
 ```
@@ -35893,7 +35893,7 @@ func InternalValue() PodSpecContainerEnvValueFromSecretKeyRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerLifecycleOutputReference
 ```
@@ -36226,7 +36226,7 @@ func InternalValue() PodSpecContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePostStartExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePostStartExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerLifecyclePostStartExecOutputReference
 ```
@@ -36504,7 +36504,7 @@ func InternalValue() PodSpecContainerLifecyclePostStartExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePostStartHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerLifecyclePostStartHttpGetHttpHeaderList
 ```
@@ -36664,7 +36664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 ```
@@ -36989,7 +36989,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePostStartHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePostStartHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerLifecyclePostStartHttpGetOutputReference
 ```
@@ -37396,7 +37396,7 @@ func InternalValue() PodSpecContainerLifecyclePostStartHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePostStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePostStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerLifecyclePostStartList
 ```
@@ -37556,7 +37556,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePostStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePostStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerLifecyclePostStartOutputReference
 ```
@@ -37949,7 +37949,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePostStartTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePostStartTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerLifecyclePostStartTcpSocketList
 ```
@@ -38109,7 +38109,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePostStartTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePostStartTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerLifecyclePostStartTcpSocketOutputReference
 ```
@@ -38398,7 +38398,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePreStopExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerLifecyclePreStopExecOutputReference
 ```
@@ -38676,7 +38676,7 @@ func InternalValue() PodSpecContainerLifecyclePreStopExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerLifecyclePreStopHttpGetHttpHeaderList
 ```
@@ -38836,7 +38836,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 ```
@@ -39161,7 +39161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePreStopHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerLifecyclePreStopHttpGetOutputReference
 ```
@@ -39568,7 +39568,7 @@ func InternalValue() PodSpecContainerLifecyclePreStopHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePreStopList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerLifecyclePreStopList
 ```
@@ -39728,7 +39728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePreStopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerLifecyclePreStopOutputReference
 ```
@@ -40121,7 +40121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePreStopTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerLifecyclePreStopTcpSocketList
 ```
@@ -40281,7 +40281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLifecyclePreStopTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerLifecyclePreStopTcpSocketOutputReference
 ```
@@ -40570,7 +40570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerList
 ```
@@ -40730,7 +40730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerLivenessProbeExecOutputReference
 ```
@@ -41008,7 +41008,7 @@ func InternalValue() PodSpecContainerLivenessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerLivenessProbeGrpcList
 ```
@@ -41168,7 +41168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerLivenessProbeGrpcOutputReference
 ```
@@ -41486,7 +41486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLivenessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerLivenessProbeHttpGetHttpHeaderList
 ```
@@ -41646,7 +41646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -41971,7 +41971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerLivenessProbeHttpGetOutputReference
 ```
@@ -42378,7 +42378,7 @@ func InternalValue() PodSpecContainerLivenessProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerLivenessProbeOutputReference
 ```
@@ -42940,7 +42940,7 @@ func InternalValue() PodSpecContainerLivenessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerLivenessProbeTcpSocketList
 ```
@@ -43100,7 +43100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerLivenessProbeTcpSocketOutputReference
 ```
@@ -43389,7 +43389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerOutputReference
 ```
@@ -44459,7 +44459,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerPortList
 ```
@@ -44619,7 +44619,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerPortOutputReference
 ```
@@ -45024,7 +45024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerReadinessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerReadinessProbeExecOutputReference
 ```
@@ -45302,7 +45302,7 @@ func InternalValue() PodSpecContainerReadinessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerReadinessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerReadinessProbeGrpcList
 ```
@@ -45462,7 +45462,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerReadinessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerReadinessProbeGrpcOutputReference
 ```
@@ -45780,7 +45780,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerReadinessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerReadinessProbeHttpGetHttpHeaderList
 ```
@@ -45940,7 +45940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -46265,7 +46265,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerReadinessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerReadinessProbeHttpGetOutputReference
 ```
@@ -46672,7 +46672,7 @@ func InternalValue() PodSpecContainerReadinessProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerReadinessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerReadinessProbeOutputReference
 ```
@@ -47234,7 +47234,7 @@ func InternalValue() PodSpecContainerReadinessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerReadinessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerReadinessProbeTcpSocketList
 ```
@@ -47394,7 +47394,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerReadinessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerReadinessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerReadinessProbeTcpSocketOutputReference
 ```
@@ -47683,7 +47683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerResourcesOutputReference
 ```
@@ -47990,7 +47990,7 @@ func InternalValue() PodSpecContainerResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerSecurityContextCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerSecurityContextCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerSecurityContextCapabilitiesOutputReference
 ```
@@ -48297,7 +48297,7 @@ func InternalValue() PodSpecContainerSecurityContextCapabilities
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerSecurityContextOutputReference
 ```
@@ -48846,7 +48846,7 @@ func InternalValue() PodSpecContainerSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerSecurityContextSeccompProfileOutputReference
 ```
@@ -49153,7 +49153,7 @@ func InternalValue() PodSpecContainerSecurityContextSeccompProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -49518,7 +49518,7 @@ func InternalValue() PodSpecContainerSecurityContextSeLinuxOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerStartupProbeExecOutputReference
 ```
@@ -49796,7 +49796,7 @@ func InternalValue() PodSpecContainerStartupProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerStartupProbeGrpcList
 ```
@@ -49956,7 +49956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerStartupProbeGrpcOutputReference
 ```
@@ -50274,7 +50274,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerStartupProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerStartupProbeHttpGetHttpHeaderList
 ```
@@ -50434,7 +50434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerStartupProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerStartupProbeHttpGetHttpHeaderOutputReference
 ```
@@ -50759,7 +50759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerStartupProbeHttpGetOutputReference
 ```
@@ -51166,7 +51166,7 @@ func InternalValue() PodSpecContainerStartupProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecContainerStartupProbeOutputReference
 ```
@@ -51728,7 +51728,7 @@ func InternalValue() PodSpecContainerStartupProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerStartupProbeTcpSocketList
 ```
@@ -51888,7 +51888,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerStartupProbeTcpSocketOutputReference
 ```
@@ -52177,7 +52177,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerVolumeDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerVolumeDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerVolumeDeviceList
 ```
@@ -52337,7 +52337,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerVolumeDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerVolumeDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerVolumeDeviceOutputReference
 ```
@@ -52648,7 +52648,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerVolumeMountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerVolumeMountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecContainerVolumeMountList
 ```
@@ -52808,7 +52808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecContainerVolumeMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecContainerVolumeMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecContainerVolumeMountOutputReference
 ```
@@ -53235,7 +53235,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecDnsConfigOptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecDnsConfigOptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecDnsConfigOptionList
 ```
@@ -53395,7 +53395,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecDnsConfigOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecDnsConfigOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecDnsConfigOptionOutputReference
 ```
@@ -53713,7 +53713,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecDnsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecDnsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecDnsConfigOutputReference
 ```
@@ -54062,7 +54062,7 @@ func InternalValue() PodSpecDnsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecHostAliasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecHostAliasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecHostAliasesList
 ```
@@ -54222,7 +54222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecHostAliasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecHostAliasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecHostAliasesOutputReference
 ```
@@ -54533,7 +54533,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecImagePullSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecImagePullSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecImagePullSecretsList
 ```
@@ -54693,7 +54693,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecImagePullSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecImagePullSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecImagePullSecretsOutputReference
 ```
@@ -54982,7 +54982,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvFromConfigMapRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerEnvFromConfigMapRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerEnvFromConfigMapRefOutputReference
 ```
@@ -55282,7 +55282,7 @@ func InternalValue() PodSpecInitContainerEnvFromConfigMapRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerEnvFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerEnvFromList
 ```
@@ -55442,7 +55442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerEnvFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerEnvFromOutputReference
 ```
@@ -55822,7 +55822,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvFromSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerEnvFromSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerEnvFromSecretRefOutputReference
 ```
@@ -56122,7 +56122,7 @@ func InternalValue() PodSpecInitContainerEnvFromSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerEnvList
 ```
@@ -56282,7 +56282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerEnvOutputReference
 ```
@@ -56642,7 +56642,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference
 ```
@@ -56978,7 +56978,7 @@ func InternalValue() PodSpecInitContainerEnvValueFromConfigMapKeyRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvValueFromFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerEnvValueFromFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerEnvValueFromFieldRefOutputReference
 ```
@@ -57285,7 +57285,7 @@ func InternalValue() PodSpecInitContainerEnvValueFromFieldRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvValueFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerEnvValueFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerEnvValueFromOutputReference
 ```
@@ -57702,7 +57702,7 @@ func InternalValue() PodSpecInitContainerEnvValueFrom
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvValueFromResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerEnvValueFromResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerEnvValueFromResourceFieldRefOutputReference
 ```
@@ -58031,7 +58031,7 @@ func InternalValue() PodSpecInitContainerEnvValueFromResourceFieldRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerEnvValueFromSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerEnvValueFromSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerEnvValueFromSecretKeyRefOutputReference
 ```
@@ -58367,7 +58367,7 @@ func InternalValue() PodSpecInitContainerEnvValueFromSecretKeyRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerLifecycleOutputReference
 ```
@@ -58700,7 +58700,7 @@ func InternalValue() PodSpecInitContainerLifecycle
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePostStartExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePostStartExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerLifecyclePostStartExecOutputReference
 ```
@@ -58978,7 +58978,7 @@ func InternalValue() PodSpecInitContainerLifecyclePostStartExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList
 ```
@@ -59138,7 +59138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 ```
@@ -59463,7 +59463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePostStartHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePostStartHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerLifecyclePostStartHttpGetOutputReference
 ```
@@ -59870,7 +59870,7 @@ func InternalValue() PodSpecInitContainerLifecyclePostStartHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePostStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePostStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerLifecyclePostStartList
 ```
@@ -60030,7 +60030,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePostStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePostStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerLifecyclePostStartOutputReference
 ```
@@ -60423,7 +60423,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePostStartTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePostStartTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerLifecyclePostStartTcpSocketList
 ```
@@ -60583,7 +60583,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePostStartTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePostStartTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerLifecyclePostStartTcpSocketOutputReference
 ```
@@ -60872,7 +60872,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePreStopExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerLifecyclePreStopExecOutputReference
 ```
@@ -61150,7 +61150,7 @@ func InternalValue() PodSpecInitContainerLifecyclePreStopExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList
 ```
@@ -61310,7 +61310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference
 ```
@@ -61635,7 +61635,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePreStopHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerLifecyclePreStopHttpGetOutputReference
 ```
@@ -62042,7 +62042,7 @@ func InternalValue() PodSpecInitContainerLifecyclePreStopHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePreStopList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerLifecyclePreStopList
 ```
@@ -62202,7 +62202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePreStopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerLifecyclePreStopOutputReference
 ```
@@ -62595,7 +62595,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePreStopTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerLifecyclePreStopTcpSocketList
 ```
@@ -62755,7 +62755,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLifecyclePreStopTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLifecyclePreStopTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerLifecyclePreStopTcpSocketOutputReference
 ```
@@ -63044,7 +63044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerList
 ```
@@ -63204,7 +63204,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerLivenessProbeExecOutputReference
 ```
@@ -63482,7 +63482,7 @@ func InternalValue() PodSpecInitContainerLivenessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLivenessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerLivenessProbeGrpcList
 ```
@@ -63642,7 +63642,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerLivenessProbeGrpcOutputReference
 ```
@@ -63960,7 +63960,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLivenessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerLivenessProbeHttpGetHttpHeaderList
 ```
@@ -64120,7 +64120,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -64445,7 +64445,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerLivenessProbeHttpGetOutputReference
 ```
@@ -64852,7 +64852,7 @@ func InternalValue() PodSpecInitContainerLivenessProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerLivenessProbeOutputReference
 ```
@@ -65414,7 +65414,7 @@ func InternalValue() PodSpecInitContainerLivenessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLivenessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerLivenessProbeTcpSocketList
 ```
@@ -65574,7 +65574,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerLivenessProbeTcpSocketOutputReference
 ```
@@ -65863,7 +65863,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerOutputReference
 ```
@@ -66933,7 +66933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerPortList
 ```
@@ -67093,7 +67093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerPortOutputReference
 ```
@@ -67498,7 +67498,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerReadinessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerReadinessProbeExecOutputReference
 ```
@@ -67776,7 +67776,7 @@ func InternalValue() PodSpecInitContainerReadinessProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerReadinessProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerReadinessProbeGrpcList
 ```
@@ -67936,7 +67936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerReadinessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerReadinessProbeGrpcOutputReference
 ```
@@ -68254,7 +68254,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerReadinessProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerReadinessProbeHttpGetHttpHeaderList
 ```
@@ -68414,7 +68414,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference
 ```
@@ -68739,7 +68739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerReadinessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerReadinessProbeHttpGetOutputReference
 ```
@@ -69146,7 +69146,7 @@ func InternalValue() PodSpecInitContainerReadinessProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerReadinessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerReadinessProbeOutputReference
 ```
@@ -69708,7 +69708,7 @@ func InternalValue() PodSpecInitContainerReadinessProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerReadinessProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerReadinessProbeTcpSocketList
 ```
@@ -69868,7 +69868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerReadinessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerReadinessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerReadinessProbeTcpSocketOutputReference
 ```
@@ -70157,7 +70157,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerResourcesOutputReference
 ```
@@ -70464,7 +70464,7 @@ func InternalValue() PodSpecInitContainerResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerSecurityContextCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerSecurityContextCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerSecurityContextCapabilitiesOutputReference
 ```
@@ -70771,7 +70771,7 @@ func InternalValue() PodSpecInitContainerSecurityContextCapabilities
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerSecurityContextOutputReference
 ```
@@ -71320,7 +71320,7 @@ func InternalValue() PodSpecInitContainerSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerSecurityContextSeccompProfileOutputReference
 ```
@@ -71627,7 +71627,7 @@ func InternalValue() PodSpecInitContainerSecurityContextSeccompProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -71992,7 +71992,7 @@ func InternalValue() PodSpecInitContainerSecurityContextSeLinuxOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerStartupProbeExecOutputReference
 ```
@@ -72270,7 +72270,7 @@ func InternalValue() PodSpecInitContainerStartupProbeExec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbeGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerStartupProbeGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerStartupProbeGrpcList
 ```
@@ -72430,7 +72430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerStartupProbeGrpcOutputReference
 ```
@@ -72748,7 +72748,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbeHttpGetHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerStartupProbeHttpGetHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerStartupProbeHttpGetHttpHeaderList
 ```
@@ -72908,7 +72908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference
 ```
@@ -73233,7 +73233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerStartupProbeHttpGetOutputReference
 ```
@@ -73640,7 +73640,7 @@ func InternalValue() PodSpecInitContainerStartupProbeHttpGet
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecInitContainerStartupProbeOutputReference
 ```
@@ -74202,7 +74202,7 @@ func InternalValue() PodSpecInitContainerStartupProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbeTcpSocketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerStartupProbeTcpSocketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerStartupProbeTcpSocketList
 ```
@@ -74362,7 +74362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerStartupProbeTcpSocketOutputReference
 ```
@@ -74651,7 +74651,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerVolumeDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerVolumeDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerVolumeDeviceList
 ```
@@ -74811,7 +74811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerVolumeDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerVolumeDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerVolumeDeviceOutputReference
 ```
@@ -75122,7 +75122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerVolumeMountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerVolumeMountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecInitContainerVolumeMountList
 ```
@@ -75282,7 +75282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecInitContainerVolumeMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecInitContainerVolumeMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecInitContainerVolumeMountOutputReference
 ```
@@ -75709,7 +75709,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecOsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecOsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecOsOutputReference
 ```
@@ -75980,7 +75980,7 @@ func InternalValue() PodSpecOs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecOutputReference
 ```
@@ -77255,7 +77255,7 @@ func InternalValue() PodSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecReadinessGateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecReadinessGateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecReadinessGateList
 ```
@@ -77415,7 +77415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecReadinessGateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecReadinessGateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecReadinessGateOutputReference
 ```
@@ -77704,7 +77704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecSecurityContextOutputReference
 ```
@@ -78295,7 +78295,7 @@ func InternalValue() PodSpecSecurityContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecSecurityContextSeccompProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecSecurityContextSeccompProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecSecurityContextSeccompProfileOutputReference
 ```
@@ -78602,7 +78602,7 @@ func InternalValue() PodSpecSecurityContextSeccompProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecSecurityContextSeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecSecurityContextSeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecSecurityContextSeLinuxOptionsOutputReference
 ```
@@ -78967,7 +78967,7 @@ func InternalValue() PodSpecSecurityContextSeLinuxOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecSecurityContextSysctlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecSecurityContextSysctlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecSecurityContextSysctlList
 ```
@@ -79127,7 +79127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecSecurityContextSysctlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecSecurityContextSysctlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecSecurityContextSysctlOutputReference
 ```
@@ -79438,7 +79438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecSecurityContextWindowsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecSecurityContextWindowsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecSecurityContextWindowsOptionsOutputReference
 ```
@@ -79803,7 +79803,7 @@ func InternalValue() PodSpecSecurityContextWindowsOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecTolerationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecTolerationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecTolerationList
 ```
@@ -79963,7 +79963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecTolerationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecTolerationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecTolerationOutputReference
 ```
@@ -80375,7 +80375,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecTopologySpreadConstraintLabelSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecTopologySpreadConstraintLabelSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecTopologySpreadConstraintLabelSelectorList
 ```
@@ -80535,7 +80535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList
 ```
@@ -80695,7 +80695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference
 ```
@@ -81049,7 +81049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecTopologySpreadConstraintLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecTopologySpreadConstraintLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecTopologySpreadConstraintLabelSelectorOutputReference
 ```
@@ -81387,7 +81387,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecTopologySpreadConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecTopologySpreadConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecTopologySpreadConstraintList
 ```
@@ -81547,7 +81547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecTopologySpreadConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecTopologySpreadConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecTopologySpreadConstraintOutputReference
 ```
@@ -82059,7 +82059,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeAwsElasticBlockStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeAwsElasticBlockStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeAwsElasticBlockStoreOutputReference
 ```
@@ -82417,7 +82417,7 @@ func InternalValue() PodSpecVolumeAwsElasticBlockStore
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeAzureDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeAzureDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeAzureDiskOutputReference
 ```
@@ -82819,7 +82819,7 @@ func InternalValue() PodSpecVolumeAzureDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeAzureFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeAzureFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeAzureFileOutputReference
 ```
@@ -83170,7 +83170,7 @@ func InternalValue() PodSpecVolumeAzureFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeCephFsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeCephFsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeCephFsOutputReference
 ```
@@ -83599,7 +83599,7 @@ func InternalValue() PodSpecVolumeCephFs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeCephFsSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeCephFsSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeCephFsSecretRefOutputReference
 ```
@@ -83906,7 +83906,7 @@ func InternalValue() PodSpecVolumeCephFsSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeCinderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeCinderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeCinderOutputReference
 ```
@@ -84235,7 +84235,7 @@ func InternalValue() PodSpecVolumeCinder
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeConfigMapItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeConfigMapItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecVolumeConfigMapItemsList
 ```
@@ -84395,7 +84395,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeConfigMapItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeConfigMapItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecVolumeConfigMapItemsOutputReference
 ```
@@ -84749,7 +84749,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeConfigMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeConfigMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeConfigMapOutputReference
 ```
@@ -85127,7 +85127,7 @@ func InternalValue() PodSpecVolumeConfigMap
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeCsiNodePublishSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeCsiNodePublishSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeCsiNodePublishSecretRefOutputReference
 ```
@@ -85405,7 +85405,7 @@ func InternalValue() PodSpecVolumeCsiNodePublishSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeCsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeCsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeCsiOutputReference
 ```
@@ -85805,7 +85805,7 @@ func InternalValue() PodSpecVolumeCsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeDownwardApiItemsFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeDownwardApiItemsFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeDownwardApiItemsFieldRefOutputReference
 ```
@@ -86112,7 +86112,7 @@ func InternalValue() PodSpecVolumeDownwardApiItemsFieldRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeDownwardApiItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeDownwardApiItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecVolumeDownwardApiItemsList
 ```
@@ -86272,7 +86272,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeDownwardApiItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeDownwardApiItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecVolumeDownwardApiItemsOutputReference
 ```
@@ -86667,7 +86667,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeDownwardApiItemsResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeDownwardApiItemsResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeDownwardApiItemsResourceFieldRefOutputReference
 ```
@@ -86989,7 +86989,7 @@ func InternalValue() PodSpecVolumeDownwardApiItemsResourceFieldRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeDownwardApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeDownwardApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeDownwardApiOutputReference
 ```
@@ -87309,7 +87309,7 @@ func InternalValue() PodSpecVolumeDownwardApi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEmptyDirOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeEmptyDirOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeEmptyDirOutputReference
 ```
@@ -87616,7 +87616,7 @@ func InternalValue() PodSpecVolumeEmptyDir
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeralOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeEphemeralOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeEphemeralOutputReference
 ```
@@ -87900,7 +87900,7 @@ func InternalValue() PodSpecVolumeEphemeral
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeEphemeralVolumeClaimTemplateMetadataOutputReference
 ```
@@ -88207,7 +88207,7 @@ func InternalValue() PodSpecVolumeEphemeralVolumeClaimTemplateMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeralVolumeClaimTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeEphemeralVolumeClaimTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeEphemeralVolumeClaimTemplateOutputReference
 ```
@@ -88533,7 +88533,7 @@ func InternalValue() PodSpecVolumeEphemeralVolumeClaimTemplate
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeEphemeralVolumeClaimTemplateSpecOutputReference
 ```
@@ -88968,7 +88968,7 @@ func InternalValue() PodSpecVolumeEphemeralVolumeClaimTemplateSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeEphemeralVolumeClaimTemplateSpecResourcesOutputReference
 ```
@@ -89275,7 +89275,7 @@ func InternalValue() PodSpecVolumeEphemeralVolumeClaimTemplateSpecResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsList
 ```
@@ -89435,7 +89435,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference
 ```
@@ -89789,7 +89789,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelectorOutputReference
 ```
@@ -90109,7 +90109,7 @@ func InternalValue() PodSpecVolumeEphemeralVolumeClaimTemplateSpecSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeFcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeFcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeFcOutputReference
 ```
@@ -90460,7 +90460,7 @@ func InternalValue() PodSpecVolumeFc
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeFlexVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeFlexVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeFlexVolumeOutputReference
 ```
@@ -90860,7 +90860,7 @@ func InternalValue() PodSpecVolumeFlexVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeFlexVolumeSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeFlexVolumeSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeFlexVolumeSecretRefOutputReference
 ```
@@ -91167,7 +91167,7 @@ func InternalValue() PodSpecVolumeFlexVolumeSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeFlockerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeFlockerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeFlockerOutputReference
 ```
@@ -91474,7 +91474,7 @@ func InternalValue() PodSpecVolumeFlocker
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeGcePersistentDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeGcePersistentDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeGcePersistentDiskOutputReference
 ```
@@ -91832,7 +91832,7 @@ func InternalValue() PodSpecVolumeGcePersistentDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeGitRepoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeGitRepoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeGitRepoOutputReference
 ```
@@ -92168,7 +92168,7 @@ func InternalValue() PodSpecVolumeGitRepo
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeGlusterfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeGlusterfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeGlusterfsOutputReference
 ```
@@ -92490,7 +92490,7 @@ func InternalValue() PodSpecVolumeGlusterfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeHostPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeHostPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeHostPathOutputReference
 ```
@@ -92797,7 +92797,7 @@ func InternalValue() PodSpecVolumeHostPath
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeIscsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeIscsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeIscsiOutputReference
 ```
@@ -93206,7 +93206,7 @@ func InternalValue() PodSpecVolumeIscsi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecVolumeList
 ```
@@ -93366,7 +93366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeLocalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeLocalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeLocalOutputReference
 ```
@@ -93644,7 +93644,7 @@ func InternalValue() PodSpecVolumeLocal
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeNfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeNfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeNfsOutputReference
 ```
@@ -93966,7 +93966,7 @@ func InternalValue() PodSpecVolumeNfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecVolumeOutputReference
 ```
@@ -95396,7 +95396,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumePersistentVolumeClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumePersistentVolumeClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumePersistentVolumeClaimOutputReference
 ```
@@ -95703,7 +95703,7 @@ func InternalValue() PodSpecVolumePersistentVolumeClaim
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumePhotonPersistentDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumePhotonPersistentDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumePhotonPersistentDiskOutputReference
 ```
@@ -96003,7 +96003,7 @@ func InternalValue() PodSpecVolumePhotonPersistentDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecVolumeProjectedList
 ```
@@ -96163,7 +96163,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecVolumeProjectedOutputReference
 ```
@@ -96494,7 +96494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesConfigMapItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesConfigMapItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecVolumeProjectedSourcesConfigMapItemsList
 ```
@@ -96654,7 +96654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesConfigMapItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecVolumeProjectedSourcesConfigMapItemsOutputReference
 ```
@@ -97008,7 +97008,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesConfigMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesConfigMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecVolumeProjectedSourcesConfigMapList
 ```
@@ -97168,7 +97168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesConfigMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesConfigMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecVolumeProjectedSourcesConfigMapOutputReference
 ```
@@ -97535,7 +97535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference
 ```
@@ -97842,7 +97842,7 @@ func InternalValue() PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesDownwardApiItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecVolumeProjectedSourcesDownwardApiItemsList
 ```
@@ -98002,7 +98002,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesDownwardApiItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecVolumeProjectedSourcesDownwardApiItemsOutputReference
 ```
@@ -98404,7 +98404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference
 ```
@@ -98726,7 +98726,7 @@ func InternalValue() PodSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldR
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesDownwardApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeProjectedSourcesDownwardApiOutputReference
 ```
@@ -99017,7 +99017,7 @@ func InternalValue() PodSpecVolumeProjectedSourcesDownwardApi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecVolumeProjectedSourcesList
 ```
@@ -99177,7 +99177,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecVolumeProjectedSourcesOutputReference
 ```
@@ -99612,7 +99612,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecVolumeProjectedSourcesSecretItemsList
 ```
@@ -99772,7 +99772,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecVolumeProjectedSourcesSecretItemsOutputReference
 ```
@@ -100126,7 +100126,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecVolumeProjectedSourcesSecretList
 ```
@@ -100286,7 +100286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecVolumeProjectedSourcesSecretOutputReference
 ```
@@ -100653,7 +100653,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesServiceAccountTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeProjectedSourcesServiceAccountTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeProjectedSourcesServiceAccountTokenOutputReference
 ```
@@ -100982,7 +100982,7 @@ func InternalValue() PodSpecVolumeProjectedSourcesServiceAccountToken
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeQuobyteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeQuobyteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeQuobyteOutputReference
 ```
@@ -101362,7 +101362,7 @@ func InternalValue() PodSpecVolumeQuobyte
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeRbdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeRbdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeRbdOutputReference
 ```
@@ -101842,7 +101842,7 @@ func InternalValue() PodSpecVolumeRbd
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeRbdSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeRbdSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeRbdSecretRefOutputReference
 ```
@@ -102149,7 +102149,7 @@ func InternalValue() PodSpecVolumeRbdSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSpecVolumeSecretItemsList
 ```
@@ -102309,7 +102309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PodSpecVolumeSecretItemsOutputReference
 ```
@@ -102663,7 +102663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeSecretOutputReference
 ```
@@ -103041,7 +103041,7 @@ func InternalValue() PodSpecVolumeSecret
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodSpecVolumeVsphereVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodSpecVolumeVsphereVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodSpecVolumeVsphereVolumeOutputReference
 ```
@@ -103341,7 +103341,7 @@ func InternalValue() PodSpecVolumeVsphereVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.pod.PodTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/pod"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/pod"
 
 pod.NewPodTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PodTimeoutsOutputReference
 ```

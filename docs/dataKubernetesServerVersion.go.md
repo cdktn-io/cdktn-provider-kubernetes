@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesServerVersion.DataKubernetesServerVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesserverversion"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/datakubernetesserverversion"
 
 datakubernetesserverversion.NewDataKubernetesServerVersion(scope Construct, id *string, config DataKubernetesServerVersionConfig) DataKubernetesServerVersion
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.dataKubernetesServerVersion.DataKubernetesServerVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesserverversion"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/datakubernetesserverversion"
 
 datakubernetesserverversion.DataKubernetesServerVersion_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.dataKubernetesServerVersion.DataKubernetesServerVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesserverversion"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/datakubernetesserverversion"
 
 datakubernetesserverversion.DataKubernetesServerVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datakubernetesserverversion.DataKubernetesServerVersion_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-kubernetes.dataKubernetesServerVersion.DataKubernetesServerVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesserverversion"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/datakubernetesserverversion"
 
 datakubernetesserverversion.DataKubernetesServerVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datakubernetesserverversion.DataKubernetesServerVersion_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.dataKubernetesServerVersion.DataKubernetesServerVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesserverversion"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/datakubernetesserverversion"
 
 datakubernetesserverversion.DataKubernetesServerVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.dataKubernetesServerVersion.DataKubernetesServerVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/datakubernetesserverversion"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/datakubernetesserverversion"
 
 &datakubernetesserverversion.DataKubernetesServerVersionConfig {
 	Connection: interface{},

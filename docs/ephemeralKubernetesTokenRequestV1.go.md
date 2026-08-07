@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetestokenrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetestokenrequestv1"
 
 ephemeralkubernetestokenrequestv1.NewEphemeralKubernetesTokenRequestV1(scope Construct, id *string, config EphemeralKubernetesTokenRequestV1Config) EphemeralKubernetesTokenRequestV1
 ```
@@ -342,7 +342,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetestokenrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetestokenrequestv1"
 
 ephemeralkubernetestokenrequestv1.EphemeralKubernetesTokenRequestV1_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetestokenrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetestokenrequestv1"
 
 ephemeralkubernetestokenrequestv1.EphemeralKubernetesTokenRequestV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ ephemeralkubernetestokenrequestv1.EphemeralKubernetesTokenRequestV1_IsTerraformE
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-kubernetes.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetestokenrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetestokenrequestv1"
 
 ephemeralkubernetestokenrequestv1.EphemeralKubernetesTokenRequestV1_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetestokenrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetestokenrequestv1"
 
 &ephemeralkubernetestokenrequestv1.EphemeralKubernetesTokenRequestV1Config {
 	Count: interface{},
@@ -661,9 +661,9 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemera
 	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformEphemeralResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1Metadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1Metadata,
 	ExpirationTimestamp: *string,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1Spec,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1Spec,
 	Token: *string,
 }
 ```
@@ -795,7 +795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetestokenrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetestokenrequestv1"
 
 &ephemeralkubernetestokenrequestv1.EphemeralKubernetesTokenRequestV1Metadata {
 	Name: *string,
@@ -851,11 +851,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1Spec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetestokenrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetestokenrequestv1"
 
 &ephemeralkubernetestokenrequestv1.EphemeralKubernetesTokenRequestV1Spec {
 	Audiences: *[]*string,
-	BoundObjectRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1SpecBoundObjectRef,
+	BoundObjectRef: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1SpecBoundObjectRef,
 	ExpirationSeconds: *f64,
 }
 ```
@@ -921,7 +921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1SpecBoundObjectRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetestokenrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetestokenrequestv1"
 
 &ephemeralkubernetestokenrequestv1.EphemeralKubernetesTokenRequestV1SpecBoundObjectRef {
 	ApiVersion: *string,
@@ -1005,7 +1005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetestokenrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetestokenrequestv1"
 
 ephemeralkubernetestokenrequestv1.NewEphemeralKubernetesTokenRequestV1MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EphemeralKubernetesTokenRequestV1MetadataOutputReference
 ```
@@ -1298,7 +1298,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1SpecBoundObjectRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetestokenrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetestokenrequestv1"
 
 ephemeralkubernetestokenrequestv1.NewEphemeralKubernetesTokenRequestV1SpecBoundObjectRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EphemeralKubernetesTokenRequestV1SpecBoundObjectRefOutputReference
 ```
@@ -1663,7 +1663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.ephemeralKubernetesTokenRequestV1.EphemeralKubernetesTokenRequestV1SpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetestokenrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetestokenrequestv1"
 
 ephemeralkubernetestokenrequestv1.NewEphemeralKubernetesTokenRequestV1SpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EphemeralKubernetesTokenRequestV1SpecOutputReference
 ```

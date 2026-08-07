@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.secretV1.SecretV1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/secretv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/secretv1"
 
 secretv1.NewSecretV1(scope Construct, id *string, config SecretV1Config) SecretV1
 ```
@@ -503,7 +503,7 @@ func ResetWaitForServiceAccountToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.secretV1.SecretV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/secretv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/secretv1"
 
 secretv1.SecretV1_IsConstruct(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.secretV1.SecretV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/secretv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/secretv1"
 
 secretv1.SecretV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ secretv1.SecretV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.secretV1.SecretV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/secretv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/secretv1"
 
 secretv1.SecretV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ secretv1.SecretV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.secretV1.SecretV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/secretv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/secretv1"
 
 secretv1.SecretV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1060,7 +1060,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.secretV1.SecretV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/secretv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/secretv1"
 
 &secretv1.SecretV1Config {
 	Connection: interface{},
@@ -1070,7 +1070,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/secretv1
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.secretV1.SecretV1Metadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.secretV1.SecretV1Metadata,
 	BinaryData: *map[string]*string,
 	BinaryDataWo: *map[string]*string,
 	BinaryDataWoRevision: *f64,
@@ -1079,7 +1079,7 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/secretv1
 	DataWoRevision: *f64,
 	Id: *string,
 	Immutable: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.secretV1.SecretV1Timeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.secretV1.SecretV1Timeouts,
 	Type: *string,
 	WaitForServiceAccountToken: interface{},
 }
@@ -1359,7 +1359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.secretV1.SecretV1Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/secretv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/secretv1"
 
 &secretv1.SecretV1Metadata {
 	Annotations: *map[string]*string,
@@ -1463,7 +1463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.secretV1.SecretV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/secretv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/secretv1"
 
 &secretv1.SecretV1Timeouts {
 	Create: *string,
@@ -1497,7 +1497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/secretv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/secretv1"
 
 secretv1.NewSecretV1MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretV1MetadataOutputReference
 ```
@@ -1924,7 +1924,7 @@ func InternalValue() SecretV1Metadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.secretV1.SecretV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/secretv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/secretv1"
 
 secretv1.NewSecretV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretV1TimeoutsOutputReference
 ```
