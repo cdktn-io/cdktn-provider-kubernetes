@@ -112,5 +112,8 @@ export * as dataKubernetesServiceAccountV1 from './data-kubernetes-service-accou
 export * as dataKubernetesServiceV1 from './data-kubernetes-service-v1/index';
 export * as dataKubernetesStorageClass from './data-kubernetes-storage-class/index';
 export * as dataKubernetesStorageClassV1 from './data-kubernetes-storage-class-v1/index';
+export * as ephemeralKubernetesCertificateSigningRequestV1 from './ephemeral-kubernetes-certificate-signing-request-v1/index';
+export * as ephemeralKubernetesTokenRequestV1 from './ephemeral-kubernetes-token-request-v1/index';
 export * as provider from './provider/index';
+export * as providerFunctions from './provider-functions/index';
 

@@ -509,6 +509,9 @@ export class SecretV1 extends cdktn.TerraformResource {
 
   // binary_data_wo - computed: false, optional: true, required: false
   private _binaryDataWo?: { [key: string]: string }; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get binaryDataWo() {
     return this.getStringMapAttribute('binary_data_wo');
   }
@@ -557,6 +560,9 @@ export class SecretV1 extends cdktn.TerraformResource {
 
   // data_wo - computed: false, optional: true, required: false
   private _dataWo?: { [key: string]: string }; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get dataWo() {
     return this.getStringMapAttribute('data_wo');
   }
@@ -687,10 +693,10 @@ export class SecretV1 extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       binary_data: cdktn.hashMapper(cdktn.stringToTerraform)(this._binaryData),
-      binary_data_wo: cdktn.hashMapper(cdktn.stringToTerraform)(this._binaryDataWo),
+      binary_data_wo: this.markWriteOnlyAttribute(cdktn.hashMapper(cdktn.stringToTerraform)(this._binaryDataWo)),
       binary_data_wo_revision: cdktn.numberToTerraform(this._binaryDataWoRevision),
       data: cdktn.hashMapper(cdktn.stringToTerraform)(this._data),
-      data_wo: cdktn.hashMapper(cdktn.stringToTerraform)(this._dataWo),
+      data_wo: this.markWriteOnlyAttribute(cdktn.hashMapper(cdktn.stringToTerraform)(this._dataWo)),
       data_wo_revision: cdktn.numberToTerraform(this._dataWoRevision),
       id: cdktn.stringToTerraform(this._id),
       immutable: cdktn.booleanToTerraform(this._immutable),
@@ -710,7 +716,7 @@ export class SecretV1 extends cdktn.TerraformResource {
         storageClassType: "stringMap",
       },
       binary_data_wo: {
-        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._binaryDataWo),
+        value: this.markWriteOnlyAttribute(cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._binaryDataWo)),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -728,7 +734,7 @@ export class SecretV1 extends cdktn.TerraformResource {
         storageClassType: "stringMap",
       },
       data_wo: {
-        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._dataWo),
+        value: this.markWriteOnlyAttribute(cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._dataWo)),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

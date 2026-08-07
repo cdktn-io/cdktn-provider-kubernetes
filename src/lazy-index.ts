@@ -112,5 +112,8 @@ Object.defineProperty(exports, 'dataKubernetesServiceAccountV1', { get: function
 Object.defineProperty(exports, 'dataKubernetesServiceV1', { get: function () { return require('./data-kubernetes-service-v1'); } });
 Object.defineProperty(exports, 'dataKubernetesStorageClass', { get: function () { return require('./data-kubernetes-storage-class'); } });
 Object.defineProperty(exports, 'dataKubernetesStorageClassV1', { get: function () { return require('./data-kubernetes-storage-class-v1'); } });
+Object.defineProperty(exports, 'ephemeralKubernetesCertificateSigningRequestV1', { get: function () { return require('./ephemeral-kubernetes-certificate-signing-request-v1'); } });
+Object.defineProperty(exports, 'ephemeralKubernetesTokenRequestV1', { get: function () { return require('./ephemeral-kubernetes-token-request-v1'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
+Object.defineProperty(exports, 'providerFunctions', { get: function () { return require('./provider-functions'); } });
 
