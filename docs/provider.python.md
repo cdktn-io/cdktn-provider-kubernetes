@@ -672,6 +672,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.functions">functions</a></code> | <code>cdktn_provider_kubernetes.providerFunctions.KubernetesProviderFunctions</code> | Provider-defined functions of the kubernetes provider. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clientCertificateInput">client_certificate_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clientKeyInput">client_key_input</a></code> | <code>str</code> | *No description.* |
@@ -803,6 +804,18 @@ alias: str
 ```
 
 - *Type:* str
+
+---
+
+##### `functions`<sup>Required</sup> <a name="functions" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.functions"></a>
+
+```python
+functions: KubernetesProviderFunctions
+```
+
+- *Type:* cdktn_provider_kubernetes.providerFunctions.KubernetesProviderFunctions
+
+Provider-defined functions of the kubernetes provider.
 
 ---
 

@@ -235,6 +235,7 @@ export function kubernetesProviderExperimentsToHclTerraform(struct?: KubernetesP
 }
 
 
+import { KubernetesProviderFunctions } from '../provider-functions/index';
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs kubernetes}
 */
@@ -624,6 +625,21 @@ export class KubernetesProvider extends cdktn.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get experimentsInput() {
     return this._experiments;
+  }
+
+  // ==========================
+  // PROVIDER-DEFINED FUNCTIONS
+  // ==========================
+  private _functions?: KubernetesProviderFunctions;
+
+  /**
+  * Provider-defined functions of the kubernetes provider.
+  */
+  public get functions(): KubernetesProviderFunctions {
+    if (!this._functions) {
+      this._functions = new KubernetesProviderFunctions(this.terraformResourceType);
+    }
+    return this._functions;
   }
 
   // =========

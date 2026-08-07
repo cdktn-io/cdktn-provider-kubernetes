@@ -349,7 +349,7 @@ private void MoveFromId(string Id)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-kubernetes.secret.Secret.moveFromId.parameter.id"></a>
 
@@ -941,7 +941,9 @@ public System.Collections.Generic.IDictionary<string, string> BinaryData { get; 
 
 ---
 
-##### `BinaryDataWo`<sup>Required</sup> <a name="BinaryDataWo" id="@cdktn/provider-kubernetes.secret.Secret.property.binaryDataWo"></a>
+##### ~~`BinaryDataWo`~~<sup>Required</sup> <a name="BinaryDataWo" id="@cdktn/provider-kubernetes.secret.Secret.property.binaryDataWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```csharp
 public System.Collections.Generic.IDictionary<string, string> BinaryDataWo { get; }
@@ -971,7 +973,9 @@ public System.Collections.Generic.IDictionary<string, string> Data { get; }
 
 ---
 
-##### `DataWo`<sup>Required</sup> <a name="DataWo" id="@cdktn/provider-kubernetes.secret.Secret.property.dataWo"></a>
+##### ~~`DataWo`~~<sup>Required</sup> <a name="DataWo" id="@cdktn/provider-kubernetes.secret.Secret.property.dataWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```csharp
 public System.Collections.Generic.IDictionary<string, string> DataWo { get; }
