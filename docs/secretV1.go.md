@@ -349,7 +349,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.secretV1.SecretV1.moveFromId.parameter.id"></a>
 
@@ -941,7 +941,9 @@ func BinaryData() *map[string]*string
 
 ---
 
-##### `BinaryDataWo`<sup>Required</sup> <a name="BinaryDataWo" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.binaryDataWo"></a>
+##### ~~`BinaryDataWo`~~<sup>Required</sup> <a name="BinaryDataWo" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.binaryDataWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```go
 func BinaryDataWo() *map[string]*string
@@ -971,7 +973,9 @@ func Data() *map[string]*string
 
 ---
 
-##### `DataWo`<sup>Required</sup> <a name="DataWo" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.dataWo"></a>
+##### ~~`DataWo`~~<sup>Required</sup> <a name="DataWo" id="@cdktn/provider-kubernetes.secretV1.SecretV1.property.dataWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```go
 func DataWo() *map[string]*string

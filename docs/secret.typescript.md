@@ -349,7 +349,7 @@ public moveFromId(id: string): void
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.secret.Secret.moveFromId.parameter.id"></a>
 
@@ -941,7 +941,9 @@ public readonly binaryData: {[ key: string ]: string};
 
 ---
 
-##### `binaryDataWo`<sup>Required</sup> <a name="binaryDataWo" id="@cdktn/provider-kubernetes.secret.Secret.property.binaryDataWo"></a>
+##### ~~`binaryDataWo`~~<sup>Required</sup> <a name="binaryDataWo" id="@cdktn/provider-kubernetes.secret.Secret.property.binaryDataWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly binaryDataWo: {[ key: string ]: string};
@@ -971,7 +973,9 @@ public readonly data: {[ key: string ]: string};
 
 ---
 
-##### `dataWo`<sup>Required</sup> <a name="dataWo" id="@cdktn/provider-kubernetes.secret.Secret.property.dataWo"></a>
+##### ~~`dataWo`~~<sup>Required</sup> <a name="dataWo" id="@cdktn/provider-kubernetes.secret.Secret.property.dataWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly dataWo: {[ key: string ]: string};

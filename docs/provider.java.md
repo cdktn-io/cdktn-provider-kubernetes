@@ -652,6 +652,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>io.cdktn.cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.alias">alias</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.functions">functions</a></code> | <code>io.cdktn.providers.kubernetes.provider_functions.KubernetesProviderFunctions</code> | Provider-defined functions of the kubernetes provider. |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clientCertificateInput">clientCertificateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.provider.KubernetesProvider.property.clientKeyInput">clientKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -783,6 +784,18 @@ public java.lang.String getAlias();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `functions`<sup>Required</sup> <a name="functions" id="@cdktn/provider-kubernetes.provider.KubernetesProvider.property.functions"></a>
+
+```java
+public KubernetesProviderFunctions getFunctions();
+```
+
+- *Type:* io.cdktn.providers.kubernetes.provider_functions.KubernetesProviderFunctions
+
+Provider-defined functions of the kubernetes provider.
 
 ---
 
