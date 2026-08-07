@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRole.ClusterRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 clusterrole.NewClusterRole(scope Construct, id *string, config ClusterRoleConfig) ClusterRole
 ```
@@ -460,7 +460,7 @@ func ResetRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.clusterRole.ClusterRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 clusterrole.ClusterRole_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.clusterRole.ClusterRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 clusterrole.ClusterRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ clusterrole.ClusterRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-kubernetes.clusterRole.ClusterRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 clusterrole.ClusterRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ clusterrole.ClusterRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-kubernetes.clusterRole.ClusterRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 clusterrole.ClusterRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 &clusterrole.ClusterRoleAggregationRule {
 	ClusterRoleSelectors: interface{},
@@ -871,7 +871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 &clusterrole.ClusterRoleAggregationRuleClusterRoleSelectors {
 	MatchExpressions: interface{},
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 &clusterrole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressions {
 	Key: *string,
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 &clusterrole.ClusterRoleConfig {
 	Connection: interface{},
@@ -1001,8 +1001,8 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterr
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.clusterRole.ClusterRoleMetadata,
-	AggregationRule: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.clusterRole.ClusterRoleAggregationRule,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.clusterRole.ClusterRoleMetadata,
+	AggregationRule: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.clusterRole.ClusterRoleAggregationRule,
 	Id: *string,
 	Rule: interface{},
 }
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 &clusterrole.ClusterRoleMetadata {
 	Annotations: *map[string]*string,
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 &clusterrole.ClusterRoleRule {
 	Verbs: *[]*string,
@@ -1354,7 +1354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 clusterrole.NewClusterRoleAggregationRuleClusterRoleSelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterRoleAggregationRuleClusterRoleSelectorsList
 ```
@@ -1514,7 +1514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 clusterrole.NewClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList
 ```
@@ -1674,7 +1674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 clusterrole.NewClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsOutputReference
 ```
@@ -2028,7 +2028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 clusterrole.NewClusterRoleAggregationRuleClusterRoleSelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterRoleAggregationRuleClusterRoleSelectorsOutputReference
 ```
@@ -2366,7 +2366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 clusterrole.NewClusterRoleAggregationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterRoleAggregationRuleOutputReference
 ```
@@ -2657,7 +2657,7 @@ func InternalValue() ClusterRoleAggregationRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 clusterrole.NewClusterRoleMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClusterRoleMetadataOutputReference
 ```
@@ -3055,7 +3055,7 @@ func InternalValue() ClusterRoleMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 clusterrole.NewClusterRoleRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClusterRoleRuleList
 ```
@@ -3215,7 +3215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRole.ClusterRoleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/clusterrole"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/clusterrole"
 
 clusterrole.NewClusterRoleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClusterRoleRuleOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.ephemeralKubernetesCertificateSigningRequestV1.EphemeralKubernetesCertificateSigningRequestV1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetescertificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetescertificatesigningrequestv1"
 
 ephemeralkubernetescertificatesigningrequestv1.NewEphemeralKubernetesCertificateSigningRequestV1(scope Construct, id *string, config EphemeralKubernetesCertificateSigningRequestV1Config) EphemeralKubernetesCertificateSigningRequestV1
 ```
@@ -342,7 +342,7 @@ func ResetSpec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-kubernetes.ephemeralKubernetesCertificateSigningRequestV1.EphemeralKubernetesCertificateSigningRequestV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetescertificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetescertificatesigningrequestv1"
 
 ephemeralkubernetescertificatesigningrequestv1.EphemeralKubernetesCertificateSigningRequestV1_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-kubernetes.ephemeralKubernetesCertificateSigningRequestV1.EphemeralKubernetesCertificateSigningRequestV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetescertificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetescertificatesigningrequestv1"
 
 ephemeralkubernetescertificatesigningrequestv1.EphemeralKubernetesCertificateSigningRequestV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ ephemeralkubernetescertificatesigningrequestv1.EphemeralKubernetesCertificateSig
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-kubernetes.ephemeralKubernetesCertificateSigningRequestV1.EphemeralKubernetesCertificateSigningRequestV1.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetescertificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetescertificatesigningrequestv1"
 
 ephemeralkubernetescertificatesigningrequestv1.EphemeralKubernetesCertificateSigningRequestV1_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.ephemeralKubernetesCertificateSigningRequestV1.EphemeralKubernetesCertificateSigningRequestV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetescertificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetescertificatesigningrequestv1"
 
 &ephemeralkubernetescertificatesigningrequestv1.EphemeralKubernetesCertificateSigningRequestV1Config {
 	Count: interface{},
@@ -661,10 +661,10 @@ import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemera
 	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformEphemeralResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
-	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.ephemeralKubernetesCertificateSigningRequestV1.EphemeralKubernetesCertificateSigningRequestV1Metadata,
+	Metadata: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.ephemeralKubernetesCertificateSigningRequestV1.EphemeralKubernetesCertificateSigningRequestV1Metadata,
 	AutoApprove: interface{},
 	Certificate: *string,
-	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16.ephemeralKubernetesCertificateSigningRequestV1.EphemeralKubernetesCertificateSigningRequestV1Spec,
+	Spec: github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17.ephemeralKubernetesCertificateSigningRequestV1.EphemeralKubernetesCertificateSigningRequestV1Spec,
 }
 ```
 
@@ -817,7 +817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.ephemeralKubernetesCertificateSigningRequestV1.EphemeralKubernetesCertificateSigningRequestV1Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetescertificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetescertificatesigningrequestv1"
 
 &ephemeralkubernetescertificatesigningrequestv1.EphemeralKubernetesCertificateSigningRequestV1Metadata {
 	Name: *string,
@@ -853,7 +853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-kubernetes.ephemeralKubernetesCertificateSigningRequestV1.EphemeralKubernetesCertificateSigningRequestV1Spec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetescertificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetescertificatesigningrequestv1"
 
 &ephemeralkubernetescertificatesigningrequestv1.EphemeralKubernetesCertificateSigningRequestV1Spec {
 	Request: *string,
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.ephemeralKubernetesCertificateSigningRequestV1.EphemeralKubernetesCertificateSigningRequestV1MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetescertificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetescertificatesigningrequestv1"
 
 ephemeralkubernetescertificatesigningrequestv1.NewEphemeralKubernetesCertificateSigningRequestV1MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EphemeralKubernetesCertificateSigningRequestV1MetadataOutputReference
 ```
@@ -1258,7 +1258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.ephemeralKubernetesCertificateSigningRequestV1.EphemeralKubernetesCertificateSigningRequestV1SpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/ephemeralkubernetescertificatesigningrequestv1"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/ephemeralkubernetescertificatesigningrequestv1"
 
 ephemeralkubernetescertificatesigningrequestv1.NewEphemeralKubernetesCertificateSigningRequestV1SpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EphemeralKubernetesCertificateSigningRequestV1SpecOutputReference
 ```

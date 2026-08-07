@@ -11,7 +11,7 @@ Provider-defined functions of the kubernetes provider.
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.providerFunctions.KubernetesProviderFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v16/providerfunctions"
+import "github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17/providerfunctions"
 
 providerfunctions.NewKubernetesProviderFunctions(providerLocalName *string) KubernetesProviderFunctions
 ```
