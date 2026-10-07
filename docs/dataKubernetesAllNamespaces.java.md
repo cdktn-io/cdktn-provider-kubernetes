@@ -4,7 +4,7 @@
 
 ### DataKubernetesAllNamespaces <a name="DataKubernetesAllNamespaces" id="@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/all_namespaces kubernetes_all_namespaces}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/data-sources/all_namespaces kubernetes_all_namespaces}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.Initializer"></a>
 
@@ -19,7 +19,6 @@ DataKubernetesAllNamespaces.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-//  .id(java.lang.String)
     .build();
 ```
 
@@ -34,7 +33,6 @@ DataKubernetesAllNamespaces.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/all_namespaces#id DataKubernetesAllNamespaces#id}. |
 
 ---
 
@@ -98,17 +96,6 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/all_namespaces#id DataKubernetesAllNamespaces#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -131,7 +118,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -348,12 +334,6 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.resetId"></a>
-
-```java
-public void resetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -457,7 +437,7 @@ The construct id used in the generated config for the DataKubernetesAllNamespace
 
 The id of the existing DataKubernetesAllNamespaces that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/all_namespaces#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/data-sources/all_namespaces#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -485,9 +465,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.property.forEach">forEach</a></code> | <code>io.cdktn.cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.property.namespaces">namespaces</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.property.namespaces">namespaces</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 
 ---
 
@@ -613,26 +592,6 @@ public TerraformProvider getProvider();
 
 ---
 
-##### `namespaces`<sup>Required</sup> <a name="namespaces" id="@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.property.namespaces"></a>
-
-```java
-public java.util.List<java.lang.String> getNamespaces();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.property.id"></a>
 
 ```java
@@ -640,6 +599,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `namespaces`<sup>Required</sup> <a name="namespaces" id="@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.property.namespaces"></a>
+
+```java
+public java.util.List<java.lang.String> getNamespaces();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -678,7 +647,6 @@ DataKubernetesAllNamespacesConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-//  .id(java.lang.String)
     .build();
 ```
 
@@ -693,7 +661,6 @@ DataKubernetesAllNamespacesConfig.builder()
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespacesConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespacesConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespacesConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespacesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/all_namespaces#id DataKubernetesAllNamespaces#id}. |
 
 ---
 
@@ -764,21 +731,6 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 ```
 
 - *Type:* java.util.List<io.cdktn.cdktn.FileProvisioner|io.cdktn.cdktn.LocalExecProvisioner|io.cdktn.cdktn.RemoteExecProvisioner>
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespacesConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/all_namespaces#id DataKubernetesAllNamespaces#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
