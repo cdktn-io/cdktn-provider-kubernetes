@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1
+// https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface EphemeralKubernetesTokenRequestV1Config extends cdktn.Terraform
   /**
   * ExpirationTimestamp is the time of expiration of the returned token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1#expiration_timestamp EphemeralKubernetesTokenRequestV1#expiration_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1#expiration_timestamp EphemeralKubernetesTokenRequestV1#expiration_timestamp}
   */
   readonly expirationTimestamp?: string;
   /**
   * Token is the opaque bearer token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1#token EphemeralKubernetesTokenRequestV1#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1#token EphemeralKubernetesTokenRequestV1#token}
   */
   readonly token?: string;
   /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1#metadata EphemeralKubernetesTokenRequestV1#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1#metadata EphemeralKubernetesTokenRequestV1#metadata}
   */
   readonly metadata: EphemeralKubernetesTokenRequestV1Metadata;
   /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1#spec EphemeralKubernetesTokenRequestV1#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1#spec EphemeralKubernetesTokenRequestV1#spec}
   */
   readonly spec?: EphemeralKubernetesTokenRequestV1Spec;
 }
@@ -41,7 +41,7 @@ export interface EphemeralKubernetesTokenRequestV1Metadata {
   /**
   * Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1#name EphemeralKubernetesTokenRequestV1#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1#name EphemeralKubernetesTokenRequestV1#name}
   */
   readonly name: string;
   /**
@@ -49,7 +49,7 @@ export interface EphemeralKubernetesTokenRequestV1Metadata {
   * 
   * Must be a DNS_LABEL. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1#namespace EphemeralKubernetesTokenRequestV1#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1#namespace EphemeralKubernetesTokenRequestV1#namespace}
   */
   readonly namespace: string;
 }
@@ -168,25 +168,25 @@ export interface EphemeralKubernetesTokenRequestV1SpecBoundObjectRef {
   /**
   * API version of the referent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1#api_version EphemeralKubernetesTokenRequestV1#api_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1#api_version EphemeralKubernetesTokenRequestV1#api_version}
   */
   readonly apiVersion?: string;
   /**
   * Kind of the referent. Valid kinds are 'Pod' and 'Secret'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1#kind EphemeralKubernetesTokenRequestV1#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1#kind EphemeralKubernetesTokenRequestV1#kind}
   */
   readonly kind?: string;
   /**
   * Name of the referent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1#name EphemeralKubernetesTokenRequestV1#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1#name EphemeralKubernetesTokenRequestV1#name}
   */
   readonly name?: string;
   /**
   * UID of the referent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1#uid EphemeralKubernetesTokenRequestV1#uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1#uid EphemeralKubernetesTokenRequestV1#uid}
   */
   readonly uid?: string;
 }
@@ -369,19 +369,19 @@ export interface EphemeralKubernetesTokenRequestV1Spec {
   /**
   * Audiences are the intendend audiences of the token. A recipient of a token must identify themself with an identifier in the list of audiences of the token, and otherwise should reject the token. A token issued for multiple audiences may be used to authenticate against any of the audiences listed but implies a high degree of trust between the target audiences.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1#audiences EphemeralKubernetesTokenRequestV1#audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1#audiences EphemeralKubernetesTokenRequestV1#audiences}
   */
   readonly audiences?: string[];
   /**
   * ExpirationSeconds is the requested duration of validity of the request. The token issuer may return a token with a different validity duration so a client needs to check the 'expiration' field in a response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1#expiration_seconds EphemeralKubernetesTokenRequestV1#expiration_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1#expiration_seconds EphemeralKubernetesTokenRequestV1#expiration_seconds}
   */
   readonly expirationSeconds?: number;
   /**
   * bound_object_ref block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1#bound_object_ref EphemeralKubernetesTokenRequestV1#bound_object_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1#bound_object_ref EphemeralKubernetesTokenRequestV1#bound_object_ref}
   */
   readonly boundObjectRef?: EphemeralKubernetesTokenRequestV1SpecBoundObjectRef;
 }
@@ -533,7 +533,7 @@ export class EphemeralKubernetesTokenRequestV1SpecOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1 kubernetes_token_request_v1}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1 kubernetes_token_request_v1}
 */
 export class EphemeralKubernetesTokenRequestV1 extends cdktn.TerraformEphemeralResource {
 
@@ -547,7 +547,7 @@ export class EphemeralKubernetesTokenRequestV1 extends cdktn.TerraformEphemeralR
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/ephemeral-resources/token_request_v1 kubernetes_token_request_v1} Ephemeral Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/ephemeral-resources/token_request_v1 kubernetes_token_request_v1} Ephemeral Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -558,7 +558,7 @@ export class EphemeralKubernetesTokenRequestV1 extends cdktn.TerraformEphemeralR
       terraformResourceType: 'kubernetes_token_request_v1',
       terraformGeneratorMetadata: {
         providerName: 'kubernetes',
-        providerVersion: '3.2.1',
+        providerVersion: '3.3.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
