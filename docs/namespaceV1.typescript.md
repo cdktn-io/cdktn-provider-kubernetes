@@ -4,14 +4,14 @@
 
 ### NamespaceV1 <a name="NamespaceV1" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1 kubernetes_namespace_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1 kubernetes_namespace_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.Initializer"></a>
 
 ```typescript
 import { namespaceV1 } from '@cdktn/provider-kubernetes'
 
-new namespaceV1.NamespaceV1(scope: Construct, id: string, config: NamespaceV1Config)
+new namespaceV1.NamespaceV1(scope: Construct, id: string, config?: NamespaceV1Config)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config">NamespaceV1Config</a>
 
@@ -76,7 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.putMetadata">putMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.resetMetadata">resetMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.resetWaitForDefaultServiceAccount">resetWaitForDefaultServiceAccount</a></code> | *No description.* |
 
@@ -394,12 +394,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putMetadata` <a name="putMetadata" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.putMetadata"></a>
 
 ```typescript
-public putMetadata(value: NamespaceV1Metadata): void
+public putMetadata(value: IResolvable | NamespaceV1Metadata[]): void
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.putMetadata.parameter.value"></a>
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a>[]
 
 ---
 
@@ -415,10 +415,10 @@ public putTimeouts(value: NamespaceV1Timeouts): void
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.resetId"></a>
+##### `resetMetadata` <a name="resetMetadata" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.resetMetadata"></a>
 
 ```typescript
-public resetId(): void
+public resetMetadata(): void
 ```
 
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.resetTimeouts"></a>
@@ -536,7 +536,7 @@ The construct id used in the generated config for the NamespaceV1 to import.
 
 The id of the existing NamespaceV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -566,13 +566,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference">NamespaceV1MetadataOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList">NamespaceV1MetadataList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1TimeoutsOutputReference">NamespaceV1TimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.metadataInput">metadataInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.metadataInput">metadataInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Timeouts">NamespaceV1Timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.waitForDefaultServiceAccountInput">waitForDefaultServiceAccountInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.waitForDefaultServiceAccount">waitForDefaultServiceAccount</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 
 ---
@@ -719,13 +718,23 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.metadata"></a>
 
 ```typescript
-public readonly metadata: NamespaceV1MetadataOutputReference;
+public readonly metadata: NamespaceV1MetadataList;
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference">NamespaceV1MetadataOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList">NamespaceV1MetadataList</a>
 
 ---
 
@@ -739,23 +748,13 @@ public readonly timeouts: NamespaceV1TimeoutsOutputReference;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `metadataInput`<sup>Optional</sup> <a name="metadataInput" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.metadataInput"></a>
 
 ```typescript
-public readonly metadataInput: NamespaceV1Metadata;
+public readonly metadataInput: IResolvable | NamespaceV1Metadata[];
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a>[]
 
 ---
 
@@ -776,16 +775,6 @@ public readonly waitForDefaultServiceAccountInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
 
 ---
 
@@ -840,8 +829,7 @@ const namespaceV1Config: namespaceV1.NamespaceV1Config = { ... }
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#id NamespaceV1#id}. |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.metadata">metadata</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a>[]</code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Timeouts">NamespaceV1Timeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.waitForDefaultServiceAccount">waitForDefaultServiceAccount</a></code> | <code>boolean \| cdktn.IResolvable</code> | Terraform will wait for the default service account to be created. |
 
@@ -917,32 +905,17 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.metadata"></a>
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.metadata"></a>
 
 ```typescript
-public readonly metadata: NamespaceV1Metadata;
+public readonly metadata: IResolvable | NamespaceV1Metadata[];
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a>[]
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#metadata NamespaceV1#metadata}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Config.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#id NamespaceV1#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#metadata NamespaceV1#metadata}
 
 ---
 
@@ -956,7 +929,7 @@ public readonly timeouts: NamespaceV1Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#timeouts NamespaceV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#timeouts NamespaceV1#timeouts}
 
 ---
 
@@ -970,7 +943,7 @@ public readonly waitForDefaultServiceAccount: boolean | IResolvable;
 
 Terraform will wait for the default service account to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#wait_for_default_service_account NamespaceV1#wait_for_default_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#wait_for_default_service_account NamespaceV1#wait_for_default_service_account}
 
 ---
 
@@ -1007,7 +980,7 @@ An unstructured key value map stored with the namespace that may be used to stor
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#annotations NamespaceV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#annotations NamespaceV1#annotations}
 
 ---
 
@@ -1023,7 +996,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#generate_name NamespaceV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#generate_name NamespaceV1#generate_name}
 
 ---
 
@@ -1039,7 +1012,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#labels NamespaceV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#labels NamespaceV1#labels}
 
 ---
 
@@ -1053,7 +1026,7 @@ public readonly name: string;
 
 Name of the namespace, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#name NamespaceV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#name NamespaceV1#name}
 
 ---
 
@@ -1071,7 +1044,7 @@ const namespaceV1Timeouts: namespaceV1.NamespaceV1Timeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#delete NamespaceV1#delete}. |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Timeouts.property.delete">delete</a></code> | <code>string</code> | A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs. |
 
 ---
 
@@ -1083,11 +1056,173 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/resources/namespace_v1#delete NamespaceV1#delete}.
+A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#delete NamespaceV1#delete}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### NamespaceV1MetadataList <a name="NamespaceV1MetadataList" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.Initializer"></a>
+
+```typescript
+import { namespaceV1 } from '@cdktn/provider-kubernetes'
+
+new namespaceV1.NamespaceV1MetadataList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.get"></a>
+
+```typescript
+public get(index: number): NamespaceV1MetadataOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | NamespaceV1Metadata[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a>[]
+
+---
+
 
 ### NamespaceV1MetadataOutputReference <a name="NamespaceV1MetadataOutputReference" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference"></a>
 
@@ -1096,13 +1231,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ```typescript
 import { namespaceV1 } from '@cdktn/provider-kubernetes'
 
-new namespaceV1.NamespaceV1MetadataOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new namespaceV1.NamespaceV1MetadataOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1119,6 +1256,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -1338,7 +1491,7 @@ public resetName(): void
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference.property.generateName">generateName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a></code> | *No description.* |
 
 ---
 
@@ -1479,10 +1632,10 @@ public readonly name: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1MetadataOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: NamespaceV1Metadata;
+public readonly internalValue: IResolvable | NamespaceV1Metadata;
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.namespaceV1.NamespaceV1Metadata">NamespaceV1Metadata</a>
 
 ---
 

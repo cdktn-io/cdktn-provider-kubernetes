@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/namespace_v1
+// https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/data-sources/namespace_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface DataKubernetesNamespaceV1Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/namespace_v1#id DataKubernetesNamespaceV1#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/namespace_v1#metadata DataKubernetesNamespaceV1#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/data-sources/namespace_v1#metadata DataKubernetesNamespaceV1#metadata}
   */
-  readonly metadata: DataKubernetesNamespaceV1Metadata;
+  readonly metadata?: DataKubernetesNamespaceV1Metadata[] | cdktn.IResolvable;
 }
 export interface DataKubernetesNamespaceV1Spec {
 }
@@ -105,24 +98,24 @@ export interface DataKubernetesNamespaceV1Metadata {
   /**
   * An unstructured key value map stored with the namespace that may be used to store arbitrary metadata. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/namespace_v1#annotations DataKubernetesNamespaceV1#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/data-sources/namespace_v1#annotations DataKubernetesNamespaceV1#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Map of string keys and values that can be used to organize and categorize (scope and select) the namespace. May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/namespace_v1#labels DataKubernetesNamespaceV1#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/data-sources/namespace_v1#labels DataKubernetesNamespaceV1#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the namespace, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/namespace_v1#name DataKubernetesNamespaceV1#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/data-sources/namespace_v1#name DataKubernetesNamespaceV1#name}
   */
-  readonly name?: string;
+  readonly name: string;
 }
 
-export function dataKubernetesNamespaceV1MetadataToTerraform(struct?: DataKubernetesNamespaceV1MetadataOutputReference | DataKubernetesNamespaceV1Metadata): any {
+export function dataKubernetesNamespaceV1MetadataToTerraform(struct?: DataKubernetesNamespaceV1Metadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -135,7 +128,7 @@ export function dataKubernetesNamespaceV1MetadataToTerraform(struct?: DataKubern
 }
 
 
-export function dataKubernetesNamespaceV1MetadataToHclTerraform(struct?: DataKubernetesNamespaceV1MetadataOutputReference | DataKubernetesNamespaceV1Metadata): any {
+export function dataKubernetesNamespaceV1MetadataToHclTerraform(struct?: DataKubernetesNamespaceV1Metadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -167,16 +160,22 @@ export function dataKubernetesNamespaceV1MetadataToHclTerraform(struct?: DataKub
 
 export class DataKubernetesNamespaceV1MetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataKubernetesNamespaceV1Metadata | undefined {
+  public get internalValue(): DataKubernetesNamespaceV1Metadata | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._annotations !== undefined) {
@@ -194,22 +193,28 @@ export class DataKubernetesNamespaceV1MetadataOutputReference extends cdktn.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataKubernetesNamespaceV1Metadata | undefined) {
+  public set internalValue(value: DataKubernetesNamespaceV1Metadata | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._annotations = undefined;
       this._labels = undefined;
       this._name = undefined;
     }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._annotations = value.annotations;
       this._labels = value.labels;
       this._name = value.name;
     }
   }
 
-  // annotations - computed: false, optional: true, required: false
+  // annotations - computed: true, optional: true, required: false
   private _annotations?: { [key: string]: string }; 
   public get annotations() {
     return this.getStringMapAttribute('annotations');
@@ -230,7 +235,7 @@ export class DataKubernetesNamespaceV1MetadataOutputReference extends cdktn.Comp
     return this.getNumberAttribute('generation');
   }
 
-  // labels - computed: false, optional: true, required: false
+  // labels - computed: true, optional: true, required: false
   private _labels?: { [key: string]: string }; 
   public get labels() {
     return this.getStringMapAttribute('labels');
@@ -246,16 +251,13 @@ export class DataKubernetesNamespaceV1MetadataOutputReference extends cdktn.Comp
     return this._labels;
   }
 
-  // name - computed: true, optional: true, required: false
+  // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
@@ -273,8 +275,28 @@ export class DataKubernetesNamespaceV1MetadataOutputReference extends cdktn.Comp
   }
 }
 
+export class DataKubernetesNamespaceV1MetadataList extends cdktn.ComplexList {
+  public internalValue? : DataKubernetesNamespaceV1Metadata[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataKubernetesNamespaceV1MetadataOutputReference {
+    return new DataKubernetesNamespaceV1MetadataOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/namespace_v1 kubernetes_namespace_v1}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/data-sources/namespace_v1 kubernetes_namespace_v1}
 */
 export class DataKubernetesNamespaceV1 extends cdktn.TerraformDataSource {
 
@@ -290,7 +312,7 @@ export class DataKubernetesNamespaceV1 extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataKubernetesNamespaceV1 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataKubernetesNamespaceV1 to import
-  * @param importFromId The id of the existing DataKubernetesNamespaceV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/namespace_v1#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataKubernetesNamespaceV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/data-sources/namespace_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataKubernetesNamespaceV1 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -302,18 +324,18 @@ export class DataKubernetesNamespaceV1 extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.2.1/docs/data-sources/namespace_v1 kubernetes_namespace_v1} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/data-sources/namespace_v1 kubernetes_namespace_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataKubernetesNamespaceV1Config
+  * @param options DataKubernetesNamespaceV1Config = {}
   */
-  public constructor(scope: Construct, id: string, config: DataKubernetesNamespaceV1Config) {
+  public constructor(scope: Construct, id: string, config: DataKubernetesNamespaceV1Config = {}) {
     super(scope, id, {
       terraformResourceType: 'kubernetes_namespace_v1',
       terraformGeneratorMetadata: {
         providerName: 'kubernetes',
-        providerVersion: '3.2.1',
+        providerVersion: '3.3.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -324,7 +346,6 @@ export class DataKubernetesNamespaceV1 extends cdktn.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._metadata.internalValue = config.metadata;
   }
 
@@ -332,20 +353,9 @@ export class DataKubernetesNamespaceV1 extends cdktn.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // spec - computed: true, optional: false, required: false
@@ -354,13 +364,16 @@ export class DataKubernetesNamespaceV1 extends cdktn.TerraformDataSource {
     return this._spec;
   }
 
-  // metadata - computed: false, optional: false, required: true
-  private _metadata = new DataKubernetesNamespaceV1MetadataOutputReference(this, "metadata");
+  // metadata - computed: false, optional: true, required: false
+  private _metadata = new DataKubernetesNamespaceV1MetadataList(this, "metadata", false);
   public get metadata() {
     return this._metadata;
   }
-  public putMetadata(value: DataKubernetesNamespaceV1Metadata) {
+  public putMetadata(value: DataKubernetesNamespaceV1Metadata[] | cdktn.IResolvable) {
     this._metadata.internalValue = value;
+  }
+  public resetMetadata() {
+    this._metadata.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get metadataInput() {
@@ -373,21 +386,14 @@ export class DataKubernetesNamespaceV1 extends cdktn.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktn.stringToTerraform(this._id),
-      metadata: dataKubernetesNamespaceV1MetadataToTerraform(this._metadata.internalValue),
+      metadata: cdktn.listMapper(dataKubernetesNamespaceV1MetadataToTerraform, true)(this._metadata.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktn.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       metadata: {
-        value: dataKubernetesNamespaceV1MetadataToHclTerraform(this._metadata.internalValue),
+        value: cdktn.listMapperHcl(dataKubernetesNamespaceV1MetadataToHclTerraform, true)(this._metadata.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataKubernetesNamespaceV1MetadataList",
