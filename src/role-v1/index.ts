@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1
+// https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,59 +13,52 @@ import * as cdktn from 'cdktn';
 
 export interface RoleV1Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#id RoleV1#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#metadata RoleV1#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#metadata RoleV1#metadata}
   */
-  readonly metadata: RoleV1Metadata;
+  readonly metadata?: RoleV1Metadata[] | cdktn.IResolvable;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#rule RoleV1#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#rule RoleV1#rule}
   */
-  readonly rule: RoleV1Rule[] | cdktn.IResolvable;
+  readonly rule?: RoleV1Rule[] | cdktn.IResolvable;
 }
 export interface RoleV1Metadata {
   /**
   * An unstructured key value map stored with the role that may be used to store arbitrary metadata. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#annotations RoleV1#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#annotations RoleV1#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Prefix, used by the server, to generate a unique name ONLY IF the `name` field has not been provided. This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#generate_name RoleV1#generate_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#generate_name RoleV1#generate_name}
   */
   readonly generateName?: string;
   /**
   * Map of string keys and values that can be used to organize and categorize (scope and select) the role. May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#labels RoleV1#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#labels RoleV1#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the role, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#name RoleV1#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#name RoleV1#name}
   */
   readonly name?: string;
   /**
   * Namespace defines the space within which name of the role must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#namespace RoleV1#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#namespace RoleV1#namespace}
   */
   readonly namespace?: string;
 }
 
-export function roleV1MetadataToTerraform(struct?: RoleV1MetadataOutputReference | RoleV1Metadata): any {
+export function roleV1MetadataToTerraform(struct?: RoleV1Metadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -80,7 +73,7 @@ export function roleV1MetadataToTerraform(struct?: RoleV1MetadataOutputReference
 }
 
 
-export function roleV1MetadataToHclTerraform(struct?: RoleV1MetadataOutputReference | RoleV1Metadata): any {
+export function roleV1MetadataToHclTerraform(struct?: RoleV1Metadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -124,16 +117,22 @@ export function roleV1MetadataToHclTerraform(struct?: RoleV1MetadataOutputRefere
 
 export class RoleV1MetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RoleV1Metadata | undefined {
+  public get internalValue(): RoleV1Metadata | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._annotations !== undefined) {
@@ -159,17 +158,23 @@ export class RoleV1MetadataOutputReference extends cdktn.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RoleV1Metadata | undefined) {
+  public set internalValue(value: RoleV1Metadata | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._annotations = undefined;
       this._generateName = undefined;
       this._labels = undefined;
       this._name = undefined;
       this._namespace = undefined;
     }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._annotations = value.annotations;
       this._generateName = value.generateName;
       this._labels = value.labels;
@@ -247,7 +252,7 @@ export class RoleV1MetadataOutputReference extends cdktn.ComplexObject {
     return this._name;
   }
 
-  // namespace - computed: false, optional: true, required: false
+  // namespace - computed: true, optional: true, required: false
   private _namespace?: string; 
   public get namespace() {
     return this.getStringAttribute('namespace');
@@ -273,29 +278,49 @@ export class RoleV1MetadataOutputReference extends cdktn.ComplexObject {
     return this.getStringAttribute('uid');
   }
 }
+
+export class RoleV1MetadataList extends cdktn.ComplexList {
+  public internalValue? : RoleV1Metadata[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RoleV1MetadataOutputReference {
+    return new RoleV1MetadataOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface RoleV1Rule {
   /**
   * Name of the APIGroup that contains the resources
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#api_groups RoleV1#api_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#api_groups RoleV1#api_groups}
   */
   readonly apiGroups: string[];
   /**
   * White list of names that the rule applies to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#resource_names RoleV1#resource_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#resource_names RoleV1#resource_names}
   */
   readonly resourceNames?: string[];
   /**
   * List of resources that the rule applies to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#resources RoleV1#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#resources RoleV1#resources}
   */
   readonly resources: string[];
   /**
   * List of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#verbs RoleV1#verbs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#verbs RoleV1#verbs}
   */
   readonly verbs: string[];
 }
@@ -425,7 +450,7 @@ export class RoleV1RuleOutputReference extends cdktn.ComplexObject {
     return this._apiGroups;
   }
 
-  // resource_names - computed: false, optional: true, required: false
+  // resource_names - computed: true, optional: true, required: false
   private _resourceNames?: string[]; 
   public get resourceNames() {
     return cdktn.Fn.tolist(this.getListAttribute('resource_names'));
@@ -489,7 +514,7 @@ export class RoleV1RuleList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1 kubernetes_role_v1}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1 kubernetes_role_v1}
 */
 export class RoleV1 extends cdktn.TerraformResource {
 
@@ -505,7 +530,7 @@ export class RoleV1 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a RoleV1 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RoleV1 to import
-  * @param importFromId The id of the existing RoleV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RoleV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RoleV1 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -517,18 +542,18 @@ export class RoleV1 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1 kubernetes_role_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1 kubernetes_role_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options RoleV1Config
+  * @param options RoleV1Config = {}
   */
-  public constructor(scope: Construct, id: string, config: RoleV1Config) {
+  public constructor(scope: Construct, id: string, config: RoleV1Config = {}) {
     super(scope, id, {
       terraformResourceType: 'kubernetes_role_v1',
       terraformGeneratorMetadata: {
         providerName: 'kubernetes',
-        providerVersion: '3.3.0',
+        providerVersion: '3.4.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -539,7 +564,6 @@ export class RoleV1 extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._metadata.internalValue = config.metadata;
     this._rule.internalValue = config.rule;
   }
@@ -548,42 +572,37 @@ export class RoleV1 extends cdktn.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // metadata - computed: false, optional: false, required: true
-  private _metadata = new RoleV1MetadataOutputReference(this, "metadata");
+  // metadata - computed: false, optional: true, required: false
+  private _metadata = new RoleV1MetadataList(this, "metadata", false);
   public get metadata() {
     return this._metadata;
   }
-  public putMetadata(value: RoleV1Metadata) {
+  public putMetadata(value: RoleV1Metadata[] | cdktn.IResolvable) {
     this._metadata.internalValue = value;
+  }
+  public resetMetadata() {
+    this._metadata.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get metadataInput() {
     return this._metadata.internalValue;
   }
 
-  // rule - computed: false, optional: false, required: true
+  // rule - computed: false, optional: true, required: false
   private _rule = new RoleV1RuleList(this, "rule", false);
   public get rule() {
     return this._rule;
   }
   public putRule(value: RoleV1Rule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
+  }
+  public resetRule() {
+    this._rule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ruleInput() {
@@ -596,22 +615,15 @@ export class RoleV1 extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktn.stringToTerraform(this._id),
-      metadata: roleV1MetadataToTerraform(this._metadata.internalValue),
+      metadata: cdktn.listMapper(roleV1MetadataToTerraform, true)(this._metadata.internalValue),
       rule: cdktn.listMapper(roleV1RuleToTerraform, true)(this._rule.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktn.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       metadata: {
-        value: roleV1MetadataToHclTerraform(this._metadata.internalValue),
+        value: cdktn.listMapperHcl(roleV1MetadataToHclTerraform, true)(this._metadata.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RoleV1MetadataList",
