@@ -1,3 +1,3 @@
 # `kubernetes_validating_admission_policy_v1`
 
-Refer to the Terraform Registry for docs: [`kubernetes_validating_admission_policy_v1`](https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/validating_admission_policy_v1).
+Refer to the Terraform Registry for docs: [`kubernetes_validating_admission_policy_v1`](https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/validating_admission_policy_v1).
