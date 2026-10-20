@@ -4,7 +4,7 @@
 
 ### NamespaceV1 <a name="NamespaceV1" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1 kubernetes_namespace_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/namespace_v1 kubernetes_namespace_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.namespaceV1.NamespaceV1.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the NamespaceV1 to import.
 
 The id of the existing NamespaceV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/namespace_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -926,7 +926,7 @@ Metadata interface{}
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#metadata NamespaceV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/namespace_v1#metadata NamespaceV1#metadata}
 
 ---
 
@@ -940,7 +940,7 @@ Timeouts NamespaceV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#timeouts NamespaceV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/namespace_v1#timeouts NamespaceV1#timeouts}
 
 ---
 
@@ -954,7 +954,7 @@ WaitForDefaultServiceAccount interface{}
 
 Terraform will wait for the default service account to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#wait_for_default_service_account NamespaceV1#wait_for_default_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/namespace_v1#wait_for_default_service_account NamespaceV1#wait_for_default_service_account}
 
 ---
 
@@ -996,7 +996,7 @@ An unstructured key value map stored with the namespace that may be used to stor
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#annotations NamespaceV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/namespace_v1#annotations NamespaceV1#annotations}
 
 ---
 
@@ -1012,7 +1012,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#generate_name NamespaceV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/namespace_v1#generate_name NamespaceV1#generate_name}
 
 ---
 
@@ -1028,7 +1028,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#labels NamespaceV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/namespace_v1#labels NamespaceV1#labels}
 
 ---
 
@@ -1042,7 +1042,7 @@ Name *string
 
 Name of the namespace, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#name NamespaceV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/namespace_v1#name NamespaceV1#name}
 
 ---
 
@@ -1076,7 +1076,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/namespace_v1#delete NamespaceV1#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/namespace_v1#delete NamespaceV1#delete}
 
 ---
 

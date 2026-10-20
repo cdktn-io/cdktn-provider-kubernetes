@@ -4,7 +4,7 @@
 
 ### DataKubernetesAllNamespaces <a name="DataKubernetesAllNamespaces" id="@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/data-sources/all_namespaces kubernetes_all_namespaces}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/data-sources/all_namespaces kubernetes_all_namespaces}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.dataKubernetesAllNamespaces.DataKubernetesAllNamespaces.Initializer"></a>
 
@@ -477,7 +477,7 @@ The construct id used in the generated config for the DataKubernetesAllNamespace
 
 The id of the existing DataKubernetesAllNamespaces that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/data-sources/all_namespaces#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/data-sources/all_namespaces#import import section} in the documentation of this resource for the id to use
 
 ---
 

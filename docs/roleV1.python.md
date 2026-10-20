@@ -4,7 +4,7 @@
 
 ### RoleV1 <a name="RoleV1" id="@cdktn/provider-kubernetes.roleV1.RoleV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1 kubernetes_role_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1 kubernetes_role_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.roleV1.RoleV1.Initializer"></a>
 
@@ -21,9 +21,8 @@ roleV1.RoleV1(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  metadata: RoleV1Metadata,
-  rule: IResolvable | typing.List[RoleV1Rule],
-  id: str = None
+  metadata: IResolvable | typing.List[RoleV1Metadata] = None,
+  rule: IResolvable | typing.List[RoleV1Rule] = None
 )
 ```
 
@@ -38,9 +37,8 @@ roleV1.RoleV1(
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a></code> | metadata block. |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.Initializer.parameter.metadata">metadata</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a>]</code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.Initializer.parameter.rule">rule</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Rule">RoleV1Rule</a>]</code> | rule block. |
-| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#id RoleV1#id}. |
 
 ---
 
@@ -104,34 +102,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-kubernetes.roleV1.RoleV1.Initializer.parameter.metadata"></a>
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-kubernetes.roleV1.RoleV1.Initializer.parameter.metadata"></a>
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a>
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a>]
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#metadata RoleV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#metadata RoleV1#metadata}
 
 ---
 
-##### `rule`<sup>Required</sup> <a name="rule" id="@cdktn/provider-kubernetes.roleV1.RoleV1.Initializer.parameter.rule"></a>
+##### `rule`<sup>Optional</sup> <a name="rule" id="@cdktn/provider-kubernetes.roleV1.RoleV1.Initializer.parameter.rule"></a>
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Rule">RoleV1Rule</a>]
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#rule RoleV1#rule}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-kubernetes.roleV1.RoleV1.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#id RoleV1#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#rule RoleV1#rule}
 
 ---
 
@@ -165,7 +152,8 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.putMetadata">put_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.putRule">put_rule</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.resetMetadata">reset_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.resetRule">reset_rule</a></code> | *No description.* |
 
 ---
 
@@ -521,67 +509,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_metadata(
-  annotations: typing.Mapping[str] = None,
-  generate_name: str = None,
-  labels: typing.Mapping[str] = None,
-  name: str = None,
-  namespace: str = None
+  value: IResolvable | typing.List[RoleV1Metadata]
 ) -> None
 ```
 
-###### `annotations`<sup>Optional</sup> <a name="annotations" id="@cdktn/provider-kubernetes.roleV1.RoleV1.putMetadata.parameter.annotations"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-kubernetes.roleV1.RoleV1.putMetadata.parameter.value"></a>
 
-- *Type:* typing.Mapping[str]
-
-An unstructured key value map stored with the role that may be used to store arbitrary metadata.
-
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#annotations RoleV1#annotations}
-
----
-
-###### `generate_name`<sup>Optional</sup> <a name="generate_name" id="@cdktn/provider-kubernetes.roleV1.RoleV1.putMetadata.parameter.generateName"></a>
-
-- *Type:* str
-
-Prefix, used by the server, to generate a unique name ONLY IF the `name` field has not been provided.
-
-This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#generate_name RoleV1#generate_name}
-
----
-
-###### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-kubernetes.roleV1.RoleV1.putMetadata.parameter.labels"></a>
-
-- *Type:* typing.Mapping[str]
-
-Map of string keys and values that can be used to organize and categorize (scope and select) the role.
-
-May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#labels RoleV1#labels}
-
----
-
-###### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-kubernetes.roleV1.RoleV1.putMetadata.parameter.name"></a>
-
-- *Type:* str
-
-Name of the role, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#name RoleV1#name}
-
----
-
-###### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-kubernetes.roleV1.RoleV1.putMetadata.parameter.namespace"></a>
-
-- *Type:* str
-
-Namespace defines the space within which name of the role must be unique.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#namespace RoleV1#namespace}
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a>]
 
 ---
 
@@ -599,10 +533,16 @@ def put_rule(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktn/provider-kubernetes.roleV1.RoleV1.resetId"></a>
+##### `reset_metadata` <a name="reset_metadata" id="@cdktn/provider-kubernetes.roleV1.RoleV1.resetMetadata"></a>
 
 ```python
-def reset_id() -> None
+def reset_metadata() -> None
+```
+
+##### `reset_rule` <a name="reset_rule" id="@cdktn/provider-kubernetes.roleV1.RoleV1.resetRule"></a>
+
+```python
+def reset_rule() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -719,7 +659,7 @@ The construct id used in the generated config for the RoleV1 to import.
 
 The id of the existing RoleV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -749,12 +689,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference">RoleV1MetadataOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.property.rule">rule</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1RuleList">RoleV1RuleList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.property.metadataInput">metadata_input</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.property.ruleInput">rule_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Rule">RoleV1Rule</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList">RoleV1MetadataList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.property.rule">rule</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1RuleList">RoleV1RuleList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.property.metadataInput">metadata_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1.property.ruleInput">rule_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Rule">RoleV1Rule</a>]</code> | *No description.* |
 
 ---
 
@@ -900,13 +839,23 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.roleV1.RoleV1.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-kubernetes.roleV1.RoleV1.property.metadata"></a>
 
 ```python
-metadata: RoleV1MetadataOutputReference
+metadata: RoleV1MetadataList
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference">RoleV1MetadataOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList">RoleV1MetadataList</a>
 
 ---
 
@@ -920,23 +869,13 @@ rule: RoleV1RuleList
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-kubernetes.roleV1.RoleV1.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `metadata_input`<sup>Optional</sup> <a name="metadata_input" id="@cdktn/provider-kubernetes.roleV1.RoleV1.property.metadataInput"></a>
 
 ```python
-metadata_input: RoleV1Metadata
+metadata_input: IResolvable | typing.List[RoleV1Metadata]
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a>
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a>]
 
 ---
 
@@ -947,16 +886,6 @@ rule_input: IResolvable | typing.List[RoleV1Rule]
 ```
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Rule">RoleV1Rule</a>]
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.roleV1.RoleV1.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
 
 ---
 
@@ -995,9 +924,8 @@ roleV1.RoleV1Config(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  metadata: RoleV1Metadata,
-  rule: IResolvable | typing.List[RoleV1Rule],
-  id: str = None
+  metadata: IResolvable | typing.List[RoleV1Metadata] = None,
+  rule: IResolvable | typing.List[RoleV1Rule] = None
 )
 ```
 
@@ -1012,9 +940,8 @@ roleV1.RoleV1Config(
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Config.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a></code> | metadata block. |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Config.property.metadata">metadata</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a>]</code> | metadata block. |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Config.property.rule">rule</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Rule">RoleV1Rule</a>]</code> | rule block. |
-| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#id RoleV1#id}. |
 
 ---
 
@@ -1088,21 +1015,21 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-kubernetes.roleV1.RoleV1Config.property.metadata"></a>
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-kubernetes.roleV1.RoleV1Config.property.metadata"></a>
 
 ```python
-metadata: RoleV1Metadata
+metadata: IResolvable | typing.List[RoleV1Metadata]
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a>
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a>]
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#metadata RoleV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#metadata RoleV1#metadata}
 
 ---
 
-##### `rule`<sup>Required</sup> <a name="rule" id="@cdktn/provider-kubernetes.roleV1.RoleV1Config.property.rule"></a>
+##### `rule`<sup>Optional</sup> <a name="rule" id="@cdktn/provider-kubernetes.roleV1.RoleV1Config.property.rule"></a>
 
 ```python
 rule: IResolvable | typing.List[RoleV1Rule]
@@ -1112,22 +1039,7 @@ rule: IResolvable | typing.List[RoleV1Rule]
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#rule RoleV1#rule}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-kubernetes.roleV1.RoleV1Config.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#id RoleV1#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#rule RoleV1#rule}
 
 ---
 
@@ -1171,7 +1083,7 @@ An unstructured key value map stored with the role that may be used to store arb
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#annotations RoleV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#annotations RoleV1#annotations}
 
 ---
 
@@ -1187,7 +1099,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#generate_name RoleV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#generate_name RoleV1#generate_name}
 
 ---
 
@@ -1203,7 +1115,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#labels RoleV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#labels RoleV1#labels}
 
 ---
 
@@ -1217,7 +1129,7 @@ name: str
 
 Name of the role, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#name RoleV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#name RoleV1#name}
 
 ---
 
@@ -1231,7 +1143,7 @@ namespace: str
 
 Namespace defines the space within which name of the role must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#namespace RoleV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#namespace RoleV1#namespace}
 
 ---
 
@@ -1271,7 +1183,7 @@ api_groups: typing.List[str]
 
 Name of the APIGroup that contains the resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#api_groups RoleV1#api_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#api_groups RoleV1#api_groups}
 
 ---
 
@@ -1285,7 +1197,7 @@ resources: typing.List[str]
 
 List of resources that the rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#resources RoleV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#resources RoleV1#resources}
 
 ---
 
@@ -1299,7 +1211,7 @@ verbs: typing.List[str]
 
 List of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#verbs RoleV1#verbs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#verbs RoleV1#verbs}
 
 ---
 
@@ -1313,11 +1225,181 @@ resource_names: typing.List[str]
 
 White list of names that the rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.3.0/docs/resources/role_v1#resource_names RoleV1#resource_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#resource_names RoleV1#resource_names}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### RoleV1MetadataList <a name="RoleV1MetadataList" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.Initializer"></a>
+
+```python
+from cdktn_provider_kubernetes import role_v1
+
+roleV1.RoleV1MetadataList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> RoleV1MetadataOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[RoleV1Metadata]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a>]
+
+---
+
 
 ### RoleV1MetadataOutputReference <a name="RoleV1MetadataOutputReference" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference"></a>
 
@@ -1328,7 +1410,9 @@ from cdktn_provider_kubernetes import role_v1
 
 roleV1.RoleV1MetadataOutputReference(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
 )
 ```
 
@@ -1336,6 +1420,8 @@ roleV1.RoleV1MetadataOutputReference(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1352,6 +1438,22 @@ The parent resource.
 - *Type:* str
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -1602,7 +1704,7 @@ def reset_namespace() -> None
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a></code> | *No description.* |
 
 ---
 
@@ -1763,10 +1865,10 @@ namespace: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-kubernetes.roleV1.RoleV1MetadataOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: RoleV1Metadata
+internal_value: IResolvable | RoleV1Metadata
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.roleV1.RoleV1Metadata">RoleV1Metadata</a>
 
 ---
 
