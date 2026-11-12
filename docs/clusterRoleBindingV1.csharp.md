@@ -4,14 +4,14 @@
 
 ### ClusterRoleBindingV1 <a name="ClusterRoleBindingV1" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1 kubernetes_cluster_role_binding_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1 kubernetes_cluster_role_binding_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.Initializer"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Kubernetes;
 
-new ClusterRoleBindingV1(Construct Scope, string Id, ClusterRoleBindingV1Config Config);
+new ClusterRoleBindingV1(Construct Scope, string Id, ClusterRoleBindingV1Config Config = null);
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `Config`<sup>Required</sup> <a name="Config" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.Initializer.parameter.config"></a>
+##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config">ClusterRoleBindingV1Config</a>
 
@@ -77,7 +77,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.putMetadata">PutMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.putRoleRef">PutRoleRef</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.putSubject">PutSubject</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.resetMetadata">ResetMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.resetRoleRef">ResetRoleRef</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.resetSubject">ResetSubject</a></code> | *No description.* |
 
 ---
 
@@ -393,24 +395,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutMetadata` <a name="PutMetadata" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.putMetadata"></a>
 
 ```csharp
-private void PutMetadata(ClusterRoleBindingV1Metadata Value)
+private void PutMetadata(IResolvable|ClusterRoleBindingV1Metadata[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.putMetadata.parameter.value"></a>
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a>
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a>[]
 
 ---
 
 ##### `PutRoleRef` <a name="PutRoleRef" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.putRoleRef"></a>
 
 ```csharp
-private void PutRoleRef(ClusterRoleBindingV1RoleRef Value)
+private void PutRoleRef(IResolvable|ClusterRoleBindingV1RoleRef[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.putRoleRef.parameter.value"></a>
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a>
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a>[]
 
 ---
 
@@ -426,10 +428,22 @@ private void PutSubject(IResolvable|ClusterRoleBindingV1Subject[] Value)
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.resetId"></a>
+##### `ResetMetadata` <a name="ResetMetadata" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.resetMetadata"></a>
 
 ```csharp
-private void ResetId()
+private void ResetMetadata()
+```
+
+##### `ResetRoleRef` <a name="ResetRoleRef" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.resetRoleRef"></a>
+
+```csharp
+private void ResetRoleRef()
+```
+
+##### `ResetSubject` <a name="ResetSubject" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.resetSubject"></a>
+
+```csharp
+private void ResetSubject()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -535,7 +549,7 @@ The construct id used in the generated config for the ClusterRoleBindingV1 to im
 
 The id of the existing ClusterRoleBindingV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -565,14 +579,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference">ClusterRoleBindingV1MetadataOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.roleRef">RoleRef</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefOutputReference">ClusterRoleBindingV1RoleRefOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.subject">Subject</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1SubjectList">ClusterRoleBindingV1SubjectList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.metadataInput">MetadataInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.roleRefInput">RoleRefInput</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.subjectInput">SubjectInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Subject">ClusterRoleBindingV1Subject</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList">ClusterRoleBindingV1MetadataList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.roleRef">RoleRef</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList">ClusterRoleBindingV1RoleRefList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.subject">Subject</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1SubjectList">ClusterRoleBindingV1SubjectList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.metadataInput">MetadataInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.roleRefInput">RoleRefInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.subjectInput">SubjectInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Subject">ClusterRoleBindingV1Subject</a>[]</code> | *No description.* |
 
 ---
 
@@ -718,23 +731,33 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Metadata`<sup>Required</sup> <a name="Metadata" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.metadata"></a>
 
 ```csharp
-public ClusterRoleBindingV1MetadataOutputReference Metadata { get; }
+public ClusterRoleBindingV1MetadataList Metadata { get; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference">ClusterRoleBindingV1MetadataOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList">ClusterRoleBindingV1MetadataList</a>
 
 ---
 
 ##### `RoleRef`<sup>Required</sup> <a name="RoleRef" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.roleRef"></a>
 
 ```csharp
-public ClusterRoleBindingV1RoleRefOutputReference RoleRef { get; }
+public ClusterRoleBindingV1RoleRefList RoleRef { get; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefOutputReference">ClusterRoleBindingV1RoleRefOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList">ClusterRoleBindingV1RoleRefList</a>
 
 ---
 
@@ -748,33 +771,23 @@ public ClusterRoleBindingV1SubjectList Subject { get; }
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.idInput"></a>
-
-```csharp
-public string IdInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `MetadataInput`<sup>Optional</sup> <a name="MetadataInput" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.metadataInput"></a>
 
 ```csharp
-public ClusterRoleBindingV1Metadata MetadataInput { get; }
+public IResolvable|ClusterRoleBindingV1Metadata[] MetadataInput { get; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a>
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a>[]
 
 ---
 
 ##### `RoleRefInput`<sup>Optional</sup> <a name="RoleRefInput" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.roleRefInput"></a>
 
 ```csharp
-public ClusterRoleBindingV1RoleRef RoleRefInput { get; }
+public IResolvable|ClusterRoleBindingV1RoleRef[] RoleRefInput { get; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a>
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a>[]
 
 ---
 
@@ -785,16 +798,6 @@ public IResolvable|ClusterRoleBindingV1Subject[] SubjectInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Subject">ClusterRoleBindingV1Subject</a>[]
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1.property.id"></a>
-
-```csharp
-public string Id { get; }
-```
-
-- *Type:* string
 
 ---
 
@@ -833,10 +836,9 @@ new ClusterRoleBindingV1Config {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
-    ClusterRoleBindingV1Metadata Metadata,
-    ClusterRoleBindingV1RoleRef RoleRef,
-    IResolvable|ClusterRoleBindingV1Subject[] Subject,
-    string Id = null
+    IResolvable|ClusterRoleBindingV1Metadata[] Metadata = null,
+    IResolvable|ClusterRoleBindingV1RoleRef[] RoleRef = null,
+    IResolvable|ClusterRoleBindingV1Subject[] Subject = null
 };
 ```
 
@@ -851,10 +853,9 @@ new ClusterRoleBindingV1Config {
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.roleRef">RoleRef</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a></code> | role_ref block. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.metadata">Metadata</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a>[]</code> | metadata block. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.roleRef">RoleRef</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a>[]</code> | role_ref block. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.subject">Subject</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Subject">ClusterRoleBindingV1Subject</a>[]</code> | subject block. |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#id ClusterRoleBindingV1#id}. |
 
 ---
 
@@ -928,35 +929,35 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
-##### `Metadata`<sup>Required</sup> <a name="Metadata" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.metadata"></a>
+##### `Metadata`<sup>Optional</sup> <a name="Metadata" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.metadata"></a>
 
 ```csharp
-public ClusterRoleBindingV1Metadata Metadata { get; set; }
+public IResolvable|ClusterRoleBindingV1Metadata[] Metadata { get; set; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a>
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a>[]
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#metadata ClusterRoleBindingV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#metadata ClusterRoleBindingV1#metadata}
 
 ---
 
-##### `RoleRef`<sup>Required</sup> <a name="RoleRef" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.roleRef"></a>
+##### `RoleRef`<sup>Optional</sup> <a name="RoleRef" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.roleRef"></a>
 
 ```csharp
-public ClusterRoleBindingV1RoleRef RoleRef { get; set; }
+public IResolvable|ClusterRoleBindingV1RoleRef[] RoleRef { get; set; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a>
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a>[]
 
 role_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#role_ref ClusterRoleBindingV1#role_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#role_ref ClusterRoleBindingV1#role_ref}
 
 ---
 
-##### `Subject`<sup>Required</sup> <a name="Subject" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.subject"></a>
+##### `Subject`<sup>Optional</sup> <a name="Subject" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.subject"></a>
 
 ```csharp
 public IResolvable|ClusterRoleBindingV1Subject[] Subject { get; set; }
@@ -966,22 +967,7 @@ public IResolvable|ClusterRoleBindingV1Subject[] Subject { get; set; }
 
 subject block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#subject ClusterRoleBindingV1#subject}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Config.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#id ClusterRoleBindingV1#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#subject ClusterRoleBindingV1#subject}
 
 ---
 
@@ -1023,7 +1009,7 @@ An unstructured key value map stored with the clusterRoleBinding that may be use
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#annotations ClusterRoleBindingV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#annotations ClusterRoleBindingV1#annotations}
 
 ---
 
@@ -1039,7 +1025,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#generate_name ClusterRoleBindingV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#generate_name ClusterRoleBindingV1#generate_name}
 
 ---
 
@@ -1055,7 +1041,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#labels ClusterRoleBindingV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#labels ClusterRoleBindingV1#labels}
 
 ---
 
@@ -1069,7 +1055,7 @@ public string Name { get; set; }
 
 Name of the clusterRoleBinding, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#name ClusterRoleBindingV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#name ClusterRoleBindingV1#name}
 
 ---
 
@@ -1107,7 +1093,7 @@ public string ApiGroup { get; set; }
 
 The API group of the user. The only value possible at the moment is `rbac.authorization.k8s.io`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#api_group ClusterRoleBindingV1#api_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#api_group ClusterRoleBindingV1#api_group}
 
 ---
 
@@ -1121,7 +1107,7 @@ public string Kind { get; set; }
 
 The kind of resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#kind ClusterRoleBindingV1#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#kind ClusterRoleBindingV1#kind}
 
 ---
 
@@ -1135,7 +1121,7 @@ public string Name { get; set; }
 
 The name of the User to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#name ClusterRoleBindingV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#name ClusterRoleBindingV1#name}
 
 ---
 
@@ -1175,7 +1161,7 @@ public string Kind { get; set; }
 
 The kind of resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#kind ClusterRoleBindingV1#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#kind ClusterRoleBindingV1#kind}
 
 ---
 
@@ -1189,7 +1175,7 @@ public string Name { get; set; }
 
 The name of the resource to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#name ClusterRoleBindingV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#name ClusterRoleBindingV1#name}
 
 ---
 
@@ -1203,7 +1189,7 @@ public string ApiGroup { get; set; }
 
 The API group of the subject resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#api_group ClusterRoleBindingV1#api_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#api_group ClusterRoleBindingV1#api_group}
 
 ---
 
@@ -1217,11 +1203,171 @@ public string Namespace { get; set; }
 
 The Namespace of the subject resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/cluster_role_binding_v1#namespace ClusterRoleBindingV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/cluster_role_binding_v1#namespace ClusterRoleBindingV1#namespace}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ClusterRoleBindingV1MetadataList <a name="ClusterRoleBindingV1MetadataList" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Kubernetes;
+
+new ClusterRoleBindingV1MetadataList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.get"></a>
+
+```csharp
+private ClusterRoleBindingV1MetadataOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ClusterRoleBindingV1Metadata[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a>[]
+
+---
+
 
 ### ClusterRoleBindingV1MetadataOutputReference <a name="ClusterRoleBindingV1MetadataOutputReference" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference"></a>
 
@@ -1230,13 +1376,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ```csharp
 using Io.Cdktn.Providers.Kubernetes;
 
-new ClusterRoleBindingV1MetadataOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+new ClusterRoleBindingV1MetadataOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1253,6 +1401,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -1472,7 +1636,7 @@ private void ResetName()
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference.property.generateName">GenerateName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a></code> | *No description.* |
 
 ---
 
@@ -1613,10 +1777,170 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1MetadataOutputReference.property.internalValue"></a>
 
 ```csharp
-public ClusterRoleBindingV1Metadata InternalValue { get; }
+public IResolvable|ClusterRoleBindingV1Metadata InternalValue { get; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a>
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1Metadata">ClusterRoleBindingV1Metadata</a>
+
+---
+
+
+### ClusterRoleBindingV1RoleRefList <a name="ClusterRoleBindingV1RoleRefList" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Kubernetes;
+
+new ClusterRoleBindingV1RoleRefList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.get"></a>
+
+```csharp
+private ClusterRoleBindingV1RoleRefOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ClusterRoleBindingV1RoleRef[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a>[]
 
 ---
 
@@ -1628,13 +1952,15 @@ public ClusterRoleBindingV1Metadata InternalValue { get; }
 ```csharp
 using Io.Cdktn.Providers.Kubernetes;
 
-new ClusterRoleBindingV1RoleRefOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+new ClusterRoleBindingV1RoleRefOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1651,6 +1977,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -1837,7 +2179,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefOutputReference.property.apiGroup">ApiGroup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefOutputReference.property.kind">Kind</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a></code> | *No description.* |
 
 ---
 
@@ -1928,10 +2270,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRefOutputReference.property.internalValue"></a>
 
 ```csharp
-public ClusterRoleBindingV1RoleRef InternalValue { get; }
+public IResolvable|ClusterRoleBindingV1RoleRef InternalValue { get; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a>
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-kubernetes.clusterRoleBindingV1.ClusterRoleBindingV1RoleRef">ClusterRoleBindingV1RoleRef</a>
 
 ---
 

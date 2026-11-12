@@ -4,7 +4,7 @@
 
 ### RoleBindingV1 <a name="RoleBindingV1" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1 kubernetes_role_binding_v1}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1 kubernetes_role_binding_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer"></a>
 
@@ -21,10 +21,9 @@ roleBindingV1.RoleBindingV1(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  metadata: RoleBindingV1Metadata,
-  role_ref: RoleBindingV1RoleRef,
-  subject: IResolvable | typing.List[RoleBindingV1Subject],
-  id: str = None
+  metadata: IResolvable | typing.List[RoleBindingV1Metadata] = None,
+  role_ref: IResolvable | typing.List[RoleBindingV1RoleRef] = None,
+  subject: IResolvable | typing.List[RoleBindingV1Subject] = None
 )
 ```
 
@@ -39,10 +38,9 @@ roleBindingV1.RoleBindingV1(
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.roleRef">role_ref</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a></code> | role_ref block. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.metadata">metadata</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a>]</code> | metadata block. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.roleRef">role_ref</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a>]</code> | role_ref block. |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.subject">subject</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject">RoleBindingV1Subject</a>]</code> | subject block. |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#id RoleBindingV1#id}. |
 
 ---
 
@@ -106,44 +104,33 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.metadata"></a>
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.metadata"></a>
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a>
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a>]
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#metadata RoleBindingV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#metadata RoleBindingV1#metadata}
 
 ---
 
-##### `role_ref`<sup>Required</sup> <a name="role_ref" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.roleRef"></a>
+##### `role_ref`<sup>Optional</sup> <a name="role_ref" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.roleRef"></a>
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a>
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a>]
 
 role_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#role_ref RoleBindingV1#role_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#role_ref RoleBindingV1#role_ref}
 
 ---
 
-##### `subject`<sup>Required</sup> <a name="subject" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.subject"></a>
+##### `subject`<sup>Optional</sup> <a name="subject" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.subject"></a>
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject">RoleBindingV1Subject</a>]
 
 subject block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#subject RoleBindingV1#subject}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#id RoleBindingV1#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#subject RoleBindingV1#subject}
 
 ---
 
@@ -178,7 +165,9 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.putMetadata">put_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.putRoleRef">put_role_ref</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.putSubject">put_subject</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.resetMetadata">reset_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.resetRoleRef">reset_role_ref</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.resetSubject">reset_subject</a></code> | *No description.* |
 
 ---
 
@@ -534,67 +523,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_metadata(
-  annotations: typing.Mapping[str] = None,
-  generate_name: str = None,
-  labels: typing.Mapping[str] = None,
-  name: str = None,
-  namespace: str = None
+  value: IResolvable | typing.List[RoleBindingV1Metadata]
 ) -> None
 ```
 
-###### `annotations`<sup>Optional</sup> <a name="annotations" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.putMetadata.parameter.annotations"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.putMetadata.parameter.value"></a>
 
-- *Type:* typing.Mapping[str]
-
-An unstructured key value map stored with the roleBinding that may be used to store arbitrary metadata.
-
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#annotations RoleBindingV1#annotations}
-
----
-
-###### `generate_name`<sup>Optional</sup> <a name="generate_name" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.putMetadata.parameter.generateName"></a>
-
-- *Type:* str
-
-Prefix, used by the server, to generate a unique name ONLY IF the `name` field has not been provided.
-
-This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#generate_name RoleBindingV1#generate_name}
-
----
-
-###### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.putMetadata.parameter.labels"></a>
-
-- *Type:* typing.Mapping[str]
-
-Map of string keys and values that can be used to organize and categorize (scope and select) the roleBinding.
-
-May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#labels RoleBindingV1#labels}
-
----
-
-###### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.putMetadata.parameter.name"></a>
-
-- *Type:* str
-
-Name of the roleBinding, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#name RoleBindingV1#name}
-
----
-
-###### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.putMetadata.parameter.namespace"></a>
-
-- *Type:* str
-
-Namespace defines the space within which name of the roleBinding must be unique.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#namespace RoleBindingV1#namespace}
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a>]
 
 ---
 
@@ -602,39 +537,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_role_ref(
-  api_group: str,
-  kind: str,
-  name: str
+  value: IResolvable | typing.List[RoleBindingV1RoleRef]
 ) -> None
 ```
 
-###### `api_group`<sup>Required</sup> <a name="api_group" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.putRoleRef.parameter.apiGroup"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.putRoleRef.parameter.value"></a>
 
-- *Type:* str
-
-The API group of the user. The only value possible at the moment is `rbac.authorization.k8s.io`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#api_group RoleBindingV1#api_group}
-
----
-
-###### `kind`<sup>Required</sup> <a name="kind" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.putRoleRef.parameter.kind"></a>
-
-- *Type:* str
-
-The kind of resource.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#kind RoleBindingV1#kind}
-
----
-
-###### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.putRoleRef.parameter.name"></a>
-
-- *Type:* str
-
-The name of the User to bind to.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#name RoleBindingV1#name}
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a>]
 
 ---
 
@@ -652,10 +561,22 @@ def put_subject(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.resetId"></a>
+##### `reset_metadata` <a name="reset_metadata" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.resetMetadata"></a>
 
 ```python
-def reset_id() -> None
+def reset_metadata() -> None
+```
+
+##### `reset_role_ref` <a name="reset_role_ref" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.resetRoleRef"></a>
+
+```python
+def reset_role_ref() -> None
+```
+
+##### `reset_subject` <a name="reset_subject" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.resetSubject"></a>
+
+```python
+def reset_subject() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -772,7 +693,7 @@ The construct id used in the generated config for the RoleBindingV1 to import.
 
 The id of the existing RoleBindingV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -802,14 +723,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference">RoleBindingV1MetadataOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.roleRef">role_ref</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference">RoleBindingV1RoleRefOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.subject">subject</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1SubjectList">RoleBindingV1SubjectList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.metadataInput">metadata_input</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.roleRefInput">role_ref_input</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.subjectInput">subject_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject">RoleBindingV1Subject</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList">RoleBindingV1MetadataList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.roleRef">role_ref</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList">RoleBindingV1RoleRefList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.subject">subject</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1SubjectList">RoleBindingV1SubjectList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.metadataInput">metadata_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.roleRefInput">role_ref_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.subjectInput">subject_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject">RoleBindingV1Subject</a>]</code> | *No description.* |
 
 ---
 
@@ -955,23 +875,33 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.metadata"></a>
 
 ```python
-metadata: RoleBindingV1MetadataOutputReference
+metadata: RoleBindingV1MetadataList
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference">RoleBindingV1MetadataOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList">RoleBindingV1MetadataList</a>
 
 ---
 
 ##### `role_ref`<sup>Required</sup> <a name="role_ref" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.roleRef"></a>
 
 ```python
-role_ref: RoleBindingV1RoleRefOutputReference
+role_ref: RoleBindingV1RoleRefList
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference">RoleBindingV1RoleRefOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList">RoleBindingV1RoleRefList</a>
 
 ---
 
@@ -985,33 +915,23 @@ subject: RoleBindingV1SubjectList
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `metadata_input`<sup>Optional</sup> <a name="metadata_input" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.metadataInput"></a>
 
 ```python
-metadata_input: RoleBindingV1Metadata
+metadata_input: IResolvable | typing.List[RoleBindingV1Metadata]
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a>
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a>]
 
 ---
 
 ##### `role_ref_input`<sup>Optional</sup> <a name="role_ref_input" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.roleRefInput"></a>
 
 ```python
-role_ref_input: RoleBindingV1RoleRef
+role_ref_input: IResolvable | typing.List[RoleBindingV1RoleRef]
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a>
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a>]
 
 ---
 
@@ -1022,16 +942,6 @@ subject_input: IResolvable | typing.List[RoleBindingV1Subject]
 ```
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject">RoleBindingV1Subject</a>]
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
 
 ---
 
@@ -1070,10 +980,9 @@ roleBindingV1.RoleBindingV1Config(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  metadata: RoleBindingV1Metadata,
-  role_ref: RoleBindingV1RoleRef,
-  subject: IResolvable | typing.List[RoleBindingV1Subject],
-  id: str = None
+  metadata: IResolvable | typing.List[RoleBindingV1Metadata] = None,
+  role_ref: IResolvable | typing.List[RoleBindingV1RoleRef] = None,
+  subject: IResolvable | typing.List[RoleBindingV1Subject] = None
 )
 ```
 
@@ -1088,10 +997,9 @@ roleBindingV1.RoleBindingV1Config(
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.roleRef">role_ref</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a></code> | role_ref block. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.metadata">metadata</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a>]</code> | metadata block. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.roleRef">role_ref</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a>]</code> | role_ref block. |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.subject">subject</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject">RoleBindingV1Subject</a>]</code> | subject block. |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#id RoleBindingV1#id}. |
 
 ---
 
@@ -1165,35 +1073,35 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.metadata"></a>
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.metadata"></a>
 
 ```python
-metadata: RoleBindingV1Metadata
+metadata: IResolvable | typing.List[RoleBindingV1Metadata]
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a>
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a>]
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#metadata RoleBindingV1#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#metadata RoleBindingV1#metadata}
 
 ---
 
-##### `role_ref`<sup>Required</sup> <a name="role_ref" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.roleRef"></a>
+##### `role_ref`<sup>Optional</sup> <a name="role_ref" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.roleRef"></a>
 
 ```python
-role_ref: RoleBindingV1RoleRef
+role_ref: IResolvable | typing.List[RoleBindingV1RoleRef]
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a>
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a>]
 
 role_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#role_ref RoleBindingV1#role_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#role_ref RoleBindingV1#role_ref}
 
 ---
 
-##### `subject`<sup>Required</sup> <a name="subject" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.subject"></a>
+##### `subject`<sup>Optional</sup> <a name="subject" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.subject"></a>
 
 ```python
 subject: IResolvable | typing.List[RoleBindingV1Subject]
@@ -1203,22 +1111,7 @@ subject: IResolvable | typing.List[RoleBindingV1Subject]
 
 subject block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#subject RoleBindingV1#subject}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Config.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#id RoleBindingV1#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#subject RoleBindingV1#subject}
 
 ---
 
@@ -1262,7 +1155,7 @@ An unstructured key value map stored with the roleBinding that may be used to st
 
 More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#annotations RoleBindingV1#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#annotations RoleBindingV1#annotations}
 
 ---
 
@@ -1278,7 +1171,7 @@ Prefix, used by the server, to generate a unique name ONLY IF the `name` field h
 
 This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#generate_name RoleBindingV1#generate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#generate_name RoleBindingV1#generate_name}
 
 ---
 
@@ -1294,7 +1187,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 
 May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#labels RoleBindingV1#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#labels RoleBindingV1#labels}
 
 ---
 
@@ -1308,7 +1201,7 @@ name: str
 
 Name of the roleBinding, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#name RoleBindingV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#name RoleBindingV1#name}
 
 ---
 
@@ -1322,7 +1215,7 @@ namespace: str
 
 Namespace defines the space within which name of the roleBinding must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#namespace RoleBindingV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#namespace RoleBindingV1#namespace}
 
 ---
 
@@ -1344,9 +1237,9 @@ roleBindingV1.RoleBindingV1RoleRef(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef.property.apiGroup">api_group</a></code> | <code>str</code> | The API group of the user. The only value possible at the moment is `rbac.authorization.k8s.io`. |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef.property.kind">kind</a></code> | <code>str</code> | The kind of resource. |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef.property.name">name</a></code> | <code>str</code> | The name of the User to bind to. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef.property.apiGroup">api_group</a></code> | <code>str</code> | The API group of the referenced Role. The only valid value is `rbac.authorization.k8s.io`. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef.property.kind">kind</a></code> | <code>str</code> | The kind of the referenced role. Must be `Role` or `ClusterRole`. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef.property.name">name</a></code> | <code>str</code> | The name of the Role or ClusterRole to bind to. |
 
 ---
 
@@ -1358,9 +1251,9 @@ api_group: str
 
 - *Type:* str
 
-The API group of the user. The only value possible at the moment is `rbac.authorization.k8s.io`.
+The API group of the referenced Role. The only valid value is `rbac.authorization.k8s.io`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#api_group RoleBindingV1#api_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#api_group RoleBindingV1#api_group}
 
 ---
 
@@ -1372,9 +1265,9 @@ kind: str
 
 - *Type:* str
 
-The kind of resource.
+The kind of the referenced role. Must be `Role` or `ClusterRole`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#kind RoleBindingV1#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#kind RoleBindingV1#kind}
 
 ---
 
@@ -1386,9 +1279,9 @@ name: str
 
 - *Type:* str
 
-The name of the User to bind to.
+The name of the Role or ClusterRole to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#name RoleBindingV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#name RoleBindingV1#name}
 
 ---
 
@@ -1411,10 +1304,10 @@ roleBindingV1.RoleBindingV1Subject(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject.property.kind">kind</a></code> | <code>str</code> | The kind of resource. |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject.property.name">name</a></code> | <code>str</code> | The name of the resource to bind to. |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject.property.apiGroup">api_group</a></code> | <code>str</code> | The API group of the subject resource. |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject.property.namespace">namespace</a></code> | <code>str</code> | The Namespace of the subject resource. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject.property.kind">kind</a></code> | <code>str</code> | The kind of the subject. One of `User`, `ServiceAccount`, or `Group`. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject.property.name">name</a></code> | <code>str</code> | The name of the subject. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject.property.apiGroup">api_group</a></code> | <code>str</code> | The API group of the subject. For User and Group subjects use `rbac.authorization.k8s.io`. For ServiceAccount subjects use `""`. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Subject.property.namespace">namespace</a></code> | <code>str</code> | The namespace of the referenced ServiceAccount. Defaults to `default`. Used only for `ServiceAccount` subjects. |
 
 ---
 
@@ -1426,9 +1319,9 @@ kind: str
 
 - *Type:* str
 
-The kind of resource.
+The kind of the subject. One of `User`, `ServiceAccount`, or `Group`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#kind RoleBindingV1#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#kind RoleBindingV1#kind}
 
 ---
 
@@ -1440,9 +1333,9 @@ name: str
 
 - *Type:* str
 
-The name of the resource to bind to.
+The name of the subject.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#name RoleBindingV1#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#name RoleBindingV1#name}
 
 ---
 
@@ -1454,9 +1347,9 @@ api_group: str
 
 - *Type:* str
 
-The API group of the subject resource.
+The API group of the subject. For User and Group subjects use `rbac.authorization.k8s.io`. For ServiceAccount subjects use `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#api_group RoleBindingV1#api_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#api_group RoleBindingV1#api_group}
 
 ---
 
@@ -1468,13 +1361,183 @@ namespace: str
 
 - *Type:* str
 
-The Namespace of the subject resource.
+The namespace of the referenced ServiceAccount. Defaults to `default`. Used only for `ServiceAccount` subjects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_binding_v1#namespace RoleBindingV1#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_binding_v1#namespace RoleBindingV1#namespace}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### RoleBindingV1MetadataList <a name="RoleBindingV1MetadataList" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.Initializer"></a>
+
+```python
+from cdktn_provider_kubernetes import role_binding_v1
+
+roleBindingV1.RoleBindingV1MetadataList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> RoleBindingV1MetadataOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[RoleBindingV1Metadata]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a>]
+
+---
+
 
 ### RoleBindingV1MetadataOutputReference <a name="RoleBindingV1MetadataOutputReference" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference"></a>
 
@@ -1485,7 +1548,9 @@ from cdktn_provider_kubernetes import role_binding_v1
 
 roleBindingV1.RoleBindingV1MetadataOutputReference(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
 )
 ```
 
@@ -1493,6 +1558,8 @@ roleBindingV1.RoleBindingV1MetadataOutputReference(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1509,6 +1576,22 @@ The parent resource.
 - *Type:* str
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -1759,7 +1842,7 @@ def reset_namespace() -> None
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a></code> | *No description.* |
 
 ---
 
@@ -1920,10 +2003,180 @@ namespace: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1MetadataOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: RoleBindingV1Metadata
+internal_value: IResolvable | RoleBindingV1Metadata
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1Metadata">RoleBindingV1Metadata</a>
+
+---
+
+
+### RoleBindingV1RoleRefList <a name="RoleBindingV1RoleRefList" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.Initializer"></a>
+
+```python
+from cdktn_provider_kubernetes import role_binding_v1
+
+roleBindingV1.RoleBindingV1RoleRefList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> RoleBindingV1RoleRefOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[RoleBindingV1RoleRef]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a>]
 
 ---
 
@@ -1937,7 +2190,9 @@ from cdktn_provider_kubernetes import role_binding_v1
 
 roleBindingV1.RoleBindingV1RoleRefOutputReference(
   terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
 )
 ```
 
@@ -1945,6 +2200,8 @@ roleBindingV1.RoleBindingV1RoleRefOutputReference(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1961,6 +2218,22 @@ The parent resource.
 - *Type:* str
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -2169,7 +2442,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference.property.apiGroup">api_group</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference.property.kind">kind</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a></code> | *No description.* |
 
 ---
 
@@ -2260,10 +2533,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: RoleBindingV1RoleRef
+internal_value: IResolvable | RoleBindingV1RoleRef
 ```
 
-- *Type:* <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRef">RoleBindingV1RoleRef</a>
 
 ---
 
