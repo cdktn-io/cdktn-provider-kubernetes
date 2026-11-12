@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1
+// https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface RoleV1Config extends cdktn.TerraformMetaArguments {
   /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#metadata RoleV1#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1#metadata RoleV1#metadata}
   */
   readonly metadata?: RoleV1Metadata[] | cdktn.IResolvable;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#rule RoleV1#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1#rule RoleV1#rule}
   */
   readonly rule?: RoleV1Rule[] | cdktn.IResolvable;
 }
@@ -29,31 +29,31 @@ export interface RoleV1Metadata {
   /**
   * An unstructured key value map stored with the role that may be used to store arbitrary metadata. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#annotations RoleV1#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1#annotations RoleV1#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Prefix, used by the server, to generate a unique name ONLY IF the `name` field has not been provided. This value will also be combined with a unique suffix. More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#idempotency
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#generate_name RoleV1#generate_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1#generate_name RoleV1#generate_name}
   */
   readonly generateName?: string;
   /**
   * Map of string keys and values that can be used to organize and categorize (scope and select) the role. May match selectors of replication controllers and services. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#labels RoleV1#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1#labels RoleV1#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the role, must be unique. Cannot be updated. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#name RoleV1#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1#name RoleV1#name}
   */
   readonly name?: string;
   /**
   * Namespace defines the space within which name of the role must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#namespace RoleV1#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1#namespace RoleV1#namespace}
   */
   readonly namespace?: string;
 }
@@ -302,25 +302,25 @@ export interface RoleV1Rule {
   /**
   * Name of the APIGroup that contains the resources
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#api_groups RoleV1#api_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1#api_groups RoleV1#api_groups}
   */
   readonly apiGroups: string[];
   /**
   * White list of names that the rule applies to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#resource_names RoleV1#resource_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1#resource_names RoleV1#resource_names}
   */
   readonly resourceNames?: string[];
   /**
   * List of resources that the rule applies to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#resources RoleV1#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1#resources RoleV1#resources}
   */
   readonly resources: string[];
   /**
   * List of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions contained in this rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#verbs RoleV1#verbs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1#verbs RoleV1#verbs}
   */
   readonly verbs: string[];
 }
@@ -514,7 +514,7 @@ export class RoleV1RuleList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1 kubernetes_role_v1}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1 kubernetes_role_v1}
 */
 export class RoleV1 extends cdktn.TerraformResource {
 
@@ -530,7 +530,7 @@ export class RoleV1 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a RoleV1 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RoleV1 to import
-  * @param importFromId The id of the existing RoleV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RoleV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RoleV1 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -542,7 +542,7 @@ export class RoleV1 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.4.0/docs/resources/role_v1 kubernetes_role_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/kubernetes/3.5.0/docs/resources/role_v1 kubernetes_role_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -553,7 +553,7 @@ export class RoleV1 extends cdktn.TerraformResource {
       terraformResourceType: 'kubernetes_role_v1',
       terraformGeneratorMetadata: {
         providerName: 'kubernetes',
-        providerVersion: '3.4.0',
+        providerVersion: '3.5.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
